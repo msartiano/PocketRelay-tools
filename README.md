@@ -6,59 +6,83 @@ This repo is the single source of truth: the app's build bakes a snapshot of
 live without a rebuild.
 
 Managed as a **subfolder of the app project**: `tools/PocketRelay-tools/`.
-`npm run deploy` clones/updates it there and copies `config/*.json` into the
-app's `public/bundled/config/` before building.
+`npm run deploy` clones/updates it there and copies `config/*.json` (plus the
+emulator icons) into the app's `public/bundled/` before building.
 
 ## Layout
 
 ```
 config/
-  systems/systems.json   # THE file: per-platform metadata + emulators[] variants
-  apps/apps.json         # any-system frontends (RetroArch, Lemuroid, ...)
-  repos/curated.json     # starter repos offered to new installs
-schema/                  # JSON schemas, one per config (CI-validated)
-scripts/validate.mjs     # zero-dep validator, run on every PR
+  systems.json         # THE file: master emulator list + per-system variants
+  apps.json            # any-system frontends (RetroArch, Lemuroid, ...)
+  repos/curated.json   # starter repos offered to new installs
+  emulator-icons/      # one <id>.png per emulator; missing---<id>.png placeholder
+schema/                # JSON schemas, one per config (CI-validated)
+scripts/
+  validate.mjs                  # zero-dep validator, run on every PR
+  build-master-config.mjs       # transforms an old-style flat systems.json
+  fetch-emulator-icons.mjs      # downloads icons (Play/apkcombo/GitHub)
 docs/
-  adding-a-system.md     # walkthrough: add a platform in one entry
+  adding-a-system.md   # walkthrough: add a platform or emulator
   pr-workflow.md
 ```
 
-## Schema quick-ref (`config/systems/systems.json`)
+## Master-list format (`config/systems.json`)
+
+A top-level `emulators[]` registry — **one stable `id` per app** — plus the
+`systems[]` entries below that reference ids. Variant-only fields stay on the
+system entry; app-level data (packages, links, icon) lives on the master entry.
 
 ```jsonc
 {
-  "id": "psx",                 // lowercase, no dashes
-  "name": "Sony - Playstation",
-  "folder": "Playstation",     // ROM folder name (ES-DE convention)
-  "aliases": ["ps1"],          // folder/display aliases -> id
-  "romExtensions": ["iso", "cue", "pbp"],
-  "logoKey": "psx",            // optional, from public/platform-logos
-  "hue": 160,                  // fallback tile color 0-359
-  "mame": false,               // MAME-style (launch by ROM filename)
-  "emulators": [               // MULTIPLE emulators AND multiple configs per emulator
-    { "name": "DuckStation", "package": "com.github.stenzek.duckstation", "favourite": true },
-    { "name": "DuckStation HD", "package": "com.github.stenzek.duckstation", "extras": { "HD": "1" } },
-    { "name": "RetroArch (SwanStation)", "package": "org.retroarch", "core": "swanstation_libretro" }
+  "emulators": [
+    {
+      "id": "retroarch",                         // one id per distinct app
+      "name": "RetroArch",
+      "packages": ["org.retroarch", "com.retroarch"],   // same app, extra builds
+      "siteUrl": "https://www.retroarch.com/",   // official website / repo (always)
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.retroarch", // if on Play
+      "apkUrl": "https://..."                    // direct .apk when downloadable in-app
+    }
+  ],
+  "systems": [
+    {
+      "id": "psx",
+      "name": "Sony - Playstation",
+      "folder": "Playstation",
+      "hue": 160,
+      "mame": false,
+      "emulators": [
+        { "emulator": "duckstation", "favourite": true },            // reference the id
+        { "emulator": "retroarch", "core": "swanstation_libretro" }  // per-variant core
+      ]
+    }
   ]
 }
 ```
 
-- One system may list many emulators; one app may appear many times (RetroArch
-  per-core, HD/non-HD modes).
+- **Reuse ids across platforms** — one master entry, referenced anywhere.
 - At most one `favourite: true` per system — the default casual users get.
 - `core` = RetroArch-style core name; `extras` = launch-intent extras.
+- Every master entry needs: unique `id`, `name`, non-empty `packages[]`, and a
+  `siteUrl` (the "link to APK": official website/repo). Add `playStoreUrl`
+  when on Google Play and `apkUrl` when a direct APK is downloadable in-app.
 - See `schema/systems.schema.json` for the full contract.
 
-## Regenerate the seed
+## Emulator icons
 
-The initial config was generated from the app's built-in tables:
+Every master entry has a 256×256 PNG at `config/emulator-icons/<id>.png`.
+Where no icon could be sourced the placeholder `missing---<id>.png` is committed
+instead, so gaps are visible in the repo at a glance. Refresh with:
 
 ```
-npm run seed-config        # app repo: node scripts/seed-config.mjs
+node scripts/fetch-emulator-icons.mjs
 ```
 
-Re-run after adding a system/app in the Android sources to refresh the seed,
-then review + commit here.
+The fetcher tries Google Play → apkcombo → GitHub project avatar and writes a
+placeholder when all fail. Real icons are never re-downloaded (idempotent);
+delete a file to force a re-fetch. Play serves WebP — normalize committed icons
+to PNG (ImageMagick: `magick <id>.png <id>.png`) so every file is a real PNG.
 
 ## PR workflow
 

@@ -1,2298 +1,2957 @@
-[
-  {
-    "id": "amstradcpc",
-    "name": "Amstrad - CPC",
-    "folder": "amstradcpc",
-    "hue": 149,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (cap32)",
-        "package": "org.retroarch",
-        "core": "cap32_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (crocods)",
-        "package": "org.retroarch",
-        "core": "crocods_libretro"
-      }
-    ]
-  },
-  {
-    "id": "atarist",
-    "name": "Atari - ST",
-    "folder": "atarist",
-    "hue": 329,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (hatari)",
-        "package": "org.retroarch",
-        "core": "hatari_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "zxspectrum",
-    "name": "Sinclair - ZX Spectrum",
-    "folder": "zxspectrum",
-    "hue": 32,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (fuse)",
-        "package": "org.retroarch",
-        "core": "fuse_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (spectemu)",
-        "package": "org.retroarch",
-        "core": "spectemu_libretro"
-      }
-    ]
-  },
-  {
-    "id": "macintosh",
-    "name": "Apple - Macintosh",
-    "folder": "macintosh",
-    "hue": 353,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (minivmac)",
-        "package": "org.retroarch",
-        "core": "minivmac_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "windows3x",
-    "name": "Windows 3.x",
-    "folder": "windows3x",
-    "hue": 49,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (dosbox_pure)",
-        "package": "org.retroarch",
-        "core": "dosbox_pure_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (dosbox_svn)",
-        "package": "org.retroarch",
-        "core": "dosbox_svn_libretro"
-      }
-    ]
-  },
-  {
-    "id": "3do",
-    "name": "The 3DO Company - 3DO",
-    "folder": "3do",
-    "hue": 351,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (opera)",
-        "package": "org.retroarch",
-        "core": "opera_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (4do)",
-        "package": "org.retroarch",
-        "core": "4do_libretro"
-      }
-    ]
-  },
-  {
-    "id": "mame",
-    "name": "MAME",
-    "folder": "MAME",
-    "logoKey": "mame",
-    "hue": 37,
-    "mame": true,
-    "emulators": [
-      {
-        "name": "MAME4droid",
-        "package": "com.seleuco.mame4droid",
-        "favourite": true
-      },
-      {
-        "name": "MAME4droid Current",
-        "package": "com.seleuco.mame4d2024"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "NEO.emu",
-        "package": "com.explusalpha.NeoEmu"
-      },
-      {
-        "name": "MAME4droid (MAME4All)",
-        "package": "com.seleuco.mame4all"
-      },
-      {
-        "name": "MAMEAll",
-        "package": "com.mameall.mame4android"
-      },
-      {
-        "name": "MAME4droid",
-        "package": "com.mame.mame4droid"
-      },
-      {
-        "name": "RetroArch (mame2003_plus)",
-        "package": "org.retroarch",
-        "core": "mame2003_plus_libretro"
-      },
-      {
-        "name": "RetroArch (mame2003)",
-        "package": "org.retroarch",
-        "core": "mame2003_libretro"
-      },
-      {
-        "name": "RetroArch (mame2010)",
-        "package": "org.retroarch",
-        "core": "mame2010_libretro"
-      },
-      {
-        "name": "RetroArch (mame)",
-        "package": "org.retroarch",
-        "core": "mame_libretro"
-      },
-      {
-        "name": "RetroArch (mame2000)",
-        "package": "org.retroarch",
-        "core": "mame2000_libretro"
-      },
-      {
-        "name": "RetroArch (fbneo)",
-        "package": "org.retroarch",
-        "core": "fbneo_libretro"
-      },
-      {
-        "name": "RetroArch (fbalpha2012)",
-        "package": "org.retroarch",
-        "core": "fbalpha2012_libretro"
-      },
-      {
-        "name": "RetroArch (fbalpha)",
-        "package": "org.retroarch",
-        "core": "fbalpha_libretro"
-      },
-      {
-        "name": "RetroArch (flycast)",
-        "package": "org.retroarch",
-        "core": "flycast_libretro"
-      }
-    ]
-  },
-  {
-    "id": "fba",
-    "name": "FBNeo - Arcade Games",
-    "folder": "FBA",
-    "logoKey": "fbneo",
-    "hue": 160,
-    "mame": true,
-    "emulators": [
-      {
-        "name": "MAME4droid",
-        "package": "com.seleuco.mame4droid",
-        "favourite": true
-      },
-      {
-        "name": "MAME4droid Current",
-        "package": "com.seleuco.mame4d2024"
-      },
-      {
-        "name": "RetroArch (fbneo)",
-        "package": "org.retroarch",
-        "core": "fbneo_libretro"
-      },
-      {
-        "name": "RetroArch (fbalpha2012)",
-        "package": "org.retroarch",
-        "core": "fbalpha2012_libretro"
-      },
-      {
-        "name": "RetroArch (fbalpha)",
-        "package": "org.retroarch",
-        "core": "fbalpha_libretro"
-      },
-      {
-        "name": "RetroArch (mame2003_plus)",
-        "package": "org.retroarch",
-        "core": "mame2003_plus_libretro"
-      },
-      {
-        "name": "RetroArch (mame)",
-        "package": "org.retroarch",
-        "core": "mame_libretro"
-      },
-      {
-        "name": "RetroArch (flycast)",
-        "package": "org.retroarch",
-        "core": "flycast_libretro"
-      }
-    ]
-  },
-  {
-    "id": "atari2600",
-    "name": "Atari - 2600",
-    "folder": "2600",
-    "logoKey": "atari2600",
-    "hue": 46,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "2600.emu",
-        "package": "com.explusalpha.A2600Emu",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (stella)",
-        "package": "org.retroarch",
-        "core": "stella_libretro"
-      },
-      {
-        "name": "RetroArch (stella2014)",
-        "package": "org.retroarch",
-        "core": "stella2014_libretro"
-      }
-    ]
-  },
-  {
-    "id": "atari5200",
-    "name": "Atari - 5200",
-    "folder": "5200",
-    "logoKey": "atari5200",
-    "hue": 161,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "kat5200",
-        "package": "com.jillybunch.kat5200",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (atari800)",
-        "package": "org.retroarch",
-        "core": "atari800_libretro"
-      }
-    ]
-  },
-  {
-    "id": "atari7800",
-    "name": "Atari - 7800",
-    "folder": "7800",
-    "logoKey": "atari7800",
-    "hue": 33,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (prosystem)",
-        "package": "org.retroarch",
-        "core": "prosystem_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "j2me",
-    "name": "Java - J2ME",
-    "folder": "j2me",
-    "hue": 15,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (squirreljme)",
-        "package": "org.retroarch",
-        "core": "squirreljme_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "lynx",
-    "name": "Atari - Lynx",
-    "folder": "Lynx",
-    "logoKey": "atarilynx",
-    "hue": 200,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "Lynx.emu",
-        "package": "com.explusalpha.LynxEmu"
-      },
-      {
-        "name": "RetroArch (mednafen_lynx)",
-        "package": "org.retroarch",
-        "core": "mednafen_lynx_libretro"
-      },
-      {
-        "name": "RetroArch (holani)",
-        "package": "org.retroarch",
-        "core": "holani_libretro"
-      },
-      {
-        "name": "RetroArch (handy)",
-        "package": "org.retroarch",
-        "core": "handy_libretro"
-      }
-    ]
-  },
-  {
-    "id": "jaguar",
-    "name": "Atari - Jaguar",
-    "folder": "Jaguar",
-    "logoKey": "atarijaguar",
-    "hue": 271,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Virtual Jaguar",
-        "package": "org.icculus.virtualjaguar",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (virtualjaguar)",
-        "package": "org.retroarch",
-        "core": "virtualjaguar_libretro"
-      },
-      {
-        "name": "RetroArch (cygne)",
-        "package": "org.retroarch",
-        "core": "cygne_libretro"
-      }
-    ]
-  },
-  {
-    "id": "wonderswan",
-    "name": "Bandai - WonderSwan",
-    "folder": "wonderswan",
-    "hue": 3,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (mednafen_wswan)",
-        "package": "org.retroarch",
-        "core": "mednafen_wswan_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "wonderswancolor",
-    "name": "Bandai - WonderSwan Color",
-    "folder": "wonderswancolor",
-    "hue": 74,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (mednafen_wswan)",
-        "package": "org.retroarch",
-        "core": "mednafen_wswan_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "c64",
-    "name": "Commodore - 64",
-    "folder": "64",
-    "logoKey": "c64",
-    "hue": 0,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "VICE",
-        "package": "com.locnet.vice",
-        "favourite": true
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "C64.emu",
-        "package": "com.explusalpha.C64Emu"
-      },
-      {
-        "name": "C64",
-        "package": "de.joergjahnke.c64.android"
-      },
-      {
-        "name": "C64",
-        "package": "org.ab.c64"
-      },
-      {
-        "name": "RetroArch (vice_x64)",
-        "package": "org.retroarch",
-        "core": "vice_x64_libretro"
-      },
-      {
-        "name": "RetroArch (vice_x64sc)",
-        "package": "org.retroarch",
-        "core": "vice_x64sc_libretro"
-      }
-    ]
-  },
-  {
-    "id": "amiga",
-    "name": "Commodore - Amiga",
-    "folder": "Amiga",
-    "logoKey": "amiga",
-    "hue": 302,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "UAE4All2",
-        "package": "atua.anddev.uae4all2",
-        "favourite": true
-      },
-      {
-        "name": "UAE4Droid",
-        "package": "com.locnet.uae"
-      },
-      {
-        "name": "UAE4All",
-        "package": "org.ab.uae"
-      },
-      {
-        "name": "RetroArch (puae)",
-        "package": "org.retroarch",
-        "core": "puae_libretro"
-      },
-      {
-        "name": "RetroArch (puae2021)",
-        "package": "org.retroarch",
-        "core": "puae2021_libretro"
-      },
-      {
-        "name": "RetroArch (uae4arm)",
-        "package": "org.retroarch",
-        "core": "uae4arm_libretro"
-      }
-    ]
-  },
-  {
-    "id": "amigacd32",
-    "name": "Commodore - CD32",
-    "folder": "amigacd32",
-    "hue": 252,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (puae)",
-        "package": "org.retroarch",
-        "core": "puae_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (puae2021)",
-        "package": "org.retroarch",
-        "core": "puae2021_libretro"
-      }
-    ]
-  },
-  {
-    "id": "doom",
-    "name": "DOOM",
-    "folder": "doom",
-    "hue": 44,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "GZDoom (Delta Touch)",
-        "package": "com.opentouchgaming.gzdoomfree",
-        "favourite": true
-      },
-      {
-        "name": "GZDoom",
-        "package": "com.opentouchgaming.gzdoom"
-      },
-      {
-        "name": "RetroArch (prboom)",
-        "package": "org.retroarch",
-        "core": "prboom_libretro"
-      },
-      {
-        "name": "RetroArch (chocolate_doom)",
-        "package": "org.retroarch",
-        "core": "chocolate_doom_libretro"
-      },
-      {
-        "name": "RetroArch (crispy_doom)",
-        "package": "org.retroarch",
-        "core": "crispy_doom_libretro"
-      }
-    ]
-  },
-  {
-    "id": "fmtowns",
-    "name": "Fujitsu FM Towns",
-    "folder": "fmtowns",
-    "hue": 273,
-    "mame": false,
-    "emulators": []
-  },
-  {
-    "id": "dos",
-    "name": "DOS",
-    "folder": "DOS",
-    "logoKey": "dos",
-    "hue": 349,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Magic DOSBox",
-        "package": "bruenor.magicbox",
-        "favourite": true
-      },
-      {
-        "name": "DOSBox Turbo",
-        "package": "com.fishstix.dosbox"
-      },
-      {
-        "name": "anDOSBox",
-        "package": "com.locnet.dosbox"
-      },
-      {
-        "name": "aFreeBox",
-        "package": "com.fishstix.dosboxfree"
-      },
-      {
-        "name": "Bochs",
-        "package": "net.sourceforge.bochs"
-      },
-      {
-        "name": "RetroArch (dosbox_pure)",
-        "package": "org.retroarch",
-        "core": "dosbox_pure_libretro"
-      },
-      {
-        "name": "RetroArch (dosbox_svn)",
-        "package": "org.retroarch",
-        "core": "dosbox_svn_libretro"
-      }
-    ]
-  },
-  {
-    "id": "msx",
-    "name": "Microsoft - MSX",
-    "folder": "MSX",
-    "logoKey": "msx",
-    "hue": 147,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "fMSX",
-        "package": "com.fms.fmsx",
-        "favourite": true
-      },
-      {
-        "name": "MSX.emu",
-        "package": "com.explusalpha.MsxEmu"
-      },
-      {
-        "name": "openMSX",
-        "package": "org.openmsx.android.openmsx"
-      },
-      {
-        "name": "RetroArch (bluemsx)",
-        "package": "org.retroarch",
-        "core": "bluemsx_libretro"
-      },
-      {
-        "name": "RetroArch (fmsx)",
-        "package": "org.retroarch",
-        "core": "fmsx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "msx2",
-    "name": "Microsoft - MSX2",
-    "folder": "msx2",
-    "hue": 51,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (bluemsx)",
-        "package": "org.retroarch",
-        "core": "bluemsx_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (fmsx)",
-        "package": "org.retroarch",
-        "core": "fmsx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "pc88",
-    "name": "NEC - PC-8001 - PC-8801",
-    "folder": "pc88",
-    "hue": 308,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (quasi88)",
-        "package": "org.retroarch",
-        "core": "quasi88_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "pc98",
-    "name": "NEC - PC-98",
-    "folder": "pc98",
-    "hue": 157,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (np2kai)",
-        "package": "org.retroarch",
-        "core": "np2kai_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (quasi88)",
-        "package": "org.retroarch",
-        "core": "quasi88_libretro"
-      }
-    ]
-  },
-  {
-    "id": "pce",
-    "name": "NEC - PC Engine - TurboGrafx 16",
-    "folder": "PC Engine / TurboGrafx-16",
-    "logoKey": "tg16",
-    "hue": 99,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "PCE.emu",
-        "package": "com.PceEmu"
-      },
-      {
-        "name": "RetroArch (mednafen_pce_fast)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_fast_libretro"
-      },
-      {
-        "name": "RetroArch (mednafen_pce)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_libretro"
-      },
-      {
-        "name": "RetroArch (geargrafx)",
-        "package": "org.retroarch",
-        "core": "geargrafx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "tg16",
-    "name": "NEC - PC Engine - TurboGrafx 16",
-    "folder": "PC Engine / TurboGrafx-16",
-    "logoKey": "tg16",
-    "hue": 355,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "PCE.emu",
-        "package": "com.PceEmu"
-      },
-      {
-        "name": "RetroArch (mednafen_pce_fast)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_fast_libretro"
-      },
-      {
-        "name": "RetroArch (mednafen_pce)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_libretro"
-      },
-      {
-        "name": "RetroArch (geargrafx)",
-        "package": "org.retroarch",
-        "core": "geargrafx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "pcecd",
-    "name": "NEC - PC Engine CD - TurboGrafx-CD",
-    "folder": "pcecd",
-    "hue": 44,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (mednafen_pce_fast)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_fast_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (mednafen_pce)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_libretro"
-      },
-      {
-        "name": "RetroArch (geargrafx)",
-        "package": "org.retroarch",
-        "core": "geargrafx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "pcfx",
-    "name": "NEC - PC-FX",
-    "folder": "PC-FX",
-    "logoKey": "pcfx",
-    "hue": 274,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (mednafen_pcfx)",
-        "package": "org.retroarch",
-        "core": "mednafen_pcfx_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "supergrafx",
-    "name": "NEC - PC Engine SuperGrafx",
-    "folder": "supergrafx",
-    "hue": 254,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (mednafen_pce_fast)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_fast_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (mednafen_pce)",
-        "package": "org.retroarch",
-        "core": "mednafen_pce_libretro"
-      },
-      {
-        "name": "RetroArch (geargrafx)",
-        "package": "org.retroarch",
-        "core": "geargrafx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "n3ds",
-    "name": "Nintendo - Nintendo 3DS",
-    "folder": "Nintendo 3DS",
-    "logoKey": "n3ds",
-    "hue": 287,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Citra",
-        "package": "org.citra.citra",
-        "favourite": true
-      },
-      {
-        "name": "Lime3DS / Azahar",
-        "package": "io.github.lime3ds.android"
-      },
-      {
-        "name": "Panda3DS",
-        "package": "com.alber.panda3ds"
-      },
-      {
-        "name": "Mikage",
-        "package": "com.mikageinc.mikage"
-      },
-      {
-        "name": "Citra (nightly)",
-        "package": "org.citra.emu"
-      },
-      {
-        "name": "Citra (MMJ/fork)",
-        "package": "org.citra.citra_emu"
-      },
-      {
-        "name": "Citra MMJ",
-        "package": "org.github.weihuoya.citra"
-      },
-      {
-        "name": "RetroArch (citra)",
-        "package": "org.retroarch",
-        "core": "citra_libretro"
-      },
-      {
-        "name": "RetroArch (citra2018)",
-        "package": "org.retroarch",
-        "core": "citra2018_libretro"
-      }
-    ]
-  },
-  {
-    "id": "nds",
-    "name": "Nintendo - Nintendo DS",
-    "folder": "Nintendo DS",
-    "logoKey": "nds",
-    "hue": 76,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "melonDS",
-        "package": "me.magnum.melonds",
-        "favourite": true
-      },
-      {
-        "name": "DraStic",
-        "package": "com.dsemu.drastic"
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "DraStic",
-        "package": "com.drastic.ds"
-      },
-      {
-        "name": "RetroArch (melonds)",
-        "package": "org.retroarch",
-        "core": "melonds_libretro"
-      },
-      {
-        "name": "RetroArch (desmume)",
-        "package": "org.retroarch",
-        "core": "desmume_libretro"
-      },
-      {
-        "name": "RetroArch (desmume2015)",
-        "package": "org.retroarch",
-        "core": "desmume2015_libretro"
-      }
-    ]
-  },
-  {
-    "id": "gb",
-    "name": "Nintendo - Game Boy",
-    "folder": "Game Boy",
-    "logoKey": "gb",
-    "hue": 252,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "GBC.emu",
-        "package": "com.explusalpha.GbcEmu"
-      },
-      {
-        "name": "Nostalgia.GBC",
-        "package": "com.nostalgiaemulators.gbclite"
-      },
-      {
-        "name": "Nostalgia.GBC Pro",
-        "package": "com.nostalgiaemulators.gbcpro"
-      },
-      {
-        "name": "John GBC",
-        "package": "com.johnemulators.johngbc"
-      },
-      {
-        "name": "Pizza Boy C Pro",
-        "package": "it.dbtecno.pizzaboypro"
-      },
-      {
-        "name": "SuperRetro16",
-        "package": "com.neutronemulation.super_retro_16"
-      },
-      {
-        "name": "gbcc",
-        "package": "com.philj56.gbcc"
-      },
-      {
-        "name": "GameBoy droid",
-        "package": "ca.halsafar.mgbadroid"
-      },
-      {
-        "name": "RetroArch (sameboy)",
-        "package": "org.retroarch",
-        "core": "sameboy_libretro"
-      },
-      {
-        "name": "RetroArch (gambatte)",
-        "package": "org.retroarch",
-        "core": "gambatte_libretro"
-      },
-      {
-        "name": "RetroArch (bgb)",
-        "package": "org.retroarch",
-        "core": "bgb_libretro"
-      },
-      {
-        "name": "RetroArch (gearboy)",
-        "package": "org.retroarch",
-        "core": "gearboy_libretro"
-      },
-      {
-        "name": "RetroArch (tgbdual)",
-        "package": "org.retroarch",
-        "core": "tgbdual_libretro"
-      },
-      {
-        "name": "RetroArch (vba_next)",
-        "package": "org.retroarch",
-        "core": "vba_next_libretro"
-      }
-    ]
-  },
-  {
-    "id": "gbc",
-    "name": "Nintendo - Game Boy Color",
-    "folder": "Game Boy Color",
-    "logoKey": "gbc",
-    "hue": 141,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "GBC.emu",
-        "package": "com.explusalpha.GbcEmu"
-      },
-      {
-        "name": "Nostalgia.GBC",
-        "package": "com.nostalgiaemulators.gbclite"
-      },
-      {
-        "name": "Nostalgia.GBC Pro",
-        "package": "com.nostalgiaemulators.gbcpro"
-      },
-      {
-        "name": "John GBC",
-        "package": "com.johnemulators.johngbc"
-      },
-      {
-        "name": "Pizza Boy C Pro",
-        "package": "it.dbtecno.pizzaboypro"
-      },
-      {
-        "name": "SuperRetro16",
-        "package": "com.neutronemulation.super_retro_16"
-      },
-      {
-        "name": "gbcc",
-        "package": "com.philj56.gbcc"
-      },
-      {
-        "name": "GameBoy droid",
-        "package": "ca.halsafar.mgbadroid"
-      },
-      {
-        "name": "RetroArch (sameboy)",
-        "package": "org.retroarch",
-        "core": "sameboy_libretro"
-      },
-      {
-        "name": "RetroArch (gambatte)",
-        "package": "org.retroarch",
-        "core": "gambatte_libretro"
-      },
-      {
-        "name": "RetroArch (bgb)",
-        "package": "org.retroarch",
-        "core": "bgb_libretro"
-      },
-      {
-        "name": "RetroArch (gearboy)",
-        "package": "org.retroarch",
-        "core": "gearboy_libretro"
-      },
-      {
-        "name": "RetroArch (tgbdual)",
-        "package": "org.retroarch",
-        "core": "tgbdual_libretro"
-      },
-      {
-        "name": "RetroArch (vba_next)",
-        "package": "org.retroarch",
-        "core": "vba_next_libretro"
-      }
-    ]
-  },
-  {
-    "id": "gba",
-    "name": "Nintendo - Game Boy Advance",
-    "folder": "Game Boy Advance",
-    "logoKey": "gba",
-    "hue": 143,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "My Boy!",
-        "package": "com.fastemulator.gba",
-        "favourite": true
-      },
-      {
-        "name": "Pizza Boy A",
-        "package": "it.dbtecno.pizzaboy"
-      },
-      {
-        "name": "John GBA",
-        "package": "com.johnemulators.johngba"
-      },
-      {
-        "name": "GBA.emu",
-        "package": "com.explusalpha.GbaEmu"
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "Nostalgia.GBA",
-        "package": "com.nostalgiaemulators.gbalite"
-      },
-      {
-        "name": "Nostalgia.GBA Pro",
-        "package": "com.nostalgiaemulators.gbapro"
-      },
-      {
-        "name": "John GBA Lite",
-        "package": "com.johnemulators.johngbac"
-      },
-      {
-        "name": "Pizza Boy GBA",
-        "package": "it.dbtecno.pizzaboygba"
-      },
-      {
-        "name": "Pizza Boy GBA Pro",
-        "package": "it.dbtecno.pizzaboygbapro"
-      },
-      {
-        "name": "UnityBoyAdvance",
-        "package": "com.Rekkuzan.UnityBoyAdvance"
-      },
-      {
-        "name": "Network GBA",
-        "package": "com.hqgame.networkgba"
-      },
-      {
-        "name": "SuperRetro16",
-        "package": "com.neutronemulation.super_retro_16"
-      },
-      {
-        "name": "GameBoy Advanced droid",
-        "package": "ca.halsafar.gambattedroid"
-      },
-      {
-        "name": "RetroArch (mgba)",
-        "package": "org.retroarch",
-        "core": "mgba_libretro"
-      },
-      {
-        "name": "RetroArch (vba_m)",
-        "package": "org.retroarch",
-        "core": "vba_m_libretro"
-      },
-      {
-        "name": "RetroArch (vba_next)",
-        "package": "org.retroarch",
-        "core": "vba_next_libretro"
-      },
-      {
-        "name": "RetroArch (mednafen_gba)",
-        "package": "org.retroarch",
-        "core": "mednafen_gba_libretro"
-      },
-      {
-        "name": "RetroArch (gpsp)",
-        "package": "org.retroarch",
-        "core": "gpsp_libretro"
-      }
-    ]
-  },
-  {
-    "id": "pokemini",
-    "name": "Nintendo - Pokemon Mini",
-    "folder": "pokemini",
-    "hue": 123,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (pokemini)",
-        "package": "org.retroarch",
-        "core": "pokemini_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "nes",
-    "name": "Nintendo - Nintendo Entertainment System",
-    "folder": "Nintendo Entertainment System",
-    "logoKey": "nes",
-    "hue": 221,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "NES.emu",
-        "package": "com.explusalpha.NesEmu",
-        "favourite": true
-      },
-      {
-        "name": "Nostalgia.NES",
-        "package": "com.nostalgiaemulators.neslite"
-      },
-      {
-        "name": "John NESS",
-        "package": "com.johnemulators.johnness"
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "Nostalgia.NES Pro",
-        "package": "com.nostalgiaemulators.nespro"
-      },
-      {
-        "name": "Network NES",
-        "package": "com.hqgame.networknes"
-      },
-      {
-        "name": "NESdroid",
-        "package": "ca.halsafar.nesdroid"
-      },
-      {
-        "name": "RetroArch (mesen)",
-        "package": "org.retroarch",
-        "core": "mesen_libretro"
-      },
-      {
-        "name": "RetroArch (fceumm)",
-        "package": "org.retroarch",
-        "core": "fceumm_libretro"
-      },
-      {
-        "name": "RetroArch (nestopia)",
-        "package": "org.retroarch",
-        "core": "nestopia_libretro"
-      },
-      {
-        "name": "RetroArch (quicknes)",
-        "package": "org.retroarch",
-        "core": "quicknes_libretro"
-      },
-      {
-        "name": "RetroArch (fceux)",
-        "package": "org.retroarch",
-        "core": "fceux_libretro"
-      }
-    ]
-  },
-  {
-    "id": "snes",
-    "name": "Nintendo - Super Nintendo Entertainment System",
-    "folder": "Super Nintendo Entertainment System",
-    "logoKey": "snes",
-    "hue": 64,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Snes9x EX+",
-        "package": "com.explusalpha.Snes9xPlus",
-        "favourite": true
-      },
-      {
-        "name": "Nostalgia.SNES",
-        "package": "com.nostalgiaemulators.sneslite"
-      },
-      {
-        "name": "SuperRetro16",
-        "package": "com.neutronemulation.super_retro_16"
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "Nostalgia.SNES Pro",
-        "package": "com.nostalgiaemulators.snespro"
-      },
-      {
-        "name": "Network SNES",
-        "package": "com.hqgame.networksnes"
-      },
-      {
-        "name": "SuperZSNES",
-        "package": "com.zsnes.superzsnes"
-      },
-      {
-        "name": "SNESdroid",
-        "package": "ca.halsafar.snesdroid"
-      },
-      {
-        "name": "RetroArch (snes9x)",
-        "package": "org.retroarch",
-        "core": "snes9x_libretro"
-      },
-      {
-        "name": "RetroArch (snes9x2002)",
-        "package": "org.retroarch",
-        "core": "snes9x2002_libretro"
-      },
-      {
-        "name": "RetroArch (snes9x2005)",
-        "package": "org.retroarch",
-        "core": "snes9x2005_libretro"
-      },
-      {
-        "name": "RetroArch (snes9x2010)",
-        "package": "org.retroarch",
-        "core": "snes9x2010_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes)",
-        "package": "org.retroarch",
-        "core": "bsnes_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes_hd)",
-        "package": "org.retroarch",
-        "core": "bsnes_hd_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes_mercury_accuracy)",
-        "package": "org.retroarch",
-        "core": "bsnes_mercury_accuracy_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes_mercury_balanced)",
-        "package": "org.retroarch",
-        "core": "bsnes_mercury_balanced_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes_mercury_performance)",
-        "package": "org.retroarch",
-        "core": "bsnes_mercury_performance_libretro"
-      }
-    ]
-  },
-  {
-    "id": "sfc",
-    "name": "Nintendo - Super Famicom",
-    "folder": "Super Famicom",
-    "logoKey": "snes",
-    "hue": 229,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Snes9x EX+",
-        "package": "com.explusalpha.Snes9xPlus",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (snes9x)",
-        "package": "org.retroarch",
-        "core": "snes9x_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes)",
-        "package": "org.retroarch",
-        "core": "bsnes_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes_hd)",
-        "package": "org.retroarch",
-        "core": "bsnes_hd_libretro"
-      }
-    ]
-  },
-  {
-    "id": "satellaview",
-    "name": "Nintendo - Satellaview",
-    "folder": "satellaview",
-    "hue": 168,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (snes9x)",
-        "package": "org.retroarch",
-        "core": "snes9x_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (bsnes)",
-        "package": "org.retroarch",
-        "core": "bsnes_libretro"
-      },
-      {
-        "name": "RetroArch (bsnes_hd)",
-        "package": "org.retroarch",
-        "core": "bsnes_hd_libretro"
-      }
-    ]
-  },
-  {
-    "id": "virtualboy",
-    "name": "Nintendo - Virtual Boy",
-    "folder": "virtualboy",
-    "hue": 26,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (mednafen_vb)",
-        "package": "org.retroarch",
-        "core": "mednafen_vb_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (vba_next)",
-        "package": "org.retroarch",
-        "core": "vba_next_libretro"
-      },
-      {
-        "name": "RetroArch (gambatte)",
-        "package": "org.retroarch",
-        "core": "gambatte_libretro"
-      }
-    ]
-  },
-  {
-    "id": "n64",
-    "name": "Nintendo - Nintendo 64",
-    "folder": "Nintendo 64",
-    "logoKey": "n64",
-    "hue": 259,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Mupen64Plus AE",
-        "package": "org.mupen64plusae",
-        "favourite": true
-      },
-      {
-        "name": "M64Plus FZ",
-        "package": "org.mupen64plusae.v3.fzurita"
-      },
-      {
-        "name": "Nood (N64)",
-        "package": "com.hydra.noods"
-      },
-      {
-        "name": "N64oid",
-        "package": "com.mop.ide.n64oid"
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "N64.emu",
-        "package": "com.explusalpha.N64Plus"
-      },
-      {
-        "name": "RetroArch (mupen64plus_next)",
-        "package": "org.retroarch",
-        "core": "mupen64plus_next_libretro"
-      },
-      {
-        "name": "RetroArch (parallel_n64)",
-        "package": "org.retroarch",
-        "core": "parallel_n64_libretro"
-      }
-    ]
-  },
-  {
-    "id": "gcn",
-    "name": "Nintendo - GameCube",
-    "folder": "GameCube",
-    "logoKey": "gc",
-    "hue": 155,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Dolphin",
-        "package": "org.dolphinemu.dolphinemu",
-        "favourite": true
-      },
-      {
-        "name": "Dolphin Emulator (MMJR)",
-        "package": "com.dolphin.emulator"
-      },
-      {
-        "name": "Dolphin (MMJ)",
-        "package": "org.dolphin.dolphinemu"
-      },
-      {
-        "name": "RetroArch (dolphin)",
-        "package": "org.retroarch",
-        "core": "dolphin_libretro"
-      }
-    ]
-  },
-  {
-    "id": "ngc",
-    "name": "Nintendo - GameCube",
-    "folder": "GameCube",
-    "logoKey": "gc",
-    "hue": 331,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Dolphin",
-        "package": "org.dolphinemu.dolphinemu",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (dolphin)",
-        "package": "org.retroarch",
-        "core": "dolphin_libretro"
-      }
-    ]
-  },
-  {
-    "id": "wii",
-    "name": "Nintendo - Wii",
-    "folder": "Wii",
-    "logoKey": "wii",
-    "hue": 84,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Dolphin",
-        "package": "org.dolphinemu.dolphinemu",
-        "favourite": true
-      },
-      {
-        "name": "Dolphin Emulator (MMJR)",
-        "package": "com.dolphin.emulator"
-      },
-      {
-        "name": "Dolphin (MMJ)",
-        "package": "org.dolphin.dolphinemu"
-      },
-      {
-        "name": "RetroArch (dolphin)",
-        "package": "org.retroarch",
-        "core": "dolphin_libretro"
-      }
-    ]
-  },
-  {
-    "id": "wiiu",
-    "name": "Nintendo - Wii U",
-    "folder": "Wii U",
-    "logoKey": "wiiu",
-    "hue": 355,
-    "mame": false,
-    "emulators": []
-  },
-  {
-    "id": "nsw",
-    "name": "Nintendo - Switch",
-    "folder": "Switch",
-    "logoKey": "switch",
-    "hue": 67,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Yuzu",
-        "package": "org.yuzu.yuzu_emu",
-        "favourite": true
-      },
-      {
-        "name": "Eden (Switch)",
-        "package": "dev.eden.eden_emulator"
-      },
-      {
-        "name": "Sudachi",
-        "package": "org.sudachi.sudachi_emu"
-      },
-      {
-        "name": "Citron",
-        "package": "org.citron.citron_emu"
-      },
-      {
-        "name": "Yuzu Early Access",
-        "package": "org.yuzu.yuzu_emu.ea"
-      },
-      {
-        "name": "Yuzu",
-        "package": "org.yuzu.android"
-      },
-      {
-        "name": "Yuzu (fork)",
-        "package": "io.retroshark.yuzu"
-      },
-      {
-        "name": "Skyline",
-        "package": "emu.skyline"
-      },
-      {
-        "name": "Strato",
-        "package": "emu.strato"
-      },
-      {
-        "name": "Egg NS",
-        "package": "com.xiaoji.gamesirnsemulator.x.google"
-      },
-      {
-        "name": "DamonSwitch",
-        "package": "com.damonplay.damonps2.free"
-      }
-    ]
-  },
-  {
-    "id": "rpgmaker",
-    "name": "RPG Maker",
-    "folder": "rpgmaker",
-    "hue": 224,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (easyrpg)",
-        "package": "org.retroarch",
-        "core": "easyrpg_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "scummvm",
-    "name": "ScummVM",
-    "folder": "ScummVM",
-    "logoKey": "scummvm",
-    "hue": 133,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "ScummVM",
-        "package": "org.scummvm.scummvm",
-        "favourite": true
-      },
-      {
-        "name": "ResidualVM",
-        "package": "org.residualvm.residualvm"
-      },
-      {
-        "name": "RetroArch (scummvm)",
-        "package": "org.retroarch",
-        "core": "scummvm_libretro"
-      }
-    ]
-  },
-  {
-    "id": "windows",
-    "name": "Microsoft - Windows (ISO)",
-    "folder": "Windows",
-    "logoKey": "windows",
-    "hue": 306,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Bochs",
-        "package": "net.sourceforge.bochs",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "sega32x",
-    "name": "Sega - 32X",
-    "folder": "sega32x",
-    "hue": 104,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Redream",
-        "package": "io.recompiled.redream",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (picodrive)",
-        "package": "org.retroarch",
-        "core": "picodrive_libretro"
-      },
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "segacd",
-    "name": "Sega - Mega-CD - Sega CD",
-    "folder": "segacd",
-    "hue": 122,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (clownmdemu)",
-        "package": "org.retroarch",
-        "core": "clownmdemu_libretro"
-      },
-      {
-        "name": "RetroArch (picodrive)",
-        "package": "org.retroarch",
-        "core": "picodrive_libretro"
-      }
-    ]
-  },
-  {
-    "id": "dreamcast",
-    "name": "Sega - Dreamcast",
-    "folder": "Dreamcast",
-    "logoKey": "dreamcast",
-    "hue": 179,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Flycast",
-        "package": "com.flycast.emulator",
-        "favourite": true
-      },
-      {
-        "name": "Redream",
-        "package": "io.recompiled.redream"
-      },
-      {
-        "name": "Reicast",
-        "package": "com.reicast.emulator"
-      },
-      {
-        "name": "Flycast",
-        "package": "com.flycast"
-      },
-      {
-        "name": "Flycast (Dreamcast)",
-        "package": "com.dreamcast.flycast"
-      },
-      {
-        "name": "RetroArch (flycast)",
-        "package": "org.retroarch",
-        "core": "flycast_libretro"
-      }
-    ]
-  },
-  {
-    "id": "atomiswave",
-    "name": "Atomiswave",
-    "folder": "atomiswave",
-    "hue": 97,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Flycast",
-        "package": "com.flycast.emulator",
-        "favourite": true
-      },
-      {
-        "name": "Redream",
-        "package": "io.recompiled.redream"
-      },
-      {
-        "name": "RetroArch (flycast)",
-        "package": "org.retroarch",
-        "core": "flycast_libretro"
-      }
-    ]
-  },
-  {
-    "id": "gg",
-    "name": "Sega - Game Gear",
-    "folder": "Game Gear",
-    "logoKey": "gamegear",
-    "hue": 75,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "MD.emu",
-        "package": "com.explusalpha.MdEmu"
-      },
-      {
-        "name": "Nostalgia.GG",
-        "package": "com.nostalgiaemulators.gglite"
-      },
-      {
-        "name": "MasterEmu",
-        "package": "uk.co.philpotter.masteremu"
-      },
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro"
-      },
-      {
-        "name": "RetroArch (gearboy)",
-        "package": "org.retroarch",
-        "core": "gearboy_libretro"
-      },
-      {
-        "name": "RetroArch (gearsystem)",
-        "package": "org.retroarch",
-        "core": "gearsystem_libretro"
-      }
-    ]
-  },
-  {
-    "id": "sms",
-    "name": "Sega - Master System - Mark III",
-    "folder": "Master System",
-    "logoKey": "mastersystem",
-    "hue": 114,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid",
-        "favourite": true
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "MD.emu",
-        "package": "com.explusalpha.MdEmu"
-      },
-      {
-        "name": "Nostalgia.GG",
-        "package": "com.nostalgiaemulators.gglite"
-      },
-      {
-        "name": "MasterEmu",
-        "package": "uk.co.philpotter.masteremu"
-      },
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro"
-      },
-      {
-        "name": "RetroArch (smsplus)",
-        "package": "org.retroarch",
-        "core": "smsplus_libretro"
-      },
-      {
-        "name": "RetroArch (gearsystem)",
-        "package": "org.retroarch",
-        "core": "gearsystem_libretro"
-      },
-      {
-        "name": "RetroArch (picodrive)",
-        "package": "org.retroarch",
-        "core": "picodrive_libretro"
-      }
-    ]
-  },
-  {
-    "id": "genesis",
-    "name": "Sega - Mega Drive - Genesis",
-    "folder": "Genesis / Mega Drive",
-    "logoKey": "genesis",
-    "hue": 345,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "MD.emu",
-        "package": "com.explusalpha.MdEmu",
-        "favourite": true
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "GenesisDroid",
-        "package": "ca.halsafar.genesisdroid"
-      },
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro"
-      },
-      {
-        "name": "RetroArch (picodrive)",
-        "package": "org.retroarch",
-        "core": "picodrive_libretro"
-      },
-      {
-        "name": "RetroArch (blastem)",
-        "package": "org.retroarch",
-        "core": "blastem_libretro"
-      },
-      {
-        "name": "RetroArch (clownmdemu)",
-        "package": "org.retroarch",
-        "core": "clownmdemu_libretro"
-      }
-    ]
-  },
-  {
-    "id": "megadrive",
-    "name": "Sega - Genesis / Mega Drive",
-    "folder": "Genesis / Mega Drive",
-    "logoKey": "genesis",
-    "hue": 329,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "MD.emu",
-        "package": "com.explusalpha.MdEmu",
-        "favourite": true
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "GenesisDroid",
-        "package": "ca.halsafar.genesisdroid"
-      },
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro"
-      },
-      {
-        "name": "RetroArch (picodrive)",
-        "package": "org.retroarch",
-        "core": "picodrive_libretro"
-      },
-      {
-        "name": "RetroArch (blastem)",
-        "package": "org.retroarch",
-        "core": "blastem_libretro"
-      },
-      {
-        "name": "RetroArch (clownmdemu)",
-        "package": "org.retroarch",
-        "core": "clownmdemu_libretro"
-      }
-    ]
-  },
-  {
-    "id": "saturn",
-    "name": "Sega - Saturn",
-    "folder": "Saturn",
-    "logoKey": "saturn",
-    "hue": 302,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Yaba Sanshiro 2",
-        "package": "org.devmiyax.yabasanshioro2",
-        "favourite": true
-      },
-      {
-        "name": "Saturn.emu",
-        "package": "com.explusalpha.SaturnEmu"
-      },
-      {
-        "name": "Yabause",
-        "package": "org.bbflight.yabause"
-      },
-      {
-        "name": "RetroArch (mednafen_saturn)",
-        "package": "org.retroarch",
-        "core": "mednafen_saturn_libretro"
-      },
-      {
-        "name": "RetroArch (yabasanshiro)",
-        "package": "org.retroarch",
-        "core": "yabasanshiro_libretro"
-      }
-    ]
-  },
-  {
-    "id": "sg1000",
-    "name": "Sega - SG-1000",
-    "folder": "sg1000",
-    "hue": 206,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (genesis_plus_gx)",
-        "package": "org.retroarch",
-        "core": "genesis_plus_gx_libretro",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "ngpc",
-    "name": "SNK - Neo Geo Pocket Color",
-    "folder": "Neo Geo Pocket Color",
-    "logoKey": "ngpc",
-    "hue": 327,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "NGP.emu",
-        "package": "com.explusalpha.NgpEmu",
-        "favourite": true
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "RetroArch (mednafen_ngp)",
-        "package": "org.retroarch",
-        "core": "mednafen_ngp_libretro"
-      },
-      {
-        "name": "RetroArch (handy)",
-        "package": "org.retroarch",
-        "core": "handy_libretro"
-      }
-    ]
-  },
-  {
-    "id": "neogeocd",
-    "name": "SNK - Neo Geo CD",
-    "folder": "neogeocd",
-    "hue": 289,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (neocd)",
-        "package": "org.retroarch",
-        "core": "neocd_libretro",
-        "favourite": true
-      },
-      {
-        "name": "RetroArch (fbneo)",
-        "package": "org.retroarch",
-        "core": "fbneo_libretro"
-      }
-    ]
-  },
-  {
-    "id": "psx",
-    "name": "Sony - PlayStation",
-    "folder": "Playstation",
-    "logoKey": "psx",
-    "hue": 356,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "DuckStation",
-        "package": "com.github.stenzek.duckstation",
-        "favourite": true
-      },
-      {
-        "name": "ePSXe",
-        "package": "com.epsxe.ePSXe"
-      },
-      {
-        "name": "PSX.emu",
-        "package": "com.explusalpha.PsxEmu"
-      },
-      {
-        "name": "FPse",
-        "package": "com.emulator.fpse"
-      },
-      {
-        "name": "Lemuroid",
-        "package": "com.swordfish.lemuroid"
-      },
-      {
-        "name": "ClassicBoy Pro",
-        "package": "com.portableandroid.classicboy"
-      },
-      {
-        "name": "ClassicBoy Lite",
-        "package": "com.portableandroid.classicboyLite"
-      },
-      {
-        "name": "FPse 64",
-        "package": "com.emulator.fpse64"
-      },
-      {
-        "name": "SilverArrow",
-        "package": "com.jabosoft.silverarrow"
-      },
-      {
-        "name": "RetroArch (pcsx_rearmed)",
-        "package": "org.retroarch",
-        "core": "pcsx_rearmed_libretro"
-      },
-      {
-        "name": "RetroArch (swanstation)",
-        "package": "org.retroarch",
-        "core": "swanstation_libretro"
-      },
-      {
-        "name": "RetroArch (mednafen_psx)",
-        "package": "org.retroarch",
-        "core": "mednafen_psx_libretro"
-      }
-    ]
-  },
-  {
-    "id": "ps2",
-    "name": "Sony - PlayStation 2",
-    "folder": "Playstation 2",
-    "logoKey": "ps2",
-    "hue": 66,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "AetherSX2",
-        "package": "xyz.aethersx2.android",
-        "favourite": true
-      },
-      {
-        "name": "NetherSX2",
-        "package": "xyz.aether.sx2"
-      },
-      {
-        "name": "Play!",
-        "package": "com.virtualapplications.play"
-      },
-      {
-        "name": "DamonSwitch",
-        "package": "com.damonplay.damonps2.free"
-      },
-      {
-        "name": "AetherSX2",
-        "package": "com.aether.s2"
-      },
-      {
-        "name": "RetroArch (pcsx2)",
-        "package": "org.retroarch",
-        "core": "pcsx2_libretro"
-      },
-      {
-        "name": "RetroArch (play)",
-        "package": "org.retroarch",
-        "core": "play_libretro"
-      }
-    ]
-  },
-  {
-    "id": "ps3",
-    "name": "Sony - PlayStation 3",
-    "folder": "Playstation 3",
-    "logoKey": "ps3",
-    "hue": 245,
-    "mame": false,
-    "emulators": []
-  },
-  {
-    "id": "psp",
-    "name": "Sony - PlayStation Portable",
-    "folder": "Playstation Portable",
-    "logoKey": "psp",
-    "hue": 4,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "PPSSPP",
-        "package": "org.ppsspp.ppsspp",
-        "favourite": true
-      },
-      {
-        "name": "PPSSPP Gold",
-        "package": "org.ppsspp.ppssppgold"
-      },
-      {
-        "name": "RetroArch (ppsspp)",
-        "package": "org.retroarch",
-        "core": "ppsspp_libretro"
-      }
-    ]
-  },
-  {
-    "id": "psvita",
-    "name": "Sony - PlayStation Vita",
-    "folder": "Playstation Vita",
-    "logoKey": "psvita",
-    "hue": 214,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "Vita3K",
-        "package": "com.github.eka2l1",
-        "favourite": true
-      }
-    ]
-  },
-  {
-    "id": "xbox",
-    "name": "Microsoft - XBOX",
-    "folder": "xbox",
-    "hue": 312,
-    "mame": false,
-    "emulators": []
-  },
-  {
-    "id": "xbox360",
-    "name": "Microsoft - XBOX 360",
-    "folder": "xbox360",
-    "hue": 271,
-    "mame": false,
-    "emulators": []
-  },
-  {
-    "id": "cdimono1",
-    "name": "Philips - CD-i",
-    "folder": "cdimono1",
-    "hue": 125,
-    "mame": false,
-    "emulators": [
-      {
-        "name": "RetroArch (same_cdi)",
-        "package": "org.retroarch",
-        "core": "same_cdi_libretro",
-        "favourite": true
-      }
-    ]
-  }
-]
+{
+  "emulators": [
+    {
+      "id": "a2600-emu",
+      "name": "2600.emu",
+      "packages": [
+        "com.explusalpha.A2600Emu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu"
+    },
+    {
+      "id": "aethersx2",
+      "name": "AetherSX2",
+      "packages": [
+        "xyz.aethersx2.android"
+      ],
+      "siteUrl": "https://www.aethersx2.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aethersx2.android"
+    },
+    {
+      "id": "afreebox",
+      "name": "aFreeBox",
+      "packages": [
+        "com.fishstix.dosboxfree"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosboxfree",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosboxfree"
+    },
+    {
+      "id": "andosbox",
+      "name": "anDOSBox",
+      "packages": [
+        "com.locnet.dosbox"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.locnet.dosbox",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.dosbox"
+    },
+    {
+      "id": "armsx3",
+      "name": "ARMSX3",
+      "packages": [
+        "com.armsx3"
+      ],
+      "siteUrl": "https://github.com/ARMSX2/ARMSX3",
+      "apkUrl": "https://github.com/ARMSX2/ARMSX3/releases/download/0.7.2/ARMSX3-0.7.2.apk"
+    },
+    {
+      "id": "azahar",
+      "name": "Azahar",
+      "packages": [
+        "io.github.lime3ds.android"
+      ],
+      "siteUrl": "https://azahar-emu.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.github.lime3ds.android"
+    },
+    {
+      "id": "bochs",
+      "name": "Bochs",
+      "packages": [
+        "net.sourceforge.bochs"
+      ],
+      "siteUrl": "https://sourceforge.net/projects/bochs/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=net.sourceforge.bochs"
+    },
+    {
+      "id": "c64-ab",
+      "name": "C64",
+      "packages": [
+        "org.ab.c64"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.ab.c64",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ab.c64"
+    },
+    {
+      "id": "c64-emu",
+      "name": "C64.emu",
+      "packages": [
+        "com.explusalpha.C64Emu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu"
+    },
+    {
+      "id": "c64-jahnke",
+      "name": "C64",
+      "packages": [
+        "de.joergjahnke.c64.android"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=de.joergjahnke.c64.android",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=de.joergjahnke.c64.android"
+    },
+    {
+      "id": "citra",
+      "name": "Citra",
+      "packages": [
+        "org.citra.citra"
+      ],
+      "siteUrl": "https://citra-emu.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra"
+    },
+    {
+      "id": "citra-mmj",
+      "name": "Citra (MMJ)",
+      "packages": [
+        "org.citra.citra_emu",
+        "org.github.weihuoya.citra"
+      ],
+      "siteUrl": "https://github.com/weihuoya/citra",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra_emu"
+    },
+    {
+      "id": "citra-nightly",
+      "name": "Citra (nightly)",
+      "packages": [
+        "org.citra.emu"
+      ],
+      "siteUrl": "https://citra-emu.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.emu"
+    },
+    {
+      "id": "citron",
+      "name": "Citron",
+      "packages": [
+        "org.citron.citron_emu"
+      ],
+      "siteUrl": "https://github.com/citron-emu/citron",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citron.citron_emu"
+    },
+    {
+      "id": "classicboy",
+      "name": "ClassicBoy Pro",
+      "packages": [
+        "com.portableandroid.classicboy"
+      ],
+      "siteUrl": "https://classicboy.online/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboy"
+    },
+    {
+      "id": "classicboy-lite",
+      "name": "ClassicBoy Lite",
+      "packages": [
+        "com.portableandroid.classicboyLite"
+      ],
+      "siteUrl": "https://classicboy.online/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboyLite"
+    },
+    {
+      "id": "damonps2",
+      "name": "DamonPS2",
+      "packages": [
+        "com.damonplay.damonps2.free"
+      ],
+      "siteUrl": "https://www.damonps2.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.damonplay.damonps2.free"
+    },
+    {
+      "id": "delta-touch",
+      "name": "GZDoom (Delta Touch)",
+      "packages": [
+        "com.opentouchgaming.gzdoomfree"
+      ],
+      "siteUrl": "https://www.opentouchgaming.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoomfree"
+    },
+    {
+      "id": "delta-touch-full",
+      "name": "GZDoom (Delta Touch Full)",
+      "packages": [
+        "com.opentouchgaming.gzdoom"
+      ],
+      "siteUrl": "https://www.opentouchgaming.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoom"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "packages": [
+        "org.dolphinemu.dolphinemu"
+      ],
+      "siteUrl": "https://dolphin-emu.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
+    },
+    {
+      "id": "dolphin-mmj",
+      "name": "Dolphin (MMJ)",
+      "packages": [
+        "org.dolphin.dolphinemu"
+      ],
+      "siteUrl": "https://github.com/nsZhai/Dolphin-MMJ",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphin.dolphinemu"
+    },
+    {
+      "id": "dolphin-mmjr",
+      "name": "Dolphin Emulator (MMJR)",
+      "packages": [
+        "com.dolphin.emulator"
+      ],
+      "siteUrl": "https://github.com/EmulationSansFrontieres/dolphin-mmjr",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dolphin.emulator"
+    },
+    {
+      "id": "dosbox-turbo",
+      "name": "DOSBox Turbo",
+      "packages": [
+        "com.fishstix.dosbox"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosbox",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosbox"
+    },
+    {
+      "id": "drastic",
+      "name": "DraStic",
+      "packages": [
+        "com.dsemu.drastic"
+      ],
+      "siteUrl": "https://www.drastic-ds.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dsemu.drastic"
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "packages": [
+        "com.github.stenzek.duckstation"
+      ],
+      "siteUrl": "https://www.duckstation.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation"
+    },
+    {
+      "id": "eden",
+      "name": "Eden",
+      "packages": [
+        "dev.eden.eden_emulator"
+      ],
+      "siteUrl": "https://github.com/StratoEmu/Eden",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.eden.eden_emulator"
+    },
+    {
+      "id": "egg-ns",
+      "name": "Egg NS",
+      "packages": [
+        "com.xiaoji.gamesirnsemulator.x.google"
+      ],
+      "siteUrl": "https://www.gamepad.cn/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.xiaoji.gamesirnsemulator.x.google"
+    },
+    {
+      "id": "epsxe",
+      "name": "ePSXe",
+      "packages": [
+        "com.epsxe.ePSXe"
+      ],
+      "siteUrl": "https://www.epsxe.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.epsxe.ePSXe"
+    },
+    {
+      "id": "flycast",
+      "name": "Flycast",
+      "packages": [
+        "com.flycast.emulator"
+      ],
+      "siteUrl": "https://github.com/flyinghead/flycast",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.flycast.emulator"
+    },
+    {
+      "id": "fmsx",
+      "name": "fMSX",
+      "packages": [
+        "com.fms.fmsx"
+      ],
+      "siteUrl": "https://fms.komkon.org/fMSX/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fms.fmsx"
+    },
+    {
+      "id": "fpse",
+      "name": "FPse",
+      "packages": [
+        "com.emulator.fpse"
+      ],
+      "siteUrl": "https://www.fpsece.net/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.emulator.fpse"
+    },
+    {
+      "id": "fpse64",
+      "name": "FPse 64",
+      "packages": [
+        "com.emulator.fpse64"
+      ],
+      "siteUrl": "https://www.fpsece.net/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.emulator.fpse64"
+    },
+    {
+      "id": "gb-droid",
+      "name": "GameBoy droid",
+      "packages": [
+        "ca.halsafar.mgbadroid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.mgbadroid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.mgbadroid"
+    },
+    {
+      "id": "gba-droid",
+      "name": "GameBoy Advanced droid",
+      "packages": [
+        "ca.halsafar.gambattedroid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.gambattedroid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.gambattedroid"
+    },
+    {
+      "id": "gba-emu",
+      "name": "GBA.emu",
+      "packages": [
+        "com.explusalpha.GbaEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu"
+    },
+    {
+      "id": "gbc-emu",
+      "name": "GBC.emu",
+      "packages": [
+        "com.explusalpha.GbcEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu"
+    },
+    {
+      "id": "gbcc",
+      "name": "gbcc",
+      "packages": [
+        "com.philj56.gbcc"
+      ],
+      "siteUrl": "https://github.com/philj56/gbcc",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.philj56.gbcc"
+    },
+    {
+      "id": "genesis-droid",
+      "name": "GenesisDroid",
+      "packages": [
+        "ca.halsafar.genesisdroid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.genesisdroid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.genesisdroid"
+    },
+    {
+      "id": "john-gba",
+      "name": "John GBA",
+      "packages": [
+        "com.johnemulators.johngba"
+      ],
+      "siteUrl": "https://www.johnemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngba"
+    },
+    {
+      "id": "john-gba-lite",
+      "name": "John GBA Lite",
+      "packages": [
+        "com.johnemulators.johngbac"
+      ],
+      "siteUrl": "https://www.johnemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbac"
+    },
+    {
+      "id": "john-gbc",
+      "name": "John GBC",
+      "packages": [
+        "com.johnemulators.johngbc"
+      ],
+      "siteUrl": "https://www.johnemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbc"
+    },
+    {
+      "id": "john-nes",
+      "name": "John NES",
+      "packages": [
+        "com.johnemulators.johnness"
+      ],
+      "siteUrl": "https://www.johnemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johnness"
+    },
+    {
+      "id": "kat5200",
+      "name": "kat5200",
+      "packages": [
+        "com.jillybunch.kat5200"
+      ],
+      "siteUrl": "https://kat5200.jillybunch.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jillybunch.kat5200"
+    },
+    {
+      "id": "lemuroid",
+      "name": "Lemuroid",
+      "packages": [
+        "com.swordfish.lemuroid"
+      ],
+      "siteUrl": "https://github.com/Swordfish90/Lemuroid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid"
+    },
+    {
+      "id": "lynx-emu",
+      "name": "Lynx.emu",
+      "packages": [
+        "com.explusalpha.LynxEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.LynxEmu"
+    },
+    {
+      "id": "m64plus-fz",
+      "name": "M64Plus FZ",
+      "packages": [
+        "org.mupen64plusae.v3.fzurita"
+      ],
+      "siteUrl": "https://github.com/fzurita/m64plus_fz",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita"
+    },
+    {
+      "id": "magic-dosbox",
+      "name": "Magic DOSBox",
+      "packages": [
+        "bruenor.magicbox"
+      ],
+      "siteUrl": "https://sourceforge.net/projects/magicdosbox/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=bruenor.magicbox"
+    },
+    {
+      "id": "mame4droid",
+      "name": "MAME4droid",
+      "packages": [
+        "com.seleuco.mame4droid"
+      ],
+      "siteUrl": "https://seleuco.com/mame4droid.html",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid"
+    },
+    {
+      "id": "mame4droid-current",
+      "name": "MAME4droid (2024)",
+      "packages": [
+        "com.seleuco.mame4d2024"
+      ],
+      "siteUrl": "https://seleuco.com/mame4droid.html",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4d2024"
+    },
+    {
+      "id": "mame4droid-m4a",
+      "name": "MAME4droid (MAME4All)",
+      "packages": [
+        "com.seleuco.mame4all"
+      ],
+      "siteUrl": "https://seleuco.com/mame4droid.html",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4all"
+    },
+    {
+      "id": "masteremu",
+      "name": "MasterEmu",
+      "packages": [
+        "uk.co.philpotter.masteremu"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=uk.co.philpotter.masteremu",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=uk.co.philpotter.masteremu"
+    },
+    {
+      "id": "md-emu",
+      "name": "MD.emu",
+      "packages": [
+        "com.explusalpha.MdEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu"
+    },
+    {
+      "id": "melonds",
+      "name": "melonDS",
+      "packages": [
+        "me.magnum.melonds"
+      ],
+      "siteUrl": "https://github.com/rafaelvcaetano/melonDS-Android",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=me.magnum.melonds"
+    },
+    {
+      "id": "mikage",
+      "name": "Mikage",
+      "packages": [
+        "com.mikageinc.mikage"
+      ],
+      "siteUrl": "https://mikage.app/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mikageinc.mikage"
+    },
+    {
+      "id": "msx-emu",
+      "name": "MSX.emu",
+      "packages": [
+        "com.explusalpha.MsxEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.MsxEmu"
+    },
+    {
+      "id": "mupen64plus-ae",
+      "name": "Mupen64Plus AE",
+      "packages": [
+        "org.mupen64plusae"
+      ],
+      "siteUrl": "https://github.com/mupen64plus-ae/mupen64plus-ae",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae"
+    },
+    {
+      "id": "my-boy",
+      "name": "My Boy!",
+      "packages": [
+        "com.fastemulator.gba"
+      ],
+      "siteUrl": "https://fastemulator.blogspot.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gba"
+    },
+    {
+      "id": "n64-emu",
+      "name": "N64.emu",
+      "packages": [
+        "com.explusalpha.N64Plus"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.N64Plus"
+    },
+    {
+      "id": "n64oid",
+      "name": "N64oid",
+      "packages": [
+        "com.mop.ide.n64oid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.mop.ide.n64oid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mop.ide.n64oid"
+    },
+    {
+      "id": "neo-emu",
+      "name": "NEO.emu",
+      "packages": [
+        "com.explusalpha.NeoEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu"
+    },
+    {
+      "id": "nes-droid",
+      "name": "NESdroid",
+      "packages": [
+        "ca.halsafar.nesdroid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.nesdroid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.nesdroid"
+    },
+    {
+      "id": "nes-emu",
+      "name": "NES.emu",
+      "packages": [
+        "com.explusalpha.NesEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu"
+    },
+    {
+      "id": "nethersx2",
+      "name": "NetherSX2",
+      "packages": [
+        "xyz.aether.sx2"
+      ],
+      "siteUrl": "https://github.com/NovaSquirrel/NetherSX2",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aether.sx2"
+    },
+    {
+      "id": "network-gba",
+      "name": "Network GBA",
+      "packages": [
+        "com.hqgame.networkgba"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networkgba",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networkgba"
+    },
+    {
+      "id": "network-nes",
+      "name": "Network NES",
+      "packages": [
+        "com.hqgame.networknes"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networknes",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networknes"
+    },
+    {
+      "id": "network-snes",
+      "name": "Network SNES",
+      "packages": [
+        "com.hqgame.networksnes"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networksnes",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networksnes"
+    },
+    {
+      "id": "ngp-emu",
+      "name": "NGP.emu",
+      "packages": [
+        "com.explusalpha.NgpEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NgpEmu"
+    },
+    {
+      "id": "nood",
+      "name": "Nood (N64)",
+      "packages": [
+        "com.hydra.noods"
+      ],
+      "siteUrl": "https://github.com/operatingsystems/nood",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hydra.noods"
+    },
+    {
+      "id": "nostalgia-gba",
+      "name": "Nostalgia.GBA",
+      "packages": [
+        "com.nostalgiaemulators.gbalite"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbalite"
+    },
+    {
+      "id": "nostalgia-gba-pro",
+      "name": "Nostalgia.GBA Pro",
+      "packages": [
+        "com.nostalgiaemulators.gbapro"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbapro"
+    },
+    {
+      "id": "nostalgia-gbc",
+      "name": "Nostalgia.GBC",
+      "packages": [
+        "com.nostalgiaemulators.gbclite"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbclite"
+    },
+    {
+      "id": "nostalgia-gbc-pro",
+      "name": "Nostalgia.GBC Pro",
+      "packages": [
+        "com.nostalgiaemulators.gbcpro"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbcpro"
+    },
+    {
+      "id": "nostalgia-gg",
+      "name": "Nostalgia.GG",
+      "packages": [
+        "com.nostalgiaemulators.gglite"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gglite"
+    },
+    {
+      "id": "nostalgia-nes",
+      "name": "Nostalgia.NES",
+      "packages": [
+        "com.nostalgiaemulators.neslite"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.neslite"
+    },
+    {
+      "id": "nostalgia-nes-pro",
+      "name": "Nostalgia.NES Pro",
+      "packages": [
+        "com.nostalgiaemulators.nespro"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.nespro"
+    },
+    {
+      "id": "nostalgia-snes",
+      "name": "Nostalgia.SNES",
+      "packages": [
+        "com.nostalgiaemulators.sneslite"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.sneslite"
+    },
+    {
+      "id": "nostalgia-snes-pro",
+      "name": "Nostalgia.SNES Pro",
+      "packages": [
+        "com.nostalgiaemulators.snespro"
+      ],
+      "siteUrl": "https://nostalgiaemulators.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.snespro"
+    },
+    {
+      "id": "openmsx",
+      "name": "openMSX",
+      "packages": [
+        "org.openmsx.android.openmsx"
+      ],
+      "siteUrl": "https://openmsx.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.openmsx.android.openmsx"
+    },
+    {
+      "id": "panda3ds",
+      "name": "Panda3DS",
+      "packages": [
+        "com.alber.panda3ds"
+      ],
+      "siteUrl": "https://github.com/wheremyfoodat/Panda3DS",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.alber.panda3ds"
+    },
+    {
+      "id": "pce-emu",
+      "name": "PCE.emu",
+      "packages": [
+        "com.PceEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.PceEmu"
+    },
+    {
+      "id": "pizzaboy",
+      "name": "Pizza Boy",
+      "packages": [
+        "it.dbtecno.pizzaboy"
+      ],
+      "siteUrl": "https://www.pizzaboyemulator.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboy"
+    },
+    {
+      "id": "pizzaboy-c",
+      "name": "Pizza Boy C",
+      "packages": [
+        "it.dbtecno.pizzaboyc"
+      ],
+      "siteUrl": "https://www.pizzaboyemulator.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboyc"
+    },
+    {
+      "id": "pizzaboy-cpro",
+      "name": "Pizza Boy C Pro",
+      "packages": [
+        "it.dbtecno.pizzaboycpro"
+      ],
+      "siteUrl": "https://www.pizzaboyemulator.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboycpro"
+    },
+    {
+      "id": "pizzaboy-pro",
+      "name": "Pizza Boy Pro",
+      "packages": [
+        "it.dbtecno.pizzaboypro"
+      ],
+      "siteUrl": "https://www.pizzaboyemulator.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboypro"
+    },
+    {
+      "id": "play",
+      "name": "Play!",
+      "packages": [
+        "com.virtualapplications.play"
+      ],
+      "siteUrl": "https://github.com/jpd002/Play-",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.virtualapplications.play"
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "packages": [
+        "org.ppsspp.ppsspp"
+      ],
+      "siteUrl": "https://www.ppsspp.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
+    },
+    {
+      "id": "ppsspp-gold",
+      "name": "PPSSPP Gold",
+      "packages": [
+        "org.ppsspp.ppssppgold"
+      ],
+      "siteUrl": "https://www.ppsspp.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold"
+    },
+    {
+      "id": "psx-emu",
+      "name": "PSX.emu",
+      "packages": [
+        "com.explusalpha.PsxEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.PsxEmu"
+    },
+    {
+      "id": "redream",
+      "name": "Redream",
+      "packages": [
+        "io.recompiled.redream"
+      ],
+      "siteUrl": "https://redream.io/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.recompiled.redream"
+    },
+    {
+      "id": "reicast",
+      "name": "Reicast",
+      "packages": [
+        "com.reicast.emulator"
+      ],
+      "siteUrl": "https://github.com/reicast/reicast-emulator",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.reicast.emulator"
+    },
+    {
+      "id": "residualvm",
+      "name": "ResidualVM",
+      "packages": [
+        "org.residualvm.residualvm"
+      ],
+      "siteUrl": "https://www.residualvm.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.residualvm.residualvm"
+    },
+    {
+      "id": "retroarch",
+      "name": "RetroArch",
+      "packages": [
+        "org.retroarch",
+        "com.retroarch"
+      ],
+      "siteUrl": "https://www.retroarch.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.retroarch"
+    },
+    {
+      "id": "retroarch64",
+      "name": "RetroArch (64-bit)",
+      "packages": [
+        "org.libretro.retroarch64"
+      ],
+      "siteUrl": "https://www.retroarch.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.libretro.retroarch64"
+    },
+    {
+      "id": "saturn-emu",
+      "name": "Saturn.emu",
+      "packages": [
+        "com.explusalpha.SaturnEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.SaturnEmu"
+    },
+    {
+      "id": "scummvm",
+      "name": "ScummVM",
+      "packages": [
+        "org.scummvm.scummvm"
+      ],
+      "siteUrl": "https://www.scummvm.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm"
+    },
+    {
+      "id": "silverarrow",
+      "name": "SilverArrow",
+      "packages": [
+        "com.jabosoft.silverarrow"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.jabosoft.silverarrow",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jabosoft.silverarrow"
+    },
+    {
+      "id": "skyline",
+      "name": "Skyline",
+      "packages": [
+        "emu.skyline"
+      ],
+      "siteUrl": "https://github.com/skyline-emu/skyline",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.skyline"
+    },
+    {
+      "id": "snes-droid",
+      "name": "SNESdroid",
+      "packages": [
+        "ca.halsafar.snesdroid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.snesdroid",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.snesdroid"
+    },
+    {
+      "id": "snes9x-ex",
+      "name": "Snes9x EX+",
+      "packages": [
+        "com.explusalpha.Snes9xPlus"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus"
+    },
+    {
+      "id": "strato",
+      "name": "Strato",
+      "packages": [
+        "emu.strato"
+      ],
+      "siteUrl": "https://github.com/StratoEmu/Strato",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.strato"
+    },
+    {
+      "id": "sudachi",
+      "name": "Sudachi",
+      "packages": [
+        "org.sudachi.sudachi_emu"
+      ],
+      "siteUrl": "https://github.com/emu-dev/Sudachi",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.sudachi.sudachi_emu"
+    },
+    {
+      "id": "superretro16",
+      "name": "SuperRetro16",
+      "packages": [
+        "com.neutronemulation.super_retro_16"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.neutronemulation.super_retro_16",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.neutronemulation.super_retro_16"
+    },
+    {
+      "id": "superzsnes",
+      "name": "SuperZSNES",
+      "packages": [
+        "com.zsnes.superzsnes"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.zsnes.superzsnes",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zsnes.superzsnes"
+    },
+    {
+      "id": "uae4all",
+      "name": "UAE4All",
+      "packages": [
+        "org.ab.uae"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.ab.uae",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ab.uae"
+    },
+    {
+      "id": "uae4all2",
+      "name": "UAE4All2",
+      "packages": [
+        "atua.anddev.uae4all2"
+      ],
+      "siteUrl": "https://github.com/Turran/UAE4All2",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=atua.anddev.uae4all2"
+    },
+    {
+      "id": "uae4droid",
+      "name": "UAE4Droid",
+      "packages": [
+        "com.locnet.uae"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.locnet.uae",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.uae"
+    },
+    {
+      "id": "unityboyadvance",
+      "name": "UnityBoyAdvance",
+      "packages": [
+        "com.Rekkuzan.UnityBoyAdvance"
+      ],
+      "siteUrl": "https://github.com/Rekkuzan/UnityBoyAdvance",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.Rekkuzan.UnityBoyAdvance"
+    },
+    {
+      "id": "vice",
+      "name": "VICE",
+      "packages": [
+        "com.locnet.vice"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.locnet.vice",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.vice"
+    },
+    {
+      "id": "virtualjaguar",
+      "name": "Virtual Jaguar",
+      "packages": [
+        "org.icculus.virtualjaguar"
+      ],
+      "siteUrl": "https://www.icculus.org/virtualjaguar/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.icculus.virtualjaguar"
+    },
+    {
+      "id": "vita3k",
+      "name": "Vita3K",
+      "packages": [
+        "com.github.eka2l1"
+      ],
+      "siteUrl": "https://vita3k.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.eka2l1"
+    },
+    {
+      "id": "yabasanshiro2",
+      "name": "Yaba Sanshiro 2",
+      "packages": [
+        "org.devmiyax.yabasanshioro2"
+      ],
+      "siteUrl": "https://github.com/devmiyax/yabause",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2"
+    },
+    {
+      "id": "yabause",
+      "name": "Yabause",
+      "packages": [
+        "org.bbflight.yabause"
+      ],
+      "siteUrl": "https://github.com/Yabause/yabause",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.bbflight.yabause"
+    },
+    {
+      "id": "yuzu",
+      "name": "Yuzu",
+      "packages": [
+        "org.yuzu.yuzu_emu",
+        "org.yuzu.android"
+      ],
+      "siteUrl": "https://github.com/yuzu-emu/yuzu-android",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu"
+    },
+    {
+      "id": "yuzu-ea",
+      "name": "Yuzu Early Access",
+      "packages": [
+        "org.yuzu.yuzu_emu.ea"
+      ],
+      "siteUrl": "https://github.com/yuzu-emu/yuzu-android",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu.ea"
+    },
+    {
+      "id": "yuzu-retroshark",
+      "name": "Yuzu (RetroShark)",
+      "packages": [
+        "io.retroshark.yuzu"
+      ],
+      "siteUrl": "https://github.com/retroshark/yuzu-android",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.retroshark.yuzu"
+    }
+  ],
+  "systems": [
+    {
+      "id": "amstradcpc",
+      "name": "Amstrad - CPC",
+      "folder": "amstradcpc",
+      "hue": 149,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "cap32_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "crocods_libretro"
+        }
+      ]
+    },
+    {
+      "id": "atarist",
+      "name": "Atari - ST",
+      "folder": "atarist",
+      "hue": 329,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "hatari_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "zxspectrum",
+      "name": "Sinclair - ZX Spectrum",
+      "folder": "zxspectrum",
+      "hue": 32,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "fuse_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "spectemu_libretro"
+        }
+      ]
+    },
+    {
+      "id": "macintosh",
+      "name": "Apple - Macintosh",
+      "folder": "macintosh",
+      "hue": 353,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "minivmac_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "windows3x",
+      "name": "Windows 3.x",
+      "folder": "windows3x",
+      "hue": 49,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_pure_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_svn_libretro"
+        }
+      ]
+    },
+    {
+      "id": "3do",
+      "name": "The 3DO Company - 3DO",
+      "folder": "3do",
+      "hue": 351,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "opera_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "4do_libretro"
+        }
+      ]
+    },
+    {
+      "id": "mame",
+      "name": "MAME",
+      "folder": "MAME",
+      "logoKey": "mame",
+      "hue": 37,
+      "mame": true,
+      "emulators": [
+        {
+          "emulator": "mame4droid",
+          "favourite": true
+        },
+        {
+          "emulator": "mame4droid-current"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "neo-emu"
+        },
+        {
+          "emulator": "mame4droid-m4a"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2003_plus_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2003_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2010_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2000_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbneo_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha2012_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha_libretro"
+        }
+      ]
+    },
+    {
+      "id": "fba",
+      "name": "FBNeo - Arcade Games",
+      "folder": "FBA",
+      "logoKey": "fbneo",
+      "hue": 160,
+      "mame": true,
+      "emulators": [
+        {
+          "emulator": "mame4droid",
+          "favourite": true
+        },
+        {
+          "emulator": "mame4droid-current"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbneo_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha2012_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2003_plus_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame_libretro"
+        }
+      ]
+    },
+    {
+      "id": "atari2600",
+      "name": "Atari - 2600",
+      "folder": "2600",
+      "logoKey": "atari2600",
+      "hue": 46,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "a2600-emu",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "stella_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "stella2014_libretro"
+        }
+      ]
+    },
+    {
+      "id": "atari5200",
+      "name": "Atari - 5200",
+      "folder": "5200",
+      "logoKey": "atari5200",
+      "hue": 161,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "kat5200",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "atari800_libretro"
+        }
+      ]
+    },
+    {
+      "id": "atari7800",
+      "name": "Atari - 7800",
+      "folder": "7800",
+      "logoKey": "atari7800",
+      "hue": 33,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "prosystem_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "j2me",
+      "name": "Java - J2ME",
+      "folder": "j2me",
+      "hue": 15,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "squirreljme_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "lynx",
+      "name": "Atari - Lynx",
+      "folder": "Lynx",
+      "logoKey": "atarilynx",
+      "hue": 200,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "lynx-emu"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_lynx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "holani_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "handy_libretro"
+        }
+      ]
+    },
+    {
+      "id": "jaguar",
+      "name": "Atari - Jaguar",
+      "folder": "Jaguar",
+      "logoKey": "atarijaguar",
+      "hue": 271,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "virtualjaguar",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "virtualjaguar_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "cygne_libretro"
+        }
+      ]
+    },
+    {
+      "id": "wonderswan",
+      "name": "Bandai - WonderSwan",
+      "folder": "wonderswan",
+      "hue": 3,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_wswan_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "wonderswancolor",
+      "name": "Bandai - WonderSwan Color",
+      "folder": "wonderswancolor",
+      "hue": 74,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_wswan_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "c64",
+      "name": "Commodore - 64",
+      "folder": "64",
+      "logoKey": "c64",
+      "hue": 0,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "vice",
+          "favourite": true
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "c64-emu"
+        },
+        {
+          "emulator": "c64-jahnke"
+        },
+        {
+          "emulator": "c64-ab"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vice_x64_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vice_x64sc_libretro"
+        }
+      ]
+    },
+    {
+      "id": "amiga",
+      "name": "Commodore - Amiga",
+      "folder": "Amiga",
+      "logoKey": "amiga",
+      "hue": 302,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "uae4all2",
+          "favourite": true
+        },
+        {
+          "emulator": "uae4droid"
+        },
+        {
+          "emulator": "uae4all"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "puae_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "puae2021_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "uae4arm_libretro"
+        }
+      ]
+    },
+    {
+      "id": "amigacd32",
+      "name": "Commodore - CD32",
+      "folder": "amigacd32",
+      "hue": 252,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "puae_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "puae2021_libretro"
+        }
+      ]
+    },
+    {
+      "id": "doom",
+      "name": "DOOM",
+      "folder": "doom",
+      "hue": 44,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "delta-touch",
+          "favourite": true
+        },
+        {
+          "emulator": "delta-touch-full"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "prboom_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "chocolate_doom_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "crispy_doom_libretro"
+        }
+      ]
+    },
+    {
+      "id": "fmtowns",
+      "name": "Fujitsu FM Towns",
+      "folder": "fmtowns",
+      "hue": 273,
+      "mame": false,
+      "emulators": []
+    },
+    {
+      "id": "dos",
+      "name": "DOS",
+      "folder": "DOS",
+      "logoKey": "dos",
+      "hue": 349,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "magic-dosbox",
+          "favourite": true
+        },
+        {
+          "emulator": "dosbox-turbo"
+        },
+        {
+          "emulator": "andosbox"
+        },
+        {
+          "emulator": "afreebox"
+        },
+        {
+          "emulator": "bochs"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_pure_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_svn_libretro"
+        }
+      ]
+    },
+    {
+      "id": "msx",
+      "name": "Microsoft - MSX",
+      "folder": "MSX",
+      "logoKey": "msx",
+      "hue": 147,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "fmsx",
+          "favourite": true
+        },
+        {
+          "emulator": "msx-emu"
+        },
+        {
+          "emulator": "openmsx"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bluemsx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fmsx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "msx2",
+      "name": "Microsoft - MSX2",
+      "folder": "msx2",
+      "hue": 51,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "bluemsx_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fmsx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pc88",
+      "name": "NEC - PC-8001 - PC-8801",
+      "folder": "pc88",
+      "hue": 308,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "quasi88_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "pc98",
+      "name": "NEC - PC-98",
+      "folder": "pc98",
+      "hue": 157,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "np2kai_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "quasi88_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pce",
+      "name": "NEC - PC Engine - TurboGrafx 16",
+      "folder": "PC Engine / TurboGrafx-16",
+      "logoKey": "tg16",
+      "hue": 99,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "pce-emu"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_fast_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "geargrafx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "tg16",
+      "name": "NEC - PC Engine - TurboGrafx 16",
+      "folder": "PC Engine / TurboGrafx-16",
+      "logoKey": "tg16",
+      "hue": 355,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "pce-emu"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_fast_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "geargrafx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pcecd",
+      "name": "NEC - PC Engine CD - TurboGrafx-CD",
+      "folder": "pcecd",
+      "hue": 44,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_fast_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "geargrafx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pcfx",
+      "name": "NEC - PC-FX",
+      "folder": "PC-FX",
+      "logoKey": "pcfx",
+      "hue": 274,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pcfx_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "supergrafx",
+      "name": "NEC - PC Engine SuperGrafx",
+      "folder": "supergrafx",
+      "hue": 254,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_fast_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_pce_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "geargrafx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "n3ds",
+      "name": "Nintendo - Nintendo 3DS",
+      "folder": "Nintendo 3DS",
+      "logoKey": "n3ds",
+      "hue": 287,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "citra",
+          "favourite": true
+        },
+        {
+          "emulator": "azahar"
+        },
+        {
+          "emulator": "panda3ds"
+        },
+        {
+          "emulator": "mikage"
+        },
+        {
+          "emulator": "citra-nightly"
+        },
+        {
+          "emulator": "citra-mmj"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "citra_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "citra2018_libretro"
+        }
+      ]
+    },
+    {
+      "id": "nds",
+      "name": "Nintendo - Nintendo DS",
+      "folder": "Nintendo DS",
+      "logoKey": "nds",
+      "hue": 76,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "melonds",
+          "favourite": true
+        },
+        {
+          "emulator": "drastic"
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "melonds_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "desmume_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "desmume2015_libretro"
+        }
+      ]
+    },
+    {
+      "id": "gb",
+      "name": "Nintendo - Game Boy",
+      "folder": "Game Boy",
+      "logoKey": "gb",
+      "hue": 252,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "gbc-emu"
+        },
+        {
+          "emulator": "nostalgia-gbc"
+        },
+        {
+          "emulator": "nostalgia-gbc-pro"
+        },
+        {
+          "emulator": "john-gbc"
+        },
+        {
+          "emulator": "superretro16"
+        },
+        {
+          "emulator": "gbcc"
+        },
+        {
+          "emulator": "gb-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "sameboy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gambatte_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bgb_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gearboy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "tgbdual_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vba_next_libretro"
+        },
+        {
+          "emulator": "pizzaboy-c"
+        },
+        {
+          "emulator": "pizzaboy-cpro"
+        }
+      ]
+    },
+    {
+      "id": "gbc",
+      "name": "Nintendo - Game Boy Color",
+      "folder": "Game Boy Color",
+      "logoKey": "gbc",
+      "hue": 141,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "gbc-emu"
+        },
+        {
+          "emulator": "nostalgia-gbc"
+        },
+        {
+          "emulator": "nostalgia-gbc-pro"
+        },
+        {
+          "emulator": "john-gbc"
+        },
+        {
+          "emulator": "superretro16"
+        },
+        {
+          "emulator": "gbcc"
+        },
+        {
+          "emulator": "gb-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "sameboy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gambatte_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bgb_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gearboy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "tgbdual_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vba_next_libretro"
+        },
+        {
+          "emulator": "pizzaboy-c"
+        },
+        {
+          "emulator": "pizzaboy-cpro"
+        }
+      ]
+    },
+    {
+      "id": "gba",
+      "name": "Nintendo - Game Boy Advance",
+      "folder": "Game Boy Advance",
+      "logoKey": "gba",
+      "hue": 143,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "my-boy",
+          "favourite": true
+        },
+        {
+          "emulator": "pizzaboy"
+        },
+        {
+          "emulator": "john-gba"
+        },
+        {
+          "emulator": "gba-emu"
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "nostalgia-gba"
+        },
+        {
+          "emulator": "nostalgia-gba-pro"
+        },
+        {
+          "emulator": "john-gba-lite"
+        },
+        {
+          "emulator": "unityboyadvance"
+        },
+        {
+          "emulator": "network-gba"
+        },
+        {
+          "emulator": "superretro16"
+        },
+        {
+          "emulator": "gba-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mgba_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vba_m_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vba_next_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_gba_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gpsp_libretro"
+        },
+        {
+          "emulator": "pizzaboy-pro"
+        }
+      ]
+    },
+    {
+      "id": "pokemini",
+      "name": "Nintendo - Pokemon Mini",
+      "folder": "pokemini",
+      "hue": 123,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "pokemini_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "nes",
+      "name": "Nintendo - Nintendo Entertainment System",
+      "folder": "Nintendo Entertainment System",
+      "logoKey": "nes",
+      "hue": 221,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "nes-emu",
+          "favourite": true
+        },
+        {
+          "emulator": "nostalgia-nes"
+        },
+        {
+          "emulator": "john-nes"
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "nostalgia-nes-pro"
+        },
+        {
+          "emulator": "network-nes"
+        },
+        {
+          "emulator": "nes-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mesen_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fceumm_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "nestopia_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "quicknes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fceux_libretro"
+        }
+      ]
+    },
+    {
+      "id": "snes",
+      "name": "Nintendo - Super Nintendo Entertainment System",
+      "folder": "Super Nintendo Entertainment System",
+      "logoKey": "snes",
+      "hue": 64,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "snes9x-ex",
+          "favourite": true
+        },
+        {
+          "emulator": "nostalgia-snes"
+        },
+        {
+          "emulator": "superretro16"
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "nostalgia-snes-pro"
+        },
+        {
+          "emulator": "network-snes"
+        },
+        {
+          "emulator": "superzsnes"
+        },
+        {
+          "emulator": "snes-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "snes9x_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "snes9x2002_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "snes9x2005_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "snes9x2010_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_hd_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_mercury_accuracy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_mercury_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_mercury_performance_libretro"
+        }
+      ]
+    },
+    {
+      "id": "sfc",
+      "name": "Nintendo - Super Famicom",
+      "folder": "Super Famicom",
+      "logoKey": "snes",
+      "hue": 229,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "snes9x-ex",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "snes9x_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_hd_libretro"
+        }
+      ]
+    },
+    {
+      "id": "satellaview",
+      "name": "Nintendo - Satellaview",
+      "folder": "satellaview",
+      "hue": 168,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "snes9x_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_hd_libretro"
+        }
+      ]
+    },
+    {
+      "id": "virtualboy",
+      "name": "Nintendo - Virtual Boy",
+      "folder": "virtualboy",
+      "hue": 26,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_vb_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vba_next_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gambatte_libretro"
+        }
+      ]
+    },
+    {
+      "id": "n64",
+      "name": "Nintendo - Nintendo 64",
+      "folder": "Nintendo 64",
+      "logoKey": "n64",
+      "hue": 259,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "mupen64plus-ae",
+          "favourite": true
+        },
+        {
+          "emulator": "m64plus-fz"
+        },
+        {
+          "emulator": "nood"
+        },
+        {
+          "emulator": "n64oid"
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "n64-emu"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mupen64plus_next_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "parallel_n64_libretro"
+        }
+      ]
+    },
+    {
+      "id": "gcn",
+      "name": "Nintendo - GameCube",
+      "folder": "GameCube",
+      "logoKey": "gc",
+      "hue": 155,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "dolphin",
+          "favourite": true
+        },
+        {
+          "emulator": "dolphin-mmjr"
+        },
+        {
+          "emulator": "dolphin-mmj"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dolphin_libretro"
+        }
+      ]
+    },
+    {
+      "id": "ngc",
+      "name": "Nintendo - GameCube",
+      "folder": "GameCube",
+      "logoKey": "gc",
+      "hue": 331,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "dolphin",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dolphin_libretro"
+        }
+      ]
+    },
+    {
+      "id": "wii",
+      "name": "Nintendo - Wii",
+      "folder": "Wii",
+      "logoKey": "wii",
+      "hue": 84,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "dolphin",
+          "favourite": true
+        },
+        {
+          "emulator": "dolphin-mmjr"
+        },
+        {
+          "emulator": "dolphin-mmj"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dolphin_libretro"
+        }
+      ]
+    },
+    {
+      "id": "wiiu",
+      "name": "Nintendo - Wii U",
+      "folder": "Wii U",
+      "logoKey": "wiiu",
+      "hue": 355,
+      "mame": false,
+      "emulators": []
+    },
+    {
+      "id": "nsw",
+      "name": "Nintendo - Switch",
+      "folder": "Switch",
+      "logoKey": "switch",
+      "hue": 67,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "yuzu",
+          "favourite": true
+        },
+        {
+          "emulator": "eden"
+        },
+        {
+          "emulator": "sudachi"
+        },
+        {
+          "emulator": "citron"
+        },
+        {
+          "emulator": "yuzu-ea"
+        },
+        {
+          "emulator": "yuzu-retroshark"
+        },
+        {
+          "emulator": "skyline"
+        },
+        {
+          "emulator": "strato"
+        },
+        {
+          "emulator": "egg-ns"
+        }
+      ]
+    },
+    {
+      "id": "rpgmaker",
+      "name": "RPG Maker",
+      "folder": "rpgmaker",
+      "hue": 224,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "easyrpg_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "scummvm",
+      "name": "ScummVM",
+      "folder": "ScummVM",
+      "logoKey": "scummvm",
+      "hue": 133,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "scummvm",
+          "favourite": true
+        },
+        {
+          "emulator": "residualvm"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "scummvm_libretro"
+        }
+      ]
+    },
+    {
+      "id": "windows",
+      "name": "Microsoft - Windows (ISO)",
+      "folder": "Windows",
+      "logoKey": "windows",
+      "hue": 306,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "bochs",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "sega32x",
+      "name": "Sega - 32X",
+      "folder": "sega32x",
+      "hue": 104,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "picodrive_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "segacd",
+      "name": "Sega - Mega-CD - Sega CD",
+      "folder": "segacd",
+      "hue": 122,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "clownmdemu_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "picodrive_libretro"
+        }
+      ]
+    },
+    {
+      "id": "dreamcast",
+      "name": "Sega - Dreamcast",
+      "folder": "Dreamcast",
+      "logoKey": "dreamcast",
+      "hue": 179,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "flycast",
+          "favourite": true
+        },
+        {
+          "emulator": "redream"
+        },
+        {
+          "emulator": "reicast"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "flycast_libretro"
+        }
+      ]
+    },
+    {
+      "id": "atomiswave",
+      "name": "Atomiswave",
+      "folder": "atomiswave",
+      "hue": 97,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "flycast",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "flycast_libretro"
+        }
+      ]
+    },
+    {
+      "id": "gg",
+      "name": "Sega - Game Gear",
+      "folder": "Game Gear",
+      "logoKey": "gamegear",
+      "hue": 75,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "md-emu"
+        },
+        {
+          "emulator": "nostalgia-gg"
+        },
+        {
+          "emulator": "masteremu"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gearboy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gearsystem_libretro"
+        }
+      ]
+    },
+    {
+      "id": "sms",
+      "name": "Sega - Master System - Mark III",
+      "folder": "Master System",
+      "logoKey": "mastersystem",
+      "hue": 114,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "lemuroid",
+          "favourite": true
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "md-emu"
+        },
+        {
+          "emulator": "nostalgia-gg"
+        },
+        {
+          "emulator": "masteremu"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "smsplus_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "gearsystem_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "picodrive_libretro"
+        }
+      ]
+    },
+    {
+      "id": "genesis",
+      "name": "Sega - Mega Drive - Genesis",
+      "folder": "Genesis / Mega Drive",
+      "logoKey": "genesis",
+      "hue": 345,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "md-emu",
+          "favourite": true
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "genesis-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "picodrive_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "blastem_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "clownmdemu_libretro"
+        }
+      ]
+    },
+    {
+      "id": "megadrive",
+      "name": "Sega - Genesis / Mega Drive",
+      "folder": "Genesis / Mega Drive",
+      "logoKey": "genesis",
+      "hue": 329,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "md-emu",
+          "favourite": true
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "genesis-droid"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "picodrive_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "blastem_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "clownmdemu_libretro"
+        }
+      ]
+    },
+    {
+      "id": "saturn",
+      "name": "Sega - Saturn",
+      "folder": "Saturn",
+      "logoKey": "saturn",
+      "hue": 302,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "yabasanshiro2",
+          "favourite": true
+        },
+        {
+          "emulator": "saturn-emu"
+        },
+        {
+          "emulator": "yabause"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_saturn_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "yabasanshiro_libretro"
+        }
+      ]
+    },
+    {
+      "id": "sg1000",
+      "name": "Sega - SG-1000",
+      "folder": "sg1000",
+      "hue": 206,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_libretro",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "ngpc",
+      "name": "SNK - Neo Geo Pocket Color",
+      "folder": "Neo Geo Pocket Color",
+      "logoKey": "ngpc",
+      "hue": 327,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "ngp-emu",
+          "favourite": true
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_ngp_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "handy_libretro"
+        }
+      ]
+    },
+    {
+      "id": "neogeocd",
+      "name": "SNK - Neo Geo CD",
+      "folder": "neogeocd",
+      "hue": 289,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "neocd_libretro",
+          "favourite": true
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbneo_libretro"
+        }
+      ]
+    },
+    {
+      "id": "psx",
+      "name": "Sony - PlayStation",
+      "folder": "Playstation",
+      "logoKey": "psx",
+      "hue": 356,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "duckstation",
+          "favourite": true
+        },
+        {
+          "emulator": "epsxe"
+        },
+        {
+          "emulator": "psx-emu"
+        },
+        {
+          "emulator": "fpse"
+        },
+        {
+          "emulator": "lemuroid"
+        },
+        {
+          "emulator": "classicboy"
+        },
+        {
+          "emulator": "classicboy-lite"
+        },
+        {
+          "emulator": "fpse64"
+        },
+        {
+          "emulator": "silverarrow"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "pcsx_rearmed_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "swanstation_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_psx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "ps2",
+      "name": "Sony - PlayStation 2",
+      "folder": "Playstation 2",
+      "logoKey": "ps2",
+      "hue": 66,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "aethersx2",
+          "favourite": true
+        },
+        {
+          "emulator": "nethersx2"
+        },
+        {
+          "emulator": "play"
+        },
+        {
+          "emulator": "damonps2"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "pcsx2_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "play_libretro"
+        }
+      ]
+    },
+    {
+      "id": "ps3",
+      "name": "Sony - PlayStation 3",
+      "folder": "Playstation 3",
+      "logoKey": "ps3",
+      "hue": 245,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "armsx3",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "psp",
+      "name": "Sony - PlayStation Portable",
+      "folder": "Playstation Portable",
+      "logoKey": "psp",
+      "hue": 4,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "ppsspp",
+          "favourite": true
+        },
+        {
+          "emulator": "ppsspp-gold"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "ppsspp_libretro"
+        }
+      ]
+    },
+    {
+      "id": "psvita",
+      "name": "Sony - PlayStation Vita",
+      "folder": "Playstation Vita",
+      "logoKey": "psvita",
+      "hue": 214,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "vita3k",
+          "favourite": true
+        }
+      ]
+    },
+    {
+      "id": "xbox",
+      "name": "Microsoft - XBOX",
+      "folder": "xbox",
+      "hue": 312,
+      "mame": false,
+      "emulators": []
+    },
+    {
+      "id": "xbox360",
+      "name": "Microsoft - XBOX 360",
+      "folder": "xbox360",
+      "hue": 271,
+      "mame": false,
+      "emulators": []
+    },
+    {
+      "id": "cdimono1",
+      "name": "Philips - CD-i",
+      "folder": "cdimono1",
+      "hue": 125,
+      "mame": false,
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "same_cdi_libretro",
+          "favourite": true
+        }
+      ]
+    }
+  ]
+}

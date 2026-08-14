@@ -31,13 +31,51 @@ function check(rel, fn) {
   if (data !== null) fn(data, rel);
 }
 
-// ---- systems.json ------------------------------------------------------------
+const URL_RE = /^https?:\/\//;
+const PACKAGE_RE = /^[a-zA-Z0-9_.]+$/;
+const ID_RE = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
-check("config/systems.json", (systems) => {
-  if (!Array.isArray(systems)) return problems.push("systems.json: must be an array");
+// ---- systems.json (master-list format) ------------------------------------------
+
+check("config/systems.json", (cfg) => {
+  if (!cfg || !Array.isArray(cfg.emulators) || !Array.isArray(cfg.systems)) {
+    problems.push("systems.json: must be { emulators[], systems[] }");
+    return;
+  }
+
+  // Master emulator registry.
+  const emulatorIds = new Set();
+  const packages = new Set();
+  for (const emu of cfg.emulators) {
+    const label = `emulators[] ${emu?.id ?? emu?.name}`;
+    if (!emu || typeof emu.id !== "string" || !ID_RE.test(emu.id)) {
+      problems.push(`${label}: bad id`);
+      continue;
+    }
+    if (emulatorIds.has(emu.id)) problems.push(`${label}: duplicate id`);
+    emulatorIds.add(emu.id);
+    if (typeof emu.name !== "string" || !emu.name) problems.push(`${label}: name required`);
+    if (!Array.isArray(emu.packages) || emu.packages.length === 0) {
+      problems.push(`${label}: packages[] required`);
+    } else {
+      for (const p of emu.packages) {
+        if (typeof p !== "string" || !PACKAGE_RE.test(p)) problems.push(`${label}: bad package ${p}`);
+        if (packages.has(p)) problems.push(`${label}: package ${p} already claimed by another emulator`);
+        packages.add(p);
+      }
+    }
+    if (typeof emu.siteUrl !== "string" || !URL_RE.test(emu.siteUrl)) problems.push(`${label}: siteUrl required (http(s))`);
+    for (const key of ["playStoreUrl", "apkUrl"]) {
+      if (emu[key] !== undefined && (typeof emu[key] !== "string" || !URL_RE.test(emu[key]))) {
+        problems.push(`${label}: ${key} must be an http(s) url`);
+      }
+    }
+  }
+
+  // Systems referencing ids.
   const ids = new Set();
-  for (const sys of systems) {
-    const label = `systems.json[${sys?.id}]`;
+  for (const sys of cfg.systems) {
+    const label = `systems[] ${sys?.id}`;
     if (!sys || typeof sys.id !== "string" || !/^[a-z0-9]+$/.test(sys.id)) {
       problems.push(`${label}: bad id`);
       continue;
@@ -50,38 +88,36 @@ check("config/systems.json", (systems) => {
     else {
       const favs = sys.emulators.filter((e) => e?.favourite === true).length;
       if (favs > 1) problems.push(`${label}: more than one favourite`);
-      // Variants of one package are legal (RetroArch cores, HD/non-HD modes);
-      // only an identical (package, core) pair is a duplicate.
       const variants = new Set();
-      for (const emu of sys.emulators) {
-        if (!emu || typeof emu.name !== "string" || !emu.name) problems.push(`${label}: emulator name required`);
-        if (!emu || typeof emu.package !== "string" || !/^[a-zA-Z0-9_.]+$/.test(emu.package ?? "")) {
-          problems.push(`${label}: bad emulator package ${emu?.package}`);
-        } else {
-          const key = `${emu.package}|${emu.core ?? ""}`;
-          if (variants.has(key)) problems.push(`${label}: duplicate emulator variant ${key}`);
-          variants.add(key);
+      for (const v of sys.emulators) {
+        if (!v || typeof v.emulator !== "string") {
+          problems.push(`${label}: variant must reference an emulator id`);
+          continue;
         }
-        for (const key of ["core", "mimeType", "activity"]) {
-          if (emu && emu[key] !== undefined && typeof emu[key] !== "string") {
-            problems.push(`${label}.${emu.package}: ${key} must be a string`);
+        if (!emulatorIds.has(v.emulator)) problems.push(`${label}: unknown emulator id "${v.emulator}"`);
+        const key = `${v.emulator}|${v.core ?? ""}`;
+        if (variants.has(key)) problems.push(`${label}: duplicate emulator variant ${key}`);
+        variants.add(key);
+        for (const key2 of ["core", "mimeType", "activity"]) {
+          if (v[key2] !== undefined && typeof v[key2] !== "string") {
+            problems.push(`${label}.${v.emulator}: ${key2} must be a string`);
           }
         }
-        if (emu && emu.extras !== undefined && (typeof emu.extras !== "object" || emu.extras === null)) {
-          problems.push(`${label}.${emu.package}: extras must be an object`);
+        if (v.extras !== undefined && (typeof v.extras !== "object" || v.extras === null)) {
+          problems.push(`${label}.${v.emulator}: extras must be an object`);
         }
       }
     }
   }
 });
 
-// ---- apps.json ---------------------------------------------------------------
+// ---- apps.json -----------------------------------------------------------------
 
 check("config/apps.json", (appsFile, rel) => {
   if (!Array.isArray(appsFile?.apps)) return problems.push(`${rel}: apps[] required`);
   const seen = new Set();
   for (const app of appsFile.apps) {
-    if (typeof app?.package !== "string" || !/^[a-zA-Z0-9_.]+$/.test(app.package)) {
+    if (typeof app?.package !== "string" || !PACKAGE_RE.test(app.package)) {
       problems.push(`apps.json: bad package ${app?.package}`);
       continue;
     }
@@ -96,7 +132,7 @@ check("config/apps.json", (appsFile, rel) => {
 check("config/repos/curated.json", (curated, rel) => {
   if (!Array.isArray(curated?.repos)) return problems.push(`${rel}: repos[] required`);
   for (const repo of curated.repos) {
-    if (typeof repo?.url !== "string" || !/^https?:\/\//.test(repo.url)) {
+    if (typeof repo?.url !== "string" || !URL_RE.test(repo.url)) {
       problems.push(`${rel}: bad repo url ${repo?.url}`);
     }
   }
