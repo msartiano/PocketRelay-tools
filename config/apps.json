@@ -6,13 +6,13 @@
       "systems": "any"
     },
     {
-      "package": "org.libretro.retroarch64",
-      "name": "RetroArch (64-bit)",
+      "package": "com.retroarch.aarch64",
+      "name": "RetroArch Plus (64-bit)",
       "systems": "any"
     },
     {
-      "package": "org.retroarch",
-      "name": "RetroArch",
+      "package": "com.retroarch.ra32",
+      "name": "RetroArch (32-bit)",
       "systems": "any"
     }
   ]

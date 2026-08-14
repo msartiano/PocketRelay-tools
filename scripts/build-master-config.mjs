@@ -31,8 +31,6 @@ const play = (pkg) => `https://play.google.com/store/apps/details?id=${pkg}`;
 
 // package -> { id } merges the package into an existing id (same app, extra build).
 const MERGE = {
-  "com.retroarch": "retroarch",
-  "org.libretro.retroarch64": "retroarch64",
   "org.yuzu.android": "yuzu",
 };
 
@@ -60,9 +58,10 @@ const DROP_CORE_FROM = {
 
 // package -> master entry (primary).
 const EMU = {
-  // ---- RetroArch family ------------------------------------------------------
-  "org.retroarch": { id: "retroarch", name: "RetroArch", site: "https://www.retroarch.com/", play: play("org.retroarch") },
-  "org.libretro.retroarch64": { id: "retroarch64", name: "RetroArch (64-bit)", site: "https://www.retroarch.com/", play: play("org.libretro.retroarch64") },
+  // ---- RetroArch family (real builds: site APK + Play Store share package ids) --
+  "com.retroarch": { id: "retroarch", name: "RetroArch", site: "https://www.retroarch.com/", play: play("com.retroarch"), apk: "https://buildbot.libretro.com/stable/1.22.2/android/RetroArch.apk" },
+  "com.retroarch.aarch64": { id: "retroarch-plus", name: "RetroArch Plus (64-bit)", site: "https://www.retroarch.com/", play: play("com.retroarch.aarch64"), apk: "https://buildbot.libretro.com/stable/1.22.2/android/RetroArch_aarch64.apk" },
+  "com.retroarch.ra32": { id: "retroarch-32", name: "RetroArch (32-bit)", site: "https://www.retroarch.com/", apk: "https://buildbot.libretro.com/stable/1.22.2/android/RetroArch_ra32.apk" },
 
   // ---- Multi-system frontends ------------------------------------------------
   "com.swordfish.lemuroid": { id: "lemuroid", name: "Lemuroid", site: "https://github.com/Swordfish90/Lemuroid", play: play("com.swordfish.lemuroid") },
@@ -286,6 +285,29 @@ if (gba) gba.emulators.push({ emulator: "pizzaboy-pro" });
 // Add ARMSX3 as the PS3 emulator.
 const ps3 = systems.find((s) => s.id === "ps3");
 if (ps3) ps3.emulators.push({ emulator: "armsx3", favourite: true });
+
+// Every system offering RetroArch also offers the other two real builds (same
+// core, same extras) so each appears as its own suggestion card / candidate.
+for (const familyId of ["retroarch-plus", "retroarch-32"]) {
+  for (const sys of systems) {
+    const retroVariants = sys.emulators.filter((v) => v.emulator === "retroarch");
+    if (retroVariants.length === 0) continue;
+    const existing = new Set(
+      sys.emulators.filter((v) => v.emulator === familyId).map((v) => `${v.core ?? ""}|${JSON.stringify(v.extras ?? {})}`),
+    );
+    for (const v of retroVariants) {
+      const key = `${v.core ?? ""}|${JSON.stringify(v.extras ?? {})}`;
+      if (existing.has(key)) continue;
+      existing.add(key);
+      const copy = { emulator: familyId };
+      if (v.core !== undefined) copy.core = v.core;
+      if (v.extras !== undefined) copy.extras = v.extras;
+      if (typeof v.mimeType === "string") copy.mimeType = v.mimeType;
+      if (typeof v.activity === "string") copy.activity = v.activity;
+      sys.emulators.push(copy);
+    }
+  }
+}
 
 const master = Array.from(byId.values())
   .map((e) => {
