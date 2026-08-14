@@ -1,11 +1,11 @@
-# PocketRelay-tools
+# PocketConsole-tools
 
 Canonical emulator/system config for the **nodeland-android** app (EmuBricks).
 This repo is the single source of truth: the app's build bakes a snapshot of
 `config/` into every APK (offline), and Settings → Update pulls the latest
 live without a rebuild.
 
-Managed as a **subfolder of the app project**: `tools/PocketRelay-tools/`.
+Managed as a **subfolder of the app project**: `tools/PocketConsole-tools/`.
 `npm run deploy` clones/updates it there and copies `config/*.json` (plus the
 emulator icons) into the app's `public/bundled/` before building.
 

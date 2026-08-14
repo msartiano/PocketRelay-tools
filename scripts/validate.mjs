@@ -160,8 +160,8 @@ check("config/repos/curated.json", (curated, rel) => {
 // ---- report ------------------------------------------------------------------
 
 if (problems.length) {
-  console.error(`PocketRelay-tools validation failed (${problems.length}):`);
+  console.error(`PocketConsole-tools validation failed (${problems.length}):`);
   for (const p of problems) console.error(`  - ${p}`);
   process.exit(1);
 }
-console.log("PocketRelay-tools config OK");
+console.log("PocketConsole-tools config OK");
