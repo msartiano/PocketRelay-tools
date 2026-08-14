@@ -6,8 +6,8 @@
  *   node scripts/fetch-emulator-icons.mjs
  *
  * Source order per id:
- *   1. apkcombo app page (Play Store icon) -> config/emulator-icons/<id>.png
- *   2. GitHub project avatar (REPOS map)   -> config/emulator-icons/<id>.png
+ *   1. GitHub project avatar (REPOS map)   -> config/emulator-icons/<id>.png
+ *   2. Play Store / apkcombo app icon      -> config/emulator-icons/<id>.png
  *   3. otherwise                           -> config/emulator-icons/missing---<id>.png
  *
  * `missing---` placeholders are deliberate: they make gaps visible in the repo
@@ -57,8 +57,7 @@ const REPOS = {
   openmsx: "openMSX/openMSX",
   citra: "citra-emu/citra",
   "citra-nightly": "citra-emu/citra",
-  "dolphin-mmj": "nsZhai/Dolphin-MMJ",
-  "dolphin-mmjr": "EmulationSansFrontieres/dolphin-mmjr",
+  retroarch: "libretro/RetroArch",
   retroarch64: "libretro/RetroArch",
   ppsspp: "hrydgard/ppsspp",
   "ppsspp-gold": "hrydgard/ppsspp",
@@ -206,13 +205,18 @@ async function worker() {
       continue;
     }
     let got = null;
-    for (const pkg of emu.packages) {
-      got = await iconFromPlay(pkg);
-      if (got) break;
-      got = await iconFromApkCombo(pkg);
-      if (got) break;
+    // REPOS-listed ids use the project repo avatar as the authoritative logo —
+    // more reliable than scraping store search pages (which can match a wrong app).
+    if (REPOS[emu.id]) {
+      got = await iconFromGithub(REPOS[emu.id]);
+    } else {
+      for (const pkg of emu.packages) {
+        got = await iconFromPlay(pkg);
+        if (got) break;
+        got = await iconFromApkCombo(pkg);
+        if (got) break;
+      }
     }
-    if (!got && REPOS[emu.id]) got = await iconFromGithub(REPOS[emu.id]);
     if (got && isPngOrWebp(got)) {
       writeFileSync(realPath, got);
       if (existsSync(missingPath)) unlinkSync(missingPath);

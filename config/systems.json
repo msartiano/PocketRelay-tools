@@ -7,7 +7,19 @@
         "com.explusalpha.A2600Emu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.A2600Emu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "aethersx2",
@@ -16,7 +28,19 @@
         "xyz.aethersx2.android"
       ],
       "siteUrl": "https://www.aethersx2.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aethersx2.android"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aethersx2.android",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=xyz.aethersx2.android"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.aethersx2.com/"
+        }
+      ]
     },
     {
       "id": "afreebox",
@@ -25,7 +49,14 @@
         "com.fishstix.dosboxfree"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosboxfree",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosboxfree"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosboxfree",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.fishstix.dosboxfree"
+        }
+      ]
     },
     {
       "id": "andosbox",
@@ -34,7 +65,14 @@
         "com.locnet.dosbox"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.locnet.dosbox",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.dosbox"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.dosbox",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.locnet.dosbox"
+        }
+      ]
     },
     {
       "id": "armsx3",
@@ -43,7 +81,19 @@
         "com.armsx3"
       ],
       "siteUrl": "https://github.com/ARMSX2/ARMSX3",
-      "apkUrl": "https://github.com/ARMSX2/ARMSX3/releases/download/0.7.2/ARMSX3-0.7.2.apk"
+      "apkUrl": "https://github.com/ARMSX2/ARMSX3/releases/download/0.7.2/ARMSX3-0.7.2.apk",
+      "links": [
+        {
+          "kind": "apk",
+          "label": "APK",
+          "url": "https://github.com/ARMSX2/ARMSX3/releases/download/0.7.2/ARMSX3-0.7.2.apk"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/ARMSX2/ARMSX3"
+        }
+      ]
     },
     {
       "id": "azahar",
@@ -52,7 +102,19 @@
         "io.github.lime3ds.android"
       ],
       "siteUrl": "https://azahar-emu.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.github.lime3ds.android"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.github.lime3ds.android",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=io.github.lime3ds.android"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://azahar-emu.org/"
+        }
+      ]
     },
     {
       "id": "bochs",
@@ -61,7 +123,19 @@
         "net.sourceforge.bochs"
       ],
       "siteUrl": "https://sourceforge.net/projects/bochs/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=net.sourceforge.bochs"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=net.sourceforge.bochs",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=net.sourceforge.bochs"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://sourceforge.net/projects/bochs/"
+        }
+      ]
     },
     {
       "id": "c64-ab",
@@ -70,7 +144,14 @@
         "org.ab.c64"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=org.ab.c64",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ab.c64"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ab.c64",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.ab.c64"
+        }
+      ]
     },
     {
       "id": "c64-emu",
@@ -79,7 +160,19 @@
         "com.explusalpha.C64Emu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.C64Emu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "c64-jahnke",
@@ -88,7 +181,14 @@
         "de.joergjahnke.c64.android"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=de.joergjahnke.c64.android",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=de.joergjahnke.c64.android"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=de.joergjahnke.c64.android",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=de.joergjahnke.c64.android"
+        }
+      ]
     },
     {
       "id": "citra",
@@ -97,7 +197,24 @@
         "org.citra.citra"
       ],
       "siteUrl": "https://citra-emu.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.citra.citra"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/citra-emu/citra"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://citra-emu.org/"
+        }
+      ]
     },
     {
       "id": "citra-mmj",
@@ -107,7 +224,19 @@
         "org.github.weihuoya.citra"
       ],
       "siteUrl": "https://github.com/weihuoya/citra",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra_emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra_emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.citra.citra_emu"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/weihuoya/citra"
+        }
+      ]
     },
     {
       "id": "citra-nightly",
@@ -116,7 +245,24 @@
         "org.citra.emu"
       ],
       "siteUrl": "https://citra-emu.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.citra.emu"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/citra-emu/citra"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://citra-emu.org/"
+        }
+      ]
     },
     {
       "id": "citron",
@@ -125,7 +271,19 @@
         "org.citron.citron_emu"
       ],
       "siteUrl": "https://github.com/citron-emu/citron",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citron.citron_emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citron.citron_emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.citron.citron_emu"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/citron-emu/citron"
+        }
+      ]
     },
     {
       "id": "classicboy",
@@ -134,7 +292,19 @@
         "com.portableandroid.classicboy"
       ],
       "siteUrl": "https://classicboy.online/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboy"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboy",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboy"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://classicboy.online/"
+        }
+      ]
     },
     {
       "id": "classicboy-lite",
@@ -143,7 +313,19 @@
         "com.portableandroid.classicboyLite"
       ],
       "siteUrl": "https://classicboy.online/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboyLite"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboyLite",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.portableandroid.classicboyLite"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://classicboy.online/"
+        }
+      ]
     },
     {
       "id": "damonps2",
@@ -152,7 +334,19 @@
         "com.damonplay.damonps2.free"
       ],
       "siteUrl": "https://www.damonps2.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.damonplay.damonps2.free"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.damonplay.damonps2.free",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.damonplay.damonps2.free"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.damonps2.com/"
+        }
+      ]
     },
     {
       "id": "delta-touch",
@@ -161,7 +355,19 @@
         "com.opentouchgaming.gzdoomfree"
       ],
       "siteUrl": "https://www.opentouchgaming.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoomfree"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoomfree",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoomfree"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.opentouchgaming.com/"
+        }
+      ]
     },
     {
       "id": "delta-touch-full",
@@ -170,7 +376,19 @@
         "com.opentouchgaming.gzdoom"
       ],
       "siteUrl": "https://www.opentouchgaming.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoom"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoom",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.opentouchgaming.gzdoom"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.opentouchgaming.com/"
+        }
+      ]
     },
     {
       "id": "dolphin",
@@ -179,25 +397,29 @@
         "org.dolphinemu.dolphinemu"
       ],
       "siteUrl": "https://dolphin-emu.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
-    },
-    {
-      "id": "dolphin-mmj",
-      "name": "Dolphin (MMJ)",
-      "packages": [
-        "org.dolphin.dolphinemu"
-      ],
-      "siteUrl": "https://github.com/nsZhai/Dolphin-MMJ",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphin.dolphinemu"
-    },
-    {
-      "id": "dolphin-mmjr",
-      "name": "Dolphin Emulator (MMJR)",
-      "packages": [
-        "com.dolphin.emulator"
-      ],
-      "siteUrl": "https://github.com/EmulationSansFrontieres/dolphin-mmjr",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dolphin.emulator"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu"
+        },
+        {
+          "kind": "fdroid",
+          "label": "F-Droid",
+          "url": "https://f-droid.org/packages/org.dolphinemu.dolphinemu/"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/dolphin-emu/dolphin"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://dolphin-emu.org/"
+        }
+      ]
     },
     {
       "id": "dosbox-turbo",
@@ -206,7 +428,14 @@
         "com.fishstix.dosbox"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosbox",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosbox"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fishstix.dosbox",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.fishstix.dosbox"
+        }
+      ]
     },
     {
       "id": "drastic",
@@ -215,7 +444,19 @@
         "com.dsemu.drastic"
       ],
       "siteUrl": "https://www.drastic-ds.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dsemu.drastic"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.dsemu.drastic",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.dsemu.drastic"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.drastic-ds.com/"
+        }
+      ]
     },
     {
       "id": "duckstation",
@@ -224,7 +465,24 @@
         "com.github.stenzek.duckstation"
       ],
       "siteUrl": "https://www.duckstation.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/stenzek/duckstation"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.duckstation.org/"
+        }
+      ]
     },
     {
       "id": "eden",
@@ -233,7 +491,19 @@
         "dev.eden.eden_emulator"
       ],
       "siteUrl": "https://github.com/StratoEmu/Eden",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.eden.eden_emulator"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.eden.eden_emulator",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=dev.eden.eden_emulator"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/StratoEmu/Eden"
+        }
+      ]
     },
     {
       "id": "egg-ns",
@@ -242,7 +512,19 @@
         "com.xiaoji.gamesirnsemulator.x.google"
       ],
       "siteUrl": "https://www.gamepad.cn/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.xiaoji.gamesirnsemulator.x.google"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.xiaoji.gamesirnsemulator.x.google",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.xiaoji.gamesirnsemulator.x.google"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.gamepad.cn/"
+        }
+      ]
     },
     {
       "id": "epsxe",
@@ -251,7 +533,19 @@
         "com.epsxe.ePSXe"
       ],
       "siteUrl": "https://www.epsxe.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.epsxe.ePSXe"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.epsxe.ePSXe",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.epsxe.ePSXe"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.epsxe.com/"
+        }
+      ]
     },
     {
       "id": "flycast",
@@ -260,7 +554,19 @@
         "com.flycast.emulator"
       ],
       "siteUrl": "https://github.com/flyinghead/flycast",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.flycast.emulator"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.flycast.emulator",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.flycast.emulator"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/flyinghead/flycast"
+        }
+      ]
     },
     {
       "id": "fmsx",
@@ -269,7 +575,19 @@
         "com.fms.fmsx"
       ],
       "siteUrl": "https://fms.komkon.org/fMSX/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fms.fmsx"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fms.fmsx",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.fms.fmsx"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://fms.komkon.org/fMSX/"
+        }
+      ]
     },
     {
       "id": "fpse",
@@ -278,7 +596,19 @@
         "com.emulator.fpse"
       ],
       "siteUrl": "https://www.fpsece.net/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.emulator.fpse"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.emulator.fpse",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.emulator.fpse"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.fpsece.net/"
+        }
+      ]
     },
     {
       "id": "fpse64",
@@ -287,7 +617,19 @@
         "com.emulator.fpse64"
       ],
       "siteUrl": "https://www.fpsece.net/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.emulator.fpse64"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.emulator.fpse64",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.emulator.fpse64"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.fpsece.net/"
+        }
+      ]
     },
     {
       "id": "gb-droid",
@@ -296,7 +638,14 @@
         "ca.halsafar.mgbadroid"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.mgbadroid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.mgbadroid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.mgbadroid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=ca.halsafar.mgbadroid"
+        }
+      ]
     },
     {
       "id": "gba-droid",
@@ -305,7 +654,14 @@
         "ca.halsafar.gambattedroid"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.gambattedroid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.gambattedroid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.gambattedroid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=ca.halsafar.gambattedroid"
+        }
+      ]
     },
     {
       "id": "gba-emu",
@@ -314,7 +670,19 @@
         "com.explusalpha.GbaEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.GbaEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "gbc-emu",
@@ -323,7 +691,19 @@
         "com.explusalpha.GbcEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.GbcEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "gbcc",
@@ -332,7 +712,19 @@
         "com.philj56.gbcc"
       ],
       "siteUrl": "https://github.com/philj56/gbcc",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.philj56.gbcc"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.philj56.gbcc",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.philj56.gbcc"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/philj56/gbcc"
+        }
+      ]
     },
     {
       "id": "genesis-droid",
@@ -341,7 +733,14 @@
         "ca.halsafar.genesisdroid"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.genesisdroid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.genesisdroid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.genesisdroid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=ca.halsafar.genesisdroid"
+        }
+      ]
     },
     {
       "id": "john-gba",
@@ -350,7 +749,19 @@
         "com.johnemulators.johngba"
       ],
       "siteUrl": "https://www.johnemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngba"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngba",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.johnemulators.johngba"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.johnemulators.com/"
+        }
+      ]
     },
     {
       "id": "john-gba-lite",
@@ -359,7 +770,19 @@
         "com.johnemulators.johngbac"
       ],
       "siteUrl": "https://www.johnemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbac"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbac",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbac"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.johnemulators.com/"
+        }
+      ]
     },
     {
       "id": "john-gbc",
@@ -368,7 +791,19 @@
         "com.johnemulators.johngbc"
       ],
       "siteUrl": "https://www.johnemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbc"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbc",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.johnemulators.johngbc"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.johnemulators.com/"
+        }
+      ]
     },
     {
       "id": "john-nes",
@@ -377,7 +812,19 @@
         "com.johnemulators.johnness"
       ],
       "siteUrl": "https://www.johnemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johnness"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.johnemulators.johnness",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.johnemulators.johnness"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.johnemulators.com/"
+        }
+      ]
     },
     {
       "id": "kat5200",
@@ -386,7 +833,19 @@
         "com.jillybunch.kat5200"
       ],
       "siteUrl": "https://kat5200.jillybunch.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jillybunch.kat5200"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jillybunch.kat5200",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.jillybunch.kat5200"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://kat5200.jillybunch.com/"
+        }
+      ]
     },
     {
       "id": "lemuroid",
@@ -395,7 +854,24 @@
         "com.swordfish.lemuroid"
       ],
       "siteUrl": "https://github.com/Swordfish90/Lemuroid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.swordfish.lemuroid"
+        },
+        {
+          "kind": "fdroid",
+          "label": "F-Droid",
+          "url": "https://f-droid.org/packages/com.swordfish.lemuroid/"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/Swordfish90/Lemuroid"
+        }
+      ]
     },
     {
       "id": "lynx-emu",
@@ -404,7 +880,19 @@
         "com.explusalpha.LynxEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.LynxEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.LynxEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.LynxEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "m64plus-fz",
@@ -413,7 +901,19 @@
         "org.mupen64plusae.v3.fzurita"
       ],
       "siteUrl": "https://github.com/fzurita/m64plus_fz",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/fzurita/m64plus_fz"
+        }
+      ]
     },
     {
       "id": "magic-dosbox",
@@ -422,7 +922,19 @@
         "bruenor.magicbox"
       ],
       "siteUrl": "https://sourceforge.net/projects/magicdosbox/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=bruenor.magicbox"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=bruenor.magicbox",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=bruenor.magicbox"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://sourceforge.net/projects/magicdosbox/"
+        }
+      ]
     },
     {
       "id": "mame4droid",
@@ -431,7 +943,24 @@
         "com.seleuco.mame4droid"
       ],
       "siteUrl": "https://seleuco.com/mame4droid.html",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.seleuco.mame4droid"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/seleuco/MAME4droid"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://seleuco.com/mame4droid.html"
+        }
+      ]
     },
     {
       "id": "mame4droid-current",
@@ -440,7 +969,24 @@
         "com.seleuco.mame4d2024"
       ],
       "siteUrl": "https://seleuco.com/mame4droid.html",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4d2024"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4d2024",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.seleuco.mame4d2024"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/seleuco/MAME4droid"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://seleuco.com/mame4droid.html"
+        }
+      ]
     },
     {
       "id": "mame4droid-m4a",
@@ -449,7 +995,24 @@
         "com.seleuco.mame4all"
       ],
       "siteUrl": "https://seleuco.com/mame4droid.html",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4all"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.seleuco.mame4all",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.seleuco.mame4all"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/seleuco/MAME4droid"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://seleuco.com/mame4droid.html"
+        }
+      ]
     },
     {
       "id": "masteremu",
@@ -458,7 +1021,14 @@
         "uk.co.philpotter.masteremu"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=uk.co.philpotter.masteremu",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=uk.co.philpotter.masteremu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=uk.co.philpotter.masteremu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=uk.co.philpotter.masteremu"
+        }
+      ]
     },
     {
       "id": "md-emu",
@@ -467,7 +1037,19 @@
         "com.explusalpha.MdEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.MdEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "melonds",
@@ -476,7 +1058,19 @@
         "me.magnum.melonds"
       ],
       "siteUrl": "https://github.com/rafaelvcaetano/melonDS-Android",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=me.magnum.melonds"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=me.magnum.melonds",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=me.magnum.melonds"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/rafaelvcaetano/melonDS-Android"
+        }
+      ]
     },
     {
       "id": "mikage",
@@ -485,7 +1079,19 @@
         "com.mikageinc.mikage"
       ],
       "siteUrl": "https://mikage.app/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mikageinc.mikage"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mikageinc.mikage",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.mikageinc.mikage"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://mikage.app/"
+        }
+      ]
     },
     {
       "id": "msx-emu",
@@ -494,7 +1100,19 @@
         "com.explusalpha.MsxEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.MsxEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.MsxEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.MsxEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "mupen64plus-ae",
@@ -503,7 +1121,19 @@
         "org.mupen64plusae"
       ],
       "siteUrl": "https://github.com/mupen64plus-ae/mupen64plus-ae",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.mupen64plusae"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/mupen64plus-ae/mupen64plus-ae"
+        }
+      ]
     },
     {
       "id": "my-boy",
@@ -512,7 +1142,19 @@
         "com.fastemulator.gba"
       ],
       "siteUrl": "https://fastemulator.blogspot.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gba"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gba",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.fastemulator.gba"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://fastemulator.blogspot.com/"
+        }
+      ]
     },
     {
       "id": "n64-emu",
@@ -521,7 +1163,19 @@
         "com.explusalpha.N64Plus"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.N64Plus"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.N64Plus",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.N64Plus"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "n64oid",
@@ -530,7 +1184,14 @@
         "com.mop.ide.n64oid"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.mop.ide.n64oid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mop.ide.n64oid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mop.ide.n64oid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.mop.ide.n64oid"
+        }
+      ]
     },
     {
       "id": "neo-emu",
@@ -539,7 +1200,19 @@
         "com.explusalpha.NeoEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "nes-droid",
@@ -548,7 +1221,14 @@
         "ca.halsafar.nesdroid"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.nesdroid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.nesdroid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.nesdroid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=ca.halsafar.nesdroid"
+        }
+      ]
     },
     {
       "id": "nes-emu",
@@ -557,7 +1237,19 @@
         "com.explusalpha.NesEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.NesEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "nethersx2",
@@ -566,7 +1258,19 @@
         "xyz.aether.sx2"
       ],
       "siteUrl": "https://github.com/NovaSquirrel/NetherSX2",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aether.sx2"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aether.sx2",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=xyz.aether.sx2"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/NovaSquirrel/NetherSX2"
+        }
+      ]
     },
     {
       "id": "network-gba",
@@ -575,7 +1279,14 @@
         "com.hqgame.networkgba"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networkgba",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networkgba"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networkgba",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.hqgame.networkgba"
+        }
+      ]
     },
     {
       "id": "network-nes",
@@ -584,7 +1295,14 @@
         "com.hqgame.networknes"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networknes",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networknes"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networknes",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.hqgame.networknes"
+        }
+      ]
     },
     {
       "id": "network-snes",
@@ -593,7 +1311,14 @@
         "com.hqgame.networksnes"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networksnes",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networksnes"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hqgame.networksnes",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.hqgame.networksnes"
+        }
+      ]
     },
     {
       "id": "ngp-emu",
@@ -602,7 +1327,19 @@
         "com.explusalpha.NgpEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NgpEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NgpEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.NgpEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "nood",
@@ -611,7 +1348,19 @@
         "com.hydra.noods"
       ],
       "siteUrl": "https://github.com/operatingsystems/nood",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hydra.noods"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.hydra.noods",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.hydra.noods"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/operatingsystems/nood"
+        }
+      ]
     },
     {
       "id": "nostalgia-gba",
@@ -620,7 +1369,19 @@
         "com.nostalgiaemulators.gbalite"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbalite"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbalite",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbalite"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-gba-pro",
@@ -629,7 +1390,19 @@
         "com.nostalgiaemulators.gbapro"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbapro"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbapro",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbapro"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-gbc",
@@ -638,7 +1411,19 @@
         "com.nostalgiaemulators.gbclite"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbclite"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbclite",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbclite"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-gbc-pro",
@@ -647,7 +1432,19 @@
         "com.nostalgiaemulators.gbcpro"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbcpro"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbcpro",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gbcpro"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-gg",
@@ -656,7 +1453,19 @@
         "com.nostalgiaemulators.gglite"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gglite"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gglite",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.gglite"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-nes",
@@ -665,7 +1474,19 @@
         "com.nostalgiaemulators.neslite"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.neslite"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.neslite",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.neslite"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-nes-pro",
@@ -674,7 +1495,19 @@
         "com.nostalgiaemulators.nespro"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.nespro"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.nespro",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.nespro"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-snes",
@@ -683,7 +1516,19 @@
         "com.nostalgiaemulators.sneslite"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.sneslite"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.sneslite",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.sneslite"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "nostalgia-snes-pro",
@@ -692,7 +1537,19 @@
         "com.nostalgiaemulators.snespro"
       ],
       "siteUrl": "https://nostalgiaemulators.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.snespro"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.snespro",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.nostalgiaemulators.snespro"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nostalgiaemulators.com/"
+        }
+      ]
     },
     {
       "id": "openmsx",
@@ -701,7 +1558,24 @@
         "org.openmsx.android.openmsx"
       ],
       "siteUrl": "https://openmsx.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.openmsx.android.openmsx"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.openmsx.android.openmsx",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.openmsx.android.openmsx"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/openMSX/openMSX"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://openmsx.org/"
+        }
+      ]
     },
     {
       "id": "panda3ds",
@@ -710,7 +1584,19 @@
         "com.alber.panda3ds"
       ],
       "siteUrl": "https://github.com/wheremyfoodat/Panda3DS",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.alber.panda3ds"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.alber.panda3ds",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.alber.panda3ds"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/wheremyfoodat/Panda3DS"
+        }
+      ]
     },
     {
       "id": "pce-emu",
@@ -719,7 +1605,19 @@
         "com.PceEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.PceEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.PceEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.PceEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "pizzaboy",
@@ -728,7 +1626,19 @@
         "it.dbtecno.pizzaboy"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboy"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboy",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboy"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.pizzaboyemulator.com/"
+        }
+      ]
     },
     {
       "id": "pizzaboy-c",
@@ -737,7 +1647,19 @@
         "it.dbtecno.pizzaboyc"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboyc"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboyc",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboyc"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.pizzaboyemulator.com/"
+        }
+      ]
     },
     {
       "id": "pizzaboy-cpro",
@@ -746,7 +1668,19 @@
         "it.dbtecno.pizzaboycpro"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboycpro"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboycpro",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboycpro"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.pizzaboyemulator.com/"
+        }
+      ]
     },
     {
       "id": "pizzaboy-pro",
@@ -755,7 +1689,19 @@
         "it.dbtecno.pizzaboypro"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboypro"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboypro",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboypro"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.pizzaboyemulator.com/"
+        }
+      ]
     },
     {
       "id": "play",
@@ -764,7 +1710,19 @@
         "com.virtualapplications.play"
       ],
       "siteUrl": "https://github.com/jpd002/Play-",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.virtualapplications.play"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.virtualapplications.play",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.virtualapplications.play"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/jpd002/Play-"
+        }
+      ]
     },
     {
       "id": "ppsspp",
@@ -773,7 +1731,29 @@
         "org.ppsspp.ppsspp"
       ],
       "siteUrl": "https://www.ppsspp.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp"
+        },
+        {
+          "kind": "fdroid",
+          "label": "F-Droid",
+          "url": "https://f-droid.org/packages/org.ppsspp.ppsspp/"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/hrydgard/ppsspp"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.ppsspp.org/"
+        }
+      ]
     },
     {
       "id": "ppsspp-gold",
@@ -782,7 +1762,24 @@
         "org.ppsspp.ppssppgold"
       ],
       "siteUrl": "https://www.ppsspp.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.ppsspp.ppssppgold"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/hrydgard/ppsspp"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.ppsspp.org/"
+        }
+      ]
     },
     {
       "id": "psx-emu",
@@ -791,7 +1788,19 @@
         "com.explusalpha.PsxEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.PsxEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.PsxEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.PsxEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "redream",
@@ -800,7 +1809,19 @@
         "io.recompiled.redream"
       ],
       "siteUrl": "https://redream.io/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.recompiled.redream"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.recompiled.redream",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=io.recompiled.redream"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://redream.io/"
+        }
+      ]
     },
     {
       "id": "reicast",
@@ -809,7 +1830,19 @@
         "com.reicast.emulator"
       ],
       "siteUrl": "https://github.com/reicast/reicast-emulator",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.reicast.emulator"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.reicast.emulator",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.reicast.emulator"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/reicast/reicast-emulator"
+        }
+      ]
     },
     {
       "id": "residualvm",
@@ -818,7 +1851,24 @@
         "org.residualvm.residualvm"
       ],
       "siteUrl": "https://www.residualvm.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.residualvm.residualvm"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.residualvm.residualvm",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.residualvm.residualvm"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/residualvm/residualvm"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.residualvm.org/"
+        }
+      ]
     },
     {
       "id": "retroarch",
@@ -828,7 +1878,29 @@
         "com.retroarch"
       ],
       "siteUrl": "https://www.retroarch.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.retroarch"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.retroarch",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.retroarch"
+        },
+        {
+          "kind": "fdroid",
+          "label": "F-Droid",
+          "url": "https://f-droid.org/packages/com.retroarch/"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/libretro/RetroArch"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.retroarch.com/"
+        }
+      ]
     },
     {
       "id": "retroarch64",
@@ -837,7 +1909,24 @@
         "org.libretro.retroarch64"
       ],
       "siteUrl": "https://www.retroarch.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.libretro.retroarch64"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.libretro.retroarch64",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.libretro.retroarch64"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/libretro/RetroArch"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.retroarch.com/"
+        }
+      ]
     },
     {
       "id": "saturn-emu",
@@ -846,7 +1935,19 @@
         "com.explusalpha.SaturnEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.SaturnEmu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.SaturnEmu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.SaturnEmu"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "scummvm",
@@ -855,7 +1956,24 @@
         "org.scummvm.scummvm"
       ],
       "siteUrl": "https://www.scummvm.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/scummvm/scummvm"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.scummvm.org/"
+        }
+      ]
     },
     {
       "id": "silverarrow",
@@ -864,7 +1982,14 @@
         "com.jabosoft.silverarrow"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.jabosoft.silverarrow",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jabosoft.silverarrow"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.jabosoft.silverarrow",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.jabosoft.silverarrow"
+        }
+      ]
     },
     {
       "id": "skyline",
@@ -873,7 +1998,19 @@
         "emu.skyline"
       ],
       "siteUrl": "https://github.com/skyline-emu/skyline",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.skyline"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.skyline",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=emu.skyline"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/skyline-emu/skyline"
+        }
+      ]
     },
     {
       "id": "snes-droid",
@@ -882,7 +2019,14 @@
         "ca.halsafar.snesdroid"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.snesdroid",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.snesdroid"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ca.halsafar.snesdroid",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=ca.halsafar.snesdroid"
+        }
+      ]
     },
     {
       "id": "snes9x-ex",
@@ -891,7 +2035,19 @@
         "com.explusalpha.Snes9xPlus"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.Snes9xPlus"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.explusalpha.com/"
+        }
+      ]
     },
     {
       "id": "strato",
@@ -900,7 +2056,19 @@
         "emu.strato"
       ],
       "siteUrl": "https://github.com/StratoEmu/Strato",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.strato"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.strato",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=emu.strato"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/StratoEmu/Strato"
+        }
+      ]
     },
     {
       "id": "sudachi",
@@ -909,7 +2077,19 @@
         "org.sudachi.sudachi_emu"
       ],
       "siteUrl": "https://github.com/emu-dev/Sudachi",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.sudachi.sudachi_emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.sudachi.sudachi_emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.sudachi.sudachi_emu"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/emu-dev/Sudachi"
+        }
+      ]
     },
     {
       "id": "superretro16",
@@ -918,7 +2098,14 @@
         "com.neutronemulation.super_retro_16"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.neutronemulation.super_retro_16",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.neutronemulation.super_retro_16"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.neutronemulation.super_retro_16",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.neutronemulation.super_retro_16"
+        }
+      ]
     },
     {
       "id": "superzsnes",
@@ -927,7 +2114,14 @@
         "com.zsnes.superzsnes"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.zsnes.superzsnes",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zsnes.superzsnes"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.zsnes.superzsnes",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.zsnes.superzsnes"
+        }
+      ]
     },
     {
       "id": "uae4all",
@@ -936,7 +2130,14 @@
         "org.ab.uae"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=org.ab.uae",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ab.uae"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ab.uae",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.ab.uae"
+        }
+      ]
     },
     {
       "id": "uae4all2",
@@ -945,7 +2146,19 @@
         "atua.anddev.uae4all2"
       ],
       "siteUrl": "https://github.com/Turran/UAE4All2",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=atua.anddev.uae4all2"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=atua.anddev.uae4all2",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=atua.anddev.uae4all2"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/Turran/UAE4All2"
+        }
+      ]
     },
     {
       "id": "uae4droid",
@@ -954,7 +2167,14 @@
         "com.locnet.uae"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.locnet.uae",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.uae"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.uae",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.locnet.uae"
+        }
+      ]
     },
     {
       "id": "unityboyadvance",
@@ -963,7 +2183,19 @@
         "com.Rekkuzan.UnityBoyAdvance"
       ],
       "siteUrl": "https://github.com/Rekkuzan/UnityBoyAdvance",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.Rekkuzan.UnityBoyAdvance"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.Rekkuzan.UnityBoyAdvance",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.Rekkuzan.UnityBoyAdvance"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/Rekkuzan/UnityBoyAdvance"
+        }
+      ]
     },
     {
       "id": "vice",
@@ -972,7 +2204,14 @@
         "com.locnet.vice"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.locnet.vice",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.vice"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.locnet.vice",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.locnet.vice"
+        }
+      ]
     },
     {
       "id": "virtualjaguar",
@@ -981,7 +2220,19 @@
         "org.icculus.virtualjaguar"
       ],
       "siteUrl": "https://www.icculus.org/virtualjaguar/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.icculus.virtualjaguar"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.icculus.virtualjaguar",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.icculus.virtualjaguar"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://www.icculus.org/virtualjaguar/"
+        }
+      ]
     },
     {
       "id": "vita3k",
@@ -990,7 +2241,24 @@
         "com.github.eka2l1"
       ],
       "siteUrl": "https://vita3k.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.eka2l1"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.eka2l1",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=com.github.eka2l1"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/Vita3K/Vita3K"
+        },
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://vita3k.org/"
+        }
+      ]
     },
     {
       "id": "yabasanshiro2",
@@ -999,7 +2267,19 @@
         "org.devmiyax.yabasanshioro2"
       ],
       "siteUrl": "https://github.com/devmiyax/yabause",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/devmiyax/yabause"
+        }
+      ]
     },
     {
       "id": "yabause",
@@ -1008,7 +2288,19 @@
         "org.bbflight.yabause"
       ],
       "siteUrl": "https://github.com/Yabause/yabause",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.bbflight.yabause"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.bbflight.yabause",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.bbflight.yabause"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/Yabause/yabause"
+        }
+      ]
     },
     {
       "id": "yuzu",
@@ -1018,7 +2310,19 @@
         "org.yuzu.android"
       ],
       "siteUrl": "https://github.com/yuzu-emu/yuzu-android",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/yuzu-emu/yuzu-android"
+        }
+      ]
     },
     {
       "id": "yuzu-ea",
@@ -1027,7 +2331,19 @@
         "org.yuzu.yuzu_emu.ea"
       ],
       "siteUrl": "https://github.com/yuzu-emu/yuzu-android",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu.ea"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu.ea",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu.ea"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/yuzu-emu/yuzu-android"
+        }
+      ]
     },
     {
       "id": "yuzu-retroshark",
@@ -1036,7 +2352,19 @@
         "io.retroshark.yuzu"
       ],
       "siteUrl": "https://github.com/retroshark/yuzu-android",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.retroshark.yuzu"
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=io.retroshark.yuzu",
+      "links": [
+        {
+          "kind": "play",
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=io.retroshark.yuzu"
+        },
+        {
+          "kind": "github",
+          "label": "GitHub",
+          "url": "https://github.com/retroshark/yuzu-android"
+        }
+      ]
     }
   ],
   "systems": [
@@ -2309,12 +3637,6 @@
           "favourite": true
         },
         {
-          "emulator": "dolphin-mmjr"
-        },
-        {
-          "emulator": "dolphin-mmj"
-        },
-        {
           "emulator": "retroarch",
           "core": "dolphin_libretro"
         }
@@ -2349,12 +3671,6 @@
         {
           "emulator": "dolphin",
           "favourite": true
-        },
-        {
-          "emulator": "dolphin-mmjr"
-        },
-        {
-          "emulator": "dolphin-mmj"
         },
         {
           "emulator": "retroarch",

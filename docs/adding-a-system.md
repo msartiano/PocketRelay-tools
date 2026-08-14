@@ -18,9 +18,31 @@ If the app is new, add one entry to the top-level `emulators[]`:
   "packages": ["com.github.stenzek.duckstation"],
   "siteUrl": "https://www.duckstation.org/",          // required: official site/repo
   "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.stenzek.duckstation", // if on Play
-  "apkUrl": "https://..."                              // direct .apk when downloadable in-app
+  "apkUrl": "https://...",                              // direct .apk when downloadable in-app
+  "links": [                                            // rich multi-source (optional)
+    { "kind": "play",   "label": "Play Store", "url": "https://play.google.com/…" },
+    { "kind": "fdroid", "label": "F-Droid",    "url": "https://f-droid.org/packages/…" },
+    { "kind": "github", "label": "GitHub",     "url": "https://github.com/owner/repo" },
+    { "kind": "apk",    "label": "APK",        "url": "https://…/app.apk" },
+    { "kind": "web",    "label": "Official",   "url": "https://www.example.com/" }
+  ]
 }
 ```
+
+Link kinds the app understands:
+- `play` → opens the Play Store app.
+- `fdroid` → opens F-Droid.
+- `apk` → the app downloads + installs the APK in-app (verified PackageInstaller).
+- `github` / `web` → opened in the in-app browser, **unless the URL is a direct
+  APK** (`*.apk`, `/releases/download/…apk`, or `"install": true`) → downloaded
+  + installed in-app. A GitHub releases page in the in-app browser lets users
+  pick what they want.
+
+`links[]` is optional — the app also derives links from the legacy
+`siteUrl`/`playStoreUrl`/`apkUrl` fields, so a bare entry always works. Run
+`node scripts/add-links.mjs` after editing to regenerate the array from the
+legacy fields plus the curated `EXTRA_LINKS` map (`scripts/links.mjs`). Only
+add F-Droid pages you have verified exist — broken links are a bug.
 
 Then add an icon: `node scripts/fetch-emulator-icons.mjs` (or drop a PNG at
 `config/emulator-icons/<id>.png`; a missing icon must be a committed

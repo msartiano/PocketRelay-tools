@@ -17,7 +17,21 @@
           "packages": { "type": "array", "items": { "type": "string", "pattern": "^[a-zA-Z0-9.]+$" } },
           "siteUrl": { "type": "string", "pattern": "^https?://" },
           "playStoreUrl": { "type": "string", "pattern": "^https?://" },
-          "apkUrl": { "type": "string", "pattern": "^https?://" }
+          "apkUrl": { "type": "string", "pattern": "^https?://" },
+          "links": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["kind", "label", "url"],
+              "properties": {
+                "kind": { "enum": ["play", "fdroid", "github", "apk", "web"] },
+                "label": { "type": "string", "minLength": 1 },
+                "url": { "type": "string", "pattern": "^https?://" },
+                "install": { "type": "boolean" }
+              },
+              "additionalProperties": false
+            }
+          }
         },
         "additionalProperties": false
       }

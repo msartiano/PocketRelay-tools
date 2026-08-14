@@ -70,6 +70,25 @@ check("config/systems.json", (cfg) => {
         problems.push(`${label}: ${key} must be an http(s) url`);
       }
     }
+    if (emu.links !== undefined && !Array.isArray(emu.links)) {
+      problems.push(`${label}: links must be an array`);
+    } else {
+      const LINK_KINDS = new Set(["play", "fdroid", "github", "apk", "web"]);
+      const seenUrls = new Set();
+      for (const l of emu.links ?? []) {
+        const llabel = `${label} link`;
+        if (!l || typeof l !== "object") {
+          problems.push(`${llabel}: must be an object { kind, label, url }`);
+          continue;
+        }
+        if (typeof l.kind !== "string" || !LINK_KINDS.has(l.kind)) problems.push(`${llabel}: bad kind ${l?.kind}`);
+        if (typeof l.label !== "string" || !l.label) problems.push(`${llabel}: label required`);
+        if (typeof l.url !== "string" || !URL_RE.test(l.url)) problems.push(`${llabel}: url must be http(s)`);
+        else if (seenUrls.has(l.url)) problems.push(`${llabel}: duplicate url ${l.url}`);
+        seenUrls.add(l.url);
+        if (l.install !== undefined && typeof l.install !== "boolean") problems.push(`${llabel}: install must be a boolean`);
+      }
+    }
   }
 
   // Systems referencing ids.

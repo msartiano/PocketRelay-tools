@@ -22,6 +22,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildLinks } from "./links.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const systemsPath = join(root, "config", "systems.json");
@@ -70,8 +71,6 @@ const EMU = {
 
   // ---- Nintendo --------------------------------------------------------------
   "org.dolphinemu.dolphinemu": { id: "dolphin", name: "Dolphin", site: "https://dolphin-emu.org/", play: play("org.dolphinemu.dolphinemu") },
-  "com.dolphin.emulator": { id: "dolphin-mmjr", name: "Dolphin Emulator (MMJR)", site: "https://github.com/EmulationSansFrontieres/dolphin-mmjr", play: play("com.dolphin.emulator") },
-  "org.dolphin.dolphinemu": { id: "dolphin-mmj", name: "Dolphin (MMJ)", site: "https://github.com/nsZhai/Dolphin-MMJ", play: play("org.dolphin.dolphinemu") },
   "org.mupen64plusae": { id: "mupen64plus-ae", name: "Mupen64Plus AE", site: "https://github.com/mupen64plus-ae/mupen64plus-ae", play: play("org.mupen64plusae") },
   "org.mupen64plusae.v3.fzurita": { id: "m64plus-fz", name: "M64Plus FZ", site: "https://github.com/fzurita/m64plus_fz", play: play("org.mupen64plusae.v3.fzurita") },
   "com.hydra.noods": { id: "nood", name: "Nood (N64)", site: "https://github.com/operatingsystems/nood", play: play("com.hydra.noods") },
@@ -293,6 +292,8 @@ const master = Array.from(byId.values())
     const out = { id: e.id, name: e.name, packages: e.packages, siteUrl: e.siteUrl };
     if (e.playStoreUrl) out.playStoreUrl = e.playStoreUrl;
     if (e.apkUrl) out.apkUrl = e.apkUrl;
+    const links = buildLinks({ id: e.id, siteUrl: e.siteUrl, playStoreUrl: e.playStoreUrl, apkUrl: e.apkUrl });
+    if (links.length > 0) out.links = links;
     return out;
   })
   .sort((a, b) => a.id.localeCompare(b.id));
