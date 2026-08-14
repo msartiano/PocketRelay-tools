@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "systems.schema.json",
+  "title": "Emulator systems config",
+  "description": "One entry per platform: metadata plus the emulators[] variants that can run it. Mirrors the desktop retroarch-playlist.conf presets[].emulators[] model.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "folder", "emulators"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^[a-z0-9]+$" },
+      "name": { "type": "string", "minLength": 1 },
+      "folder": { "type": "string", "minLength": 1 },
+      "aliases": { "type": "array", "items": { "type": "string" } },
+      "romExtensions": { "type": "array", "items": { "type": "string" } },
+      "logoKey": { "type": "string" },
+      "hue": { "type": "integer", "minimum": 0, "maximum": 359 },
+      "mame": { "type": "boolean" },
+      "emulators": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "package"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "package": { "type": "string", "pattern": "^[a-zA-Z0-9.]+$" },
+            "core": { "type": "string", "minLength": 1 },
+            "extras": { "type": "object" },
+            "mimeType": { "type": "string" },
+            "activity": { "type": "string" },
+            "favourite": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}

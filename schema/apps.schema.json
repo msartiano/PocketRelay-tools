@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "apps.schema.json",
+  "title": "Any-system emulator apps",
+  "description": "Frontends and multi-system apps that cover every system (RetroArch, Lemuroid, ...). Systems that pin specific emulators live in systems.json emulators[].",
+  "type": "object",
+  "required": ["apps"],
+  "properties": {
+    "apps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["package", "name"],
+        "properties": {
+          "package": { "type": "string", "pattern": "^[a-zA-Z0-9.]+$" },
+          "name": { "type": "string", "minLength": 1 },
+          "systems": { "enum": ["any"] },
+          "marketUri": { "type": "string" },
+          "icon": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

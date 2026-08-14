@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "repos.schema.json",
+  "title": "Curated starter repos",
+  "description": "Repos offered to new installs so the app is instantly useful. Each entry is a repo add-card URL (the manifest endpoint).",
+  "type": "object",
+  "required": ["repos"],
+  "properties": {
+    "repos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "name": { "type": "string" },
+          "id": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

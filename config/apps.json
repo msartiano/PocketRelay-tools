@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "package": "com.retroarch",
+      "name": "RetroArch",
+      "systems": "any"
+    },
+    {
+      "package": "org.libretro.retroarch64",
+      "name": "RetroArch (64-bit)",
+      "systems": "any"
+    },
+    {
+      "package": "org.retroarch",
+      "name": "RetroArch",
+      "systems": "any"
+    }
+  ]
+}
