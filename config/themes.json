@@ -1,0 +1,52 @@
+{
+  "themes": [
+    {
+      "id": "openemu",
+      "name": "OpenEmu",
+      "author": "cybermobile",
+      "version": "1.0.0",
+      "license": "CC BY-NC-SA 4.0",
+      "description": "A clean, dark, library-style interface inspired by the macOS OpenEmu frontend. Modern ES-DE format: theme variables, color schemes (dark/oled/light), aspect-ratio includes and grid/list variants.",
+      "zipUrl": "https://github.com/cybermobile/es-de-openemu-theme/archive/refs/heads/main.zip",
+      "zipTopDir": "es-de-openemu-theme-main",
+      "siteUrl": "https://github.com/cybermobile/es-de-openemu-theme",
+      "views": ["system", "gamelist"]
+    },
+    {
+      "id": "epicnoir",
+      "name": "Epic Noir",
+      "author": "c64-dev",
+      "version": "1.0.0",
+      "license": "CC BY-NC-SA 4.0",
+      "description": "A dark, film-noir inspired ES-DE theme with a system carousel and detailed/video/grid game-list views.",
+      "zipUrl": "https://github.com/c64-dev/es-theme-epicnoir/archive/refs/heads/master.zip",
+      "zipTopDir": "es-theme-epicnoir-master",
+      "siteUrl": "https://github.com/c64-dev/es-theme-epicnoir",
+      "views": ["system", "basic", "detailed", "video", "grid"]
+    },
+    {
+      "id": "switch",
+      "name": "Switch",
+      "author": "lilbud",
+      "version": "1.0.0",
+      "license": "CC BY-NC-SA 4.0",
+      "description": "A Nintendo Switch-inspired ES-DE theme with a horizontal system carousel and basic/detailed/video game-list views.",
+      "zipUrl": "https://github.com/lilbud/es-theme-switch/archive/refs/heads/master.zip",
+      "zipTopDir": "es-theme-switch-master",
+      "siteUrl": "https://github.com/lilbud/es-theme-switch",
+      "views": ["system", "basic", "detailed", "video"]
+    },
+    {
+      "id": "retrorama",
+      "name": "Retrorama",
+      "author": "lipebello",
+      "version": "1.0.0",
+      "license": "CC BY-NC-SA 4.0",
+      "description": "A vibrant, retro-styled ES-DE theme with a system view and basic/detailed/grid/video game-list views.",
+      "zipUrl": "https://github.com/lipebello/es-theme-retrorama/archive/refs/heads/master.zip",
+      "zipTopDir": "es-theme-retrorama-master",
+      "siteUrl": "https://github.com/lipebello/es-theme-retrorama",
+      "views": ["system", "basic", "detailed", "video", "grid"]
+    }
+  ]
+}
