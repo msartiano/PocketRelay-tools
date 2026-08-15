@@ -458,14 +458,12 @@ am start \
 
 - Package: `com.github.stenzek.duckstation`
 - Systems: psx
-- Activity: `com.github.stenzek.duckstation.EmulationActivity`
+- Activity: `com.github.stenzek.duckstation.MainActivity`
 - Launch:
 ```
 am start \
-  -n com.github.stenzek.duckstation/com.github.stenzek.duckstation.EmulationActivity \
+  -n com.github.stenzek.duckstation/com.github.stenzek.duckstation.MainActivity \
   -a android.intent.action.VIEW \
-  -e bootPath {file.path} \
-  --ez resumeState 0 \
   -d {file.uri}
 ```
 
