@@ -361,6 +361,19 @@ am start \
   -d {file.uri}
 ```
 
+### ColEm
+
+- Package: `com.fms.colem`
+- Systems: colecovision
+- Activity: `com.fms.emulib.MainActivity`
+- Launch:
+```
+am start \
+  -n com.fms.colem/com.fms.emulib.MainActivity \
+  -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
 ### ColEm Deluxe
 
 - Package: `com.fms.colem.deluxe`
@@ -389,7 +402,7 @@ am start \
 
 ### Dolphin
 
-- Package: `org.dolphinemu.dolphinemu`
+- Package: `org.dolphinemu.dolphinemu`, `com.dolphin.emulator`, `org.dolphin.dolphinemu`
 - Systems: gcn, ngc, wii
 - Activity: `org.dolphinemu.dolphinemu.ui.main.MainActivity`
 - Launch:
@@ -404,7 +417,7 @@ am start \
 ### Dolphin (Retroid fork)
 
 - Package: `org.dolphinemu.handheld`
-- Systems: gcn
+- Systems: gcn, wii
 - Activity: `org.dolphinemu.dolphinemu.ui.main.MainActivity`
 - Launch:
 ```
@@ -616,7 +629,7 @@ am start \
 ### GBCoid
 
 - Package: `com.androidemu.gbc`
-- Systems: gb
+- Systems: gb, gbc
 - Activity: `com.androidemu.gbc.EmulatorActivity`
 - Launch:
 ```
@@ -629,7 +642,7 @@ am start \
 ### Gearoid
 
 - Package: `com.androidemu.gg`
-- Systems: sms
+- Systems: gg, sms
 - Activity: `com.androidemu.gg.EmulatorActivity`
 - Launch:
 ```
@@ -655,7 +668,7 @@ am start \
 ### Gensoid
 
 - Package: `com.androidemu.gens`
-- Systems: megadrive
+- Systems: genesis, megadrive
 - Activity: `com.androidemu.gens.EmulatorActivity`
 - Launch:
 ```
@@ -753,6 +766,19 @@ am start \
 ```
 am start \
   -p com.johnemulators.johnness \
+  -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
+### jzIntv
+
+- Package: `org.libsdl.jzintv4droid2`
+- Systems: intellivision
+- Activity: `org.libsdl.jzintv4droid2.jzIntv4Droid`
+- Launch:
+```
+am start \
+  -n org.libsdl.jzintv4droid2/org.libsdl.jzintv4droid2.jzIntv4Droid \
   -a android.intent.action.VIEW \
   -d {file.uri}
 ```
@@ -981,7 +1007,7 @@ am start \
 ### My OldBoy!
 
 - Package: `com.fastemulator.gbc`
-- Systems: gb
+- Systems: gb, gbc
 - Activity: `com.fastemulator.gbc.EmulatorActivity`
 - Launch:
 ```
@@ -1664,6 +1690,19 @@ am start \
 ```
 am start \
   -p com.Rekkuzan.UnityBoyAdvance \
+  -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
+### VecDroid
+
+- Package: `com.willna.vecdroid`
+- Systems: vectrex
+- Activity: `com.willna.vecdroid.MainActivity`
+- Launch:
+```
+am start \
+  -n com.willna.vecdroid/com.willna.vecdroid.MainActivity \
   -a android.intent.action.VIEW \
   -d {file.uri}
 ```

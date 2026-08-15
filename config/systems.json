@@ -400,7 +400,9 @@
       "id": "dolphin",
       "name": "Dolphin",
       "packages": [
-        "org.dolphinemu.dolphinemu"
+        "org.dolphinemu.dolphinemu",
+        "com.dolphin.emulator",
+        "org.dolphin.dolphinemu"
       ],
       "siteUrl": "https://dolphin-emu.org/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
@@ -2598,6 +2600,33 @@
       "siteUrl": "https://play.google.com/store/apps/details?id=ru.vastness.altmer.iratajaguar",
       "activity": "ru.vastness.altmer.iratajaguar/.MainActivity",
       "launchArgs": "VIEW;e rom \"{file.path}\""
+    },
+    {
+      "id": "vecdroid",
+      "name": "VecDroid",
+      "packages": [
+        "com.willna.vecdroid"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.willna.vecdroid",
+      "activity": "com.willna.vecdroid/.MainActivity"
+    },
+    {
+      "id": "colem",
+      "name": "ColEm",
+      "packages": [
+        "com.fms.colem"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.fms.colem",
+      "activity": "com.fms.colem/com.fms.emulib.MainActivity"
+    },
+    {
+      "id": "jzintv",
+      "name": "jzIntv",
+      "packages": [
+        "org.libsdl.jzintv4droid2"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.libsdl.jzintv4droid2",
+      "activity": "org.libsdl.jzintv4droid2/.jzIntv4Droid"
     }
   ],
   "systems": [
@@ -4520,6 +4549,12 @@
         {
           "emulator": "retroarch-32",
           "core": "vba_next_libretro"
+        },
+        {
+          "emulator": "gbcoid"
+        },
+        {
+          "emulator": "my-oldboy"
         }
       ]
     },
@@ -5491,6 +5526,9 @@
         {
           "emulator": "retroarch-32",
           "core": "dolphin_libretro"
+        },
+        {
+          "emulator": "dolphin-retroid"
         }
       ]
     },
@@ -5831,6 +5869,9 @@
         {
           "emulator": "retroarch-32",
           "core": "gearsystem_libretro"
+        },
+        {
+          "emulator": "gearoid"
         }
       ]
     },
@@ -5998,6 +6039,9 @@
         {
           "emulator": "retroarch-32",
           "core": "clownmdemu_libretro"
+        },
+        {
+          "emulator": "gensoid"
         }
       ]
     },
@@ -6888,6 +6932,9 @@
         {
           "emulator": "retroarch-32",
           "core": "freeintv_libretro"
+        },
+        {
+          "emulator": "jzintv"
         }
       ]
     },
@@ -6917,6 +6964,9 @@
         {
           "emulator": "colem-deluxe",
           "activity": "com.fms.colem.deluxe/com.fms.emulib.MainActivity"
+        },
+        {
+          "emulator": "colem"
         }
       ]
     },
@@ -7492,6 +7542,9 @@
         {
           "emulator": "retroarch-32",
           "core": "vecx_libretro"
+        },
+        {
+          "emulator": "vecdroid"
         }
       ]
     },

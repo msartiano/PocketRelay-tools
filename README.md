@@ -99,7 +99,7 @@ Settings → Update.
 
 <!-- emulators-table:start -->
 
-PocketConsole-tools ships **119 systems** and **131 emulator apps** (128 standalone + the 3 RetroArch builds). Full launch commands live in [docs/android-emulators.md](docs/android-emulators.md).
+PocketConsole-tools ships **119 systems** and **134 emulator apps** (131 standalone + the 3 RetroArch builds). Full launch commands live in [docs/android-emulators.md](docs/android-emulators.md).
 
 ### Standalone (non-RetroArch) emulators
 
@@ -122,10 +122,11 @@ PocketConsole-tools ships **119 systems** and **131 emulator apps** (128 standal
 | Citron | `org.citron.citron_emu` | nsw | ACTION_VIEW |
 | ClassicBoy Lite | `com.portableandroid.classicboyLite` | mame, pce, tg16, gb, gbc, gba, nes, snes, n64, gg, sms, genesis, ngpc, psx | ACTION_VIEW |
 | ClassicBoy Pro | `com.portableandroid.classicboy` | mame, pce, tg16, gb, gbc, gba, nes, snes, n64, gg, sms, genesis, ngpc, psx | ACTION_VIEW |
+| ColEm | `com.fms.colem` | colecovision | ACTION_VIEW |
 | ColEm Deluxe | `com.fms.colem.deluxe` | colecovision | ACTION_VIEW |
 | DamonPS2 | `com.damonplay.damonps2.free` | ps2 | ACTION_VIEW |
-| Dolphin (Retroid fork) | `org.dolphinemu.handheld` | gcn | custom args |
-| Dolphin | `org.dolphinemu.dolphinemu` | **gcn, ngc, wii** | custom args |
+| Dolphin (Retroid fork) | `org.dolphinemu.handheld` | gcn, wii | custom args |
+| Dolphin | `org.dolphinemu.dolphinemu`, `com.dolphin.emulator`, `org.dolphin.dolphinemu` | **gcn, ngc, wii** | custom args |
 | DOSBox Turbo | `com.fishstix.dosbox` | dos | ACTION_VIEW |
 | DraStic | `com.dsemu.drastic` | nds | ACTION_VIEW |
 | DuckStation | `com.github.stenzek.duckstation` | **psx** | custom args |
@@ -141,10 +142,10 @@ PocketConsole-tools ships **119 systems** and **131 emulator apps** (128 standal
 | GBA.emu | `com.explusalpha.GbaEmu` | gba | ACTION_VIEW |
 | GBC.emu | `com.explusalpha.GbcEmu` | gb, gbc | ACTION_VIEW |
 | gbcc | `com.philj56.gbcc` | gb, gbc | ACTION_VIEW |
-| GBCoid | `com.androidemu.gbc` | gb | ACTION_VIEW |
-| Gearoid | `com.androidemu.gg` | sms | ACTION_VIEW |
+| GBCoid | `com.androidemu.gbc` | gb, gbc | ACTION_VIEW |
+| Gearoid | `com.androidemu.gg` | gg, sms | ACTION_VIEW |
 | GenesisDroid | `ca.halsafar.genesisdroid` | genesis, megadrive | ACTION_VIEW |
-| Gensoid | `com.androidemu.gens` | megadrive | ACTION_VIEW |
+| Gensoid | `com.androidemu.gens` | genesis, megadrive | ACTION_VIEW |
 | GZDoom (Delta Touch Full) | `com.opentouchgaming.gzdoom` | doom | ACTION_VIEW |
 | GZDoom (Delta Touch) | `com.opentouchgaming.gzdoomfree` | **doom** | ACTION_VIEW |
 | IrataJaguar | `ru.vastness.altmer.iratajaguar` | jaguar | custom args |
@@ -152,6 +153,7 @@ PocketConsole-tools ships **119 systems** and **131 emulator apps** (128 standal
 | John GBA Lite | `com.johnemulators.johngbac` | gba | ACTION_VIEW |
 | John GBC | `com.johnemulators.johngbc` | gb, gbc | ACTION_VIEW |
 | John NES | `com.johnemulators.johnness` | nes | ACTION_VIEW |
+| jzIntv | `org.libsdl.jzintv4droid2` | intellivision | ACTION_VIEW |
 | kat5200 | `com.jillybunch.kat5200` | **atari5200** | ACTION_VIEW |
 | Lemuroid | `com.swordfish.lemuroid` | **lynx, pce, tg16, gb, gbc, gg, sms** | ACTION_VIEW |
 | Lynx.emu | `com.explusalpha.LynxEmu` | lynx | ACTION_VIEW |
@@ -169,7 +171,7 @@ PocketConsole-tools ships **119 systems** and **131 emulator apps** (128 standal
 | Mupen64Plus AE | `org.mupen64plusae`, `paulscode.android.mupen64plusae` | **n64** | ACTION_VIEW |
 | My Boy! | `com.fastemulator.gba` | **gba** | ACTION_VIEW |
 | My Boy! Free | `com.fastemulator.gbafree` | gba | ACTION_VIEW |
-| My OldBoy! | `com.fastemulator.gbc` | gb | ACTION_VIEW |
+| My OldBoy! | `com.fastemulator.gbc` | gb, gbc | ACTION_VIEW |
 | N64.emu | `com.explusalpha.N64Plus` | n64 | ACTION_VIEW |
 | N64oid | `com.mop.ide.n64oid` | n64 | ACTION_VIEW |
 | NEO.emu | `com.explusalpha.NeoEmu` | mame, fba | ACTION_VIEW |
@@ -222,6 +224,7 @@ PocketConsole-tools ships **119 systems** and **131 emulator apps** (128 standal
 | UAE4All2 | `atua.anddev.uae4all2` | **amiga** | ACTION_VIEW |
 | UAE4Droid | `com.locnet.uae` | amiga | ACTION_VIEW |
 | UnityBoyAdvance | `com.Rekkuzan.UnityBoyAdvance` | gba | ACTION_VIEW |
+| VecDroid | `com.willna.vecdroid` | vectrex | ACTION_VIEW |
 | VICE | `com.locnet.vice` | **c64** | ACTION_VIEW |
 | Virtual Jaguar | `org.icculus.virtualjaguar` | **jaguar** | ACTION_VIEW |
 | Vita3K | `com.github.eka2l1` | **psvita** | ACTION_VIEW |
