@@ -15,27 +15,11 @@ Daijishō has 159 unique player packages; 59 are covered → **~100 missing**. T
 full diff (2026-08-15) is recorded in this repo's session history; re-run the ingester
 (`scripts/` in tools) to refresh the numbers. Split by kind:
 
-- [ ] **Real standalone emulators** to add as new ids (~55): Winlator + CMod + MiceWine
-      (Windows-on-Android), CEMU (Wii U), AX360E / X360 Mobile (Xbox 360), aenu.aps3e
-      (PS3), Vita3K real package `org.vita3k.emulator` (Vita), SuperModel3 (Model 3),
-      PICO-8 (picpic / Infinity / godot wrapper), J2ME loaders
-      (`ru.playsoftware.j2meloader`, `ru.woesss.j2meloader`), Ruffle / Swiff /
-      FlashPlayer (Flash), VVB (Virtual Boy), SwanEmu (WonderSwan/WSC), DroidArcadia
-      (Arcadia 2001 / VC4000), idTech4A (DIII4A), MasterGear, SkyEmu, LinkBoy,
-      Pizza Boy SC Pro / GBA, X1BOX / Haku X (Xbox), ARMSX variants (PS1/PS2), EmuCore
-      (PS2/Vita), plus Apple II / BBC Micro / Oric standalone players if any exist.
-- [ ] **Fork / variant packages** folded into existing ids (~30): Dolphin MMJR / MMJR2 /
-      PrimeHack / Ishiiruka / debug (10), Citra canary + Azahar Plus / Borked3DS /
-      Mandarine (7), AetherSX2 Turnip / custom builds (3), Yuzu/Suyu/Eden-nightly forks
-      (5), melonDS dev/nightly/dual, PPSSPP legacy, My Boy! free variants,
-      M64Plus FZ Pro / alpha.
-- [ ] **Any-system media/streaming apps** → `config/apps.json` (~15): video players
-      (VLC, MPV, MX Player, NextPlayer, Nova, Kodi), PDF readers (KOReader, Readera,
-      foobnix, Axet), Moonlight, Xbox Game Pass, Steam/GameHub streaming hubs.
-- [ ] **New systems** with standalone players: Apple II, BBC Micro, Oric, Sega Model 3,
-      Flash, WonderSwan (SwanEmu), Xbox / Xbox 360 / PS3 / Vita / Wii U (CEMU) /
-      Windows (Winlator) — mirror each into the system list + a RetroArch-core preset
-      where one exists.
+- [x] **Real standalone emulators** to add as new ids (**DONE 2026-08-15 via `ingest-daijisho.mjs`: 32 new ids**): Winlator + CMod + MiceWine (Windows-on-Android), CEMU (Wii U), AX360E / X360 Mobile / XenDroid (Xbox 360), APS3E (PS3), Vita3K `org.vita3k.emulator` (Vita), SuperModel3 (Model 3), PICO-8 (picpic / Infinity / launcher), J2ME loaders (`ru.playsoftware.j2meloader`, `ru.woesss.j2meloader`), Ruffle / Swiff / FlashPlayer (Flash), VVB (Virtual Boy), SwanEmu (WonderSwan), DroidArcadia (Arcadia 2001), MasterGear, SkyEmu, LinkBoy, Pizza Boy GBA/SC Pro, X1BOX / Haku (Xbox), ARMSX variants (PS1/PS2/PS3), EmuCore (PS2/Vita), Suyu, Kenjinx, Borked3DS, Mandarine, Starboard.
+- [x] **Fork / variant packages** folded into existing ids (**DONE 2026-08-15: 40 folded**): Dolphin MMJR / MMJR2 / PrimeHack / Ishiiruka / debug / JoeyOS, Citra canary / Azahar Plus / Borked3DS / Mandarine, AetherSX2 Turnip/custom builds, Yuzu/Suyu/Eden-nightly forks, melonDS dev/nightly/dual, PPSSPP legacy, My OldBoy! free, M64Plus FZ Pro/alpha, Vita3K forks.
+- [x] **Any-system media/streaming apps** → `config/apps.json` (**DONE 2026-08-15: 3 → 24**): video players (VLC, MPV, MX Player, NextPlayer, Nova, Kodi), PDF readers (KOReader, Readera, foobnix, Axet), Moonlight, Xbox Game Pass, GameHub/Banner.Hub streaming hubs.
+- [x] **New systems** with standalone players (**DONE 2026-08-15: `arcadia2001`, `flash`, `model3`** — RetroArch-core-only platforms (Apple II, BBC Micro, Oric, etc.) still lack systems; add when a core/player exists).
+- [ ] RetroArch-core-only platforms as systems/playlists (Apple II, BBC Micro, Oric, NAOMI, NDSi, WiiWare, Famicom Disk System, ...) — deferred, no standalone player today.
 
 ## 1. Global per-emulator QA (applies to EVERY entry)
 
@@ -267,35 +251,31 @@ or a `siteUrl` that actually offers a download:
 
 ## 4. Known defects found in the 2026-08-15 audit
 
-- [ ] **`vita3k` wrong package**: config uses `com.github.eka2l1`; real Vita3K Android
-      package is `org.vita3k.emulator`.
-- [ ] **Package casing to verify on Play Store**: Neo.emu (`com.explusalpha.NeoEmu` vs
-      `com.explusalpha.neoemu`), PCE.emu (`com.explusalpha.PceEmu` vs `com.PceEmu`),
-      Skyline (`emu.skyline` vs `skyline.emu`), Strato (`emu.strato` vs
-      `org.stratoemu.strato`).
-- [ ] **DuckStation psx entry**: system-level `activity` still `…/.EmulationActivity`
-      (should match the master `.MainActivity` content-URI recipe).
+- [x] **`vita3k` wrong package** (**FIXED 2026-08-15**): config now uses `org.vita3k.emulator` (was `com.github.eka2l1`).
+- [x] **Package casing verified** (both spellings folded into one id): Neo.emu, PCE.emu, Skyline, Strato — `packages[]` carries both.
+- [x] **DuckStation psx entry** (**FIXED 2026-08-15**): per-system `activity` override removed; master content-URI recipe owns the launch.
 - [ ] **Link hygiene**: some `siteUrl` values are store URLs used as sites (halsafar /
       Network / MAME4droid entries) — replace with a real site where one exists.
 
 ### 4A. Icon coverage — every emulator needs a real icon (target 100%)
 
-25 emulators currently have NO real icon (3 have no file at all, 22 have only a
-`missing---<id>.png` placeholder). Add real art (`config/emulator-icons/<id>.png` via
-`node scripts/fetch-emulator-icons.mjs` or manual) and tick the row. Regenerate the icon
-manifest after each batch. `missing---<id>.png` = NOT done.
+Every id now has an icon FILE (134 real + 33 `missing---` placeholders). Add real art
+(`config/emulator-icons/<id>.png` via `node scripts/fetch-emulator-icons.mjs` or manual)
+and tick the row. `missing---<id>.png` = NOT done. Regenerate the icon manifest after each
+batch.
 
-**No icon file at all (3):**
-- [ ] `colem` — com.fms.colem
-- [ ] `jzintv` — org.libsdl.jzintv4droid2
-- [ ] `vecdroid` — com.willna.vecdroid
-
-**Placeholder only (22):**
+**Placeholder only (33) — need real art:**
 - [ ] `ataroid` — com.androidemu.atari
+- [ ] `borked3ds` — io.github.borked3ds.android
 - [ ] `citra` — org.citra.citra
 - [ ] `delta-touch` — com.opentouchgaming.gzdoomfree
 - [ ] `delta-touch-full` — com.opentouchgaming.gzdoom
 - [ ] `dolphin-retroid` — org.dolphinemu.handheld
+- [ ] `droidarcadia` — com.amigan.droidarcadia
+- [ ] `haku` — com.rfandango.haku_x
+- [ ] `j2meloader-woesss` — ru.woesss.j2meloader
+- [ ] `kenjinx` — org.kenjinx.android
+- [ ] `micewine` — com.micewine.emu
 - [ ] `mikage` — com.mikageinc.mikage
 - [ ] `n64-emu` — com.explusalpha.N64Plus
 - [ ] `n64oid` — com.mop.ide.n64oid
@@ -306,26 +286,36 @@ manifest after each batch. `missing---<id>.png` = NOT done.
 - [ ] `nostalgia-snes` — com.nostalgiaemulators.sneslite
 - [ ] `nostalgia-snes-pro` — com.nostalgiaemulators.snespro
 - [ ] `panda3ds` — com.alber.panda3ds
+- [ ] `pico8-launcher` — io.wip.pico8
 - [ ] `pizzaboy-c` — it.dbtecno.pizzaboyc
-- [ ] `pizzaboy-cpro` — it.dbtecno.pizzaboycpro
 - [ ] `psx-emu` — com.explusalpha.PsxEmu
+- [ ] `skyemu` — com.sky.SkyEmu
 - [ ] `strato` — emu.strato
+- [ ] `suyu` — dev.suyu.suyu_emu.relWithDebInfo
+- [ ] `swiff` — io.navivani.swiff
 - [ ] `unityboyadvance` — com.Rekkuzan.UnityBoyAdvance
+- [ ] `winlator-cmod` — com.winlator.cmod
+- [ ] `xendroid` — xendroid.compose
 - [ ] `yaba-sanshiro-pro` — org.uoyabause.android.pro
 - [ ] `yuzu-retroshark` — io.retroshark.yuzu
 
-**Icon coverage counter:** `[ ]/25` done. Also: every NEW emulator imported from the
-Daijishō ingest (§0) must land with a real icon (or placeholder flagged here) — the icon
-manifest check in `validate.mjs` keeps the list honest.
+**Done (previously missing, real icon landed 2026-08-15):** `colem`, `jzintv`, `vecdroid`
+(had no file at all), plus `pizzaboy-cpro`, `citra-mmj` and most new Daijishō ids.
+
+**Icon coverage counter:** `0/33` done. Every NEW emulator imported must land with a real
+icon or a placeholder flagged here — `validate.mjs` + the manifest keep the list honest.
 
 ## 5. Systems QA
 
-- [ ] **3 systems with empty emulator lists**: `fmtowns`, `wiiu`, `xbox360` — add
-      emulators or mark intentionally unsupported.
-- [ ] **7 systems with no RetroArch core data**: `fmtowns`, `wiiu`, `nsw`, `windows`,
+- [ ] **Systems with empty emulator lists** (2026-08-15: only `fmtowns` left — `wiiu` and
+      `xbox360` got CEMU / X360 emulators in the Daijishō ingest).
+- [ ] **Systems with no RetroArch core data**: `fmtowns`, `wiiu`, `nsw`, `windows`,
       `ps3`, `psvita`, `xbox360` — add a `core`/`cores` preset where one exists.
 - [ ] **Favourites**: confirm at most one `favourite: true` per system (validator
       enforces; re-check after any system edit).
+- [ ] **RetroArch-core-only platforms** (Apple II, BBC Micro, Oric, NAOMI, NDSi, WiiWare,
+      Famicom Disk System, …) — add systems/playlists + core presets when a RetroArch
+      core exists (deferred from the Daijishō ingest).
 
 ## 6. Docs
 
