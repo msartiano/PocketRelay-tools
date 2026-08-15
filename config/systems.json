@@ -1582,6 +1582,21 @@
       ]
     },
     {
+      "id": "nyushu",
+      "name": "Nyushu",
+      "packages": [
+        "emuready.nyushu.ABenchMark"
+      ],
+      "siteUrl": "https://nyushuemulator.org",
+      "links": [
+        {
+          "kind": "web",
+          "label": "Official site",
+          "url": "https://nyushuemulator.org"
+        }
+      ]
+    },
+    {
       "id": "openmsx",
       "name": "openMSX",
       "packages": [
@@ -5576,6 +5591,9 @@
         },
         {
           "emulator": "egg-ns"
+        },
+        {
+          "emulator": "nyushu"
         }
       ]
     },

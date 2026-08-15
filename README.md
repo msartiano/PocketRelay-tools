@@ -99,7 +99,7 @@ Settings → Update.
 
 <!-- emulators-table:start -->
 
-PocketConsole-tools ships **119 systems** and **134 emulator apps** (131 standalone + the 3 RetroArch builds). Full launch commands live in [docs/android-emulators.md](docs/android-emulators.md).
+PocketConsole-tools ships **119 systems** and **135 emulator apps** (132 standalone + the 3 RetroArch builds). Full launch commands live in [docs/android-emulators.md](docs/android-emulators.md).
 
 ### Standalone (non-RetroArch) emulators
 
@@ -193,6 +193,7 @@ PocketConsole-tools ships **119 systems** and **134 emulator apps** (131 standal
 | Nostalgia.NES Pro | `com.nostalgiaemulators.nespro` | nes | ACTION_VIEW |
 | Nostalgia.SNES | `com.nostalgiaemulators.sneslite` | snes | ACTION_VIEW |
 | Nostalgia.SNES Pro | `com.nostalgiaemulators.snespro` | snes | ACTION_VIEW |
+| Nyushu | `emuready.nyushu.ABenchMark` | nsw | ACTION_VIEW |
 | openMSX | `org.openmsx.android.openmsx` | msx | ACTION_VIEW |
 | Panda3DS | `com.alber.panda3ds` | n3ds | ACTION_VIEW |
 | PCE.emu | `com.explusalpha.PceEmu` | pce, tg16 | ACTION_VIEW |

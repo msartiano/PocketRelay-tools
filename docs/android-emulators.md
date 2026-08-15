@@ -1288,6 +1288,19 @@ am start \
   -d {file.uri}
 ```
 
+### Nyushu
+
+- Package: `emuready.nyushu.ABenchMark`
+- Systems: nsw
+
+- Launch:
+```
+am start \
+  -p emuready.nyushu.ABenchMark \
+  -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
 ### openMSX
 
 - Package: `org.openmsx.android.openmsx`
