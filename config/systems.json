@@ -2420,17 +2420,16 @@
       "id": "vita3k",
       "name": "Vita3K",
       "packages": [
-        "com.github.eka2l1",
         "org.vita3k.emulator",
         "org.vita3k.emulator.ikhoeyZX"
       ],
       "siteUrl": "https://vita3k.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.eka2l1",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=org.vita3k.emulator",
       "links": [
         {
           "kind": "play",
           "label": "Play Store",
-          "url": "https://play.google.com/store/apps/details?id=com.github.eka2l1"
+          "url": "https://play.google.com/store/apps/details?id=org.vita3k.emulator"
         },
         {
           "kind": "github",
@@ -2443,7 +2442,7 @@
           "url": "https://vita3k.org/"
         }
       ],
-      "activity": "com.github.eka2l1/.emu.EmulatorActivity",
+      "activity": "org.vita3k.emulator/.Emulator",
       "launchArgs": "d \"{file.uri}\""
     },
     {
@@ -2943,7 +2942,6 @@
         "info.cemu.cemu"
       ],
       "siteUrl": "https://cemu.info/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=info.cemu.cemu",
       "activity": "info.cemu.cemu/.emulation.EmulationActivity",
       "launchArgs": "d \"{file.uri}\""
     },
@@ -3056,7 +3054,6 @@
         "com.winlator"
       ],
       "siteUrl": "https://winlator.org/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.winlator",
       "activity": "com.winlator/.XServerDisplayActivity",
       "launchArgs": "e shortcut_path \"{file.path}\""
     },
@@ -6889,8 +6886,7 @@
       "emulators": [
         {
           "emulator": "duckstation",
-          "favourite": true,
-          "activity": "com.github.stenzek.duckstation/.EmulationActivity"
+          "favourite": true
         },
         {
           "emulator": "epsxe",
