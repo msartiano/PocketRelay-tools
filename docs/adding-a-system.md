@@ -94,5 +94,9 @@ Rules:
    / `apkUrl` when available) and its icon in `config/emulator-icons/`.
 2. Edit the system's `emulators[]` to reference the id.
 3. `node scripts/validate.mjs` passes.
-4. Commit + PR. CI re-validates.
-5. Merge → the app's Settings → Update shows the change with a friendly diff.
+4. **Regenerate the docs so they can't drift**: `node scripts/gen-emulator-docs.mjs`
+   (updates the README emulator table + `docs/android-emulators.md`). Any
+   change to an emulator's config/definition — or a fix to a broken launch —
+   MUST include this step in the same commit.
+5. Commit + PR. CI re-validates.
+6. Merge → the app's Settings → Update shows the change with a friendly diff.

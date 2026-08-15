@@ -19,7 +19,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.A2600Emu/com.imagine.BaseActivity"
     },
     {
       "id": "aethersx2",
@@ -40,7 +41,9 @@
           "label": "Official site",
           "url": "https://www.aethersx2.com/"
         }
-      ]
+      ],
+      "activity": "xyz.aethersx2.android/.EmulationActivity",
+      "launchArgs": "MAIN;e bootPath \"{file.documenturi}\""
     },
     {
       "id": "afreebox",
@@ -172,7 +175,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.C64Emu/com.imagine.BaseActivity"
     },
     {
       "id": "c64-jahnke",
@@ -262,7 +266,9 @@
           "label": "Official site",
           "url": "https://citra-emu.org/"
         }
-      ]
+      ],
+      "activity": "org.citra.emu/.ui.main.MainActivity",
+      "launchArgs": "VIEW;e GamePath \"{file.path}\""
     },
     {
       "id": "citron",
@@ -419,7 +425,9 @@
           "label": "Official site",
           "url": "https://dolphin-emu.org/"
         }
-      ]
+      ],
+      "activity": "org.dolphinemu.dolphinemu/.ui.main.MainActivity",
+      "launchArgs": "VIEW;e AutoStartFile \"{file.path}\""
     },
     {
       "id": "dosbox-turbo",
@@ -456,7 +464,8 @@
           "label": "Official site",
           "url": "https://www.drastic-ds.com/"
         }
-      ]
+      ],
+      "activity": "com.dsemu.drastic/.DraSticActivity"
     },
     {
       "id": "duckstation",
@@ -482,7 +491,9 @@
           "label": "Official site",
           "url": "https://www.duckstation.org/"
         }
-      ]
+      ],
+      "activity": "com.github.stenzek.duckstation/.EmulationActivity",
+      "launchArgs": ";e bootPath \"{file.path}\";-ez resumeState 0"
     },
     {
       "id": "eden",
@@ -545,7 +556,9 @@
           "label": "Official site",
           "url": "https://www.epsxe.com/"
         }
-      ]
+      ],
+      "activity": "com.epsxe.ePSXe/.ePSXe",
+      "launchArgs": "MAIN;e com.epsxe.ePSXe.isoName \"{file.path}\""
     },
     {
       "id": "flycast",
@@ -566,7 +579,8 @@
           "label": "GitHub",
           "url": "https://github.com/flyinghead/flycast"
         }
-      ]
+      ],
+      "activity": "com.flycast.emulator/com.reicast.emulator.MainActivity"
     },
     {
       "id": "fmsx",
@@ -608,7 +622,8 @@
           "label": "Official site",
           "url": "https://www.fpsece.net/"
         }
-      ]
+      ],
+      "activity": "com.emulator.fpse/.Main"
     },
     {
       "id": "fpse64",
@@ -629,7 +644,8 @@
           "label": "Official site",
           "url": "https://www.fpsece.net/"
         }
-      ]
+      ],
+      "activity": "com.emulator.fpse64/.Main"
     },
     {
       "id": "gb-droid",
@@ -682,7 +698,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.GbaEmu/com.imagine.BaseActivity"
     },
     {
       "id": "gbc-emu",
@@ -703,7 +720,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.GbcEmu/com.imagine.BaseActivity"
     },
     {
       "id": "gbcc",
@@ -913,7 +931,8 @@
           "label": "GitHub",
           "url": "https://github.com/fzurita/m64plus_fz"
         }
-      ]
+      ],
+      "activity": "org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity"
     },
     {
       "id": "magic-dosbox",
@@ -960,7 +979,8 @@
           "label": "Official site",
           "url": "https://seleuco.com/mame4droid.html"
         }
-      ]
+      ],
+      "activity": "com.seleuco.mame4droid/.MAME4droid"
     },
     {
       "id": "mame4droid-current",
@@ -1049,7 +1069,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.MdEmu/com.imagine.BaseActivity"
     },
     {
       "id": "melonds",
@@ -1112,13 +1133,15 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.MsxEmu/com.imagine.BaseActivity"
     },
     {
       "id": "mupen64plus-ae",
       "name": "Mupen64Plus AE",
       "packages": [
-        "org.mupen64plusae"
+        "org.mupen64plusae",
+        "paulscode.android.mupen64plusae"
       ],
       "siteUrl": "https://github.com/mupen64plus-ae/mupen64plus-ae",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae",
@@ -1133,7 +1156,8 @@
           "label": "GitHub",
           "url": "https://github.com/mupen64plus-ae/mupen64plus-ae"
         }
-      ]
+      ],
+      "activity": "paulscode.android.mupen64plusae/.MainActivity"
     },
     {
       "id": "my-boy",
@@ -1154,7 +1178,8 @@
           "label": "Official site",
           "url": "https://fastemulator.blogspot.com/"
         }
-      ]
+      ],
+      "activity": "com.fastemulator.gba/.EmulatorActivity"
     },
     {
       "id": "n64-emu",
@@ -1212,7 +1237,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.NeoEmu/com.imagine.BaseActivity"
     },
     {
       "id": "nes-droid",
@@ -1249,7 +1275,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.NesEmu/com.imagine.BaseActivity"
     },
     {
       "id": "nethersx2",
@@ -1339,7 +1366,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.NgpEmu/com.imagine.BaseActivity"
     },
     {
       "id": "nood",
@@ -1602,22 +1630,23 @@
       "id": "pce-emu",
       "name": "PCE.emu",
       "packages": [
-        "com.PceEmu"
+        "com.explusalpha.PceEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
-      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.PceEmu",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.PceEmu",
       "links": [
         {
           "kind": "play",
           "label": "Play Store",
-          "url": "https://play.google.com/store/apps/details?id=com.PceEmu"
+          "url": "https://play.google.com/store/apps/details?id=com.explusalpha.PceEmu"
         },
         {
           "kind": "web",
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.PceEmu/com.imagine.BaseActivity"
     },
     {
       "id": "pizzaboy",
@@ -1753,7 +1782,9 @@
           "label": "Official site",
           "url": "https://www.ppsspp.org/"
         }
-      ]
+      ],
+      "activity": "org.ppsspp.ppsspp/.PpssppActivity",
+      "launchArgs": "VIEW;d \"{file.documenturi}\""
     },
     {
       "id": "ppsspp-gold",
@@ -1779,7 +1810,9 @@
           "label": "Official site",
           "url": "https://www.ppsspp.org/"
         }
-      ]
+      ],
+      "activity": "org.ppsspp.ppssppgold/org.ppsspp.ppsspp.PpssppActivity",
+      "launchArgs": "VIEW;d \"{file.documenturi}\""
     },
     {
       "id": "psx-emu",
@@ -1821,7 +1854,8 @@
           "label": "Official site",
           "url": "https://redream.io/"
         }
-      ]
+      ],
+      "activity": "io.recompiled.redream/.MainActivity"
     },
     {
       "id": "reicast",
@@ -1842,7 +1876,9 @@
           "label": "GitHub",
           "url": "https://github.com/reicast/reicast-emulator"
         }
-      ]
+      ],
+      "activity": "com.reicast.emulator/.MainActivity",
+      "launchArgs": "VIEW;d \"{file.path}\""
     },
     {
       "id": "residualvm",
@@ -2084,7 +2120,8 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.Snes9xPlus/com.imagine.BaseActivity"
     },
     {
       "id": "strato",
@@ -2402,6 +2439,165 @@
           "url": "https://github.com/retroshark/yuzu-android"
         }
       ]
+    },
+    {
+      "id": "ataroid",
+      "name": "Ataroid",
+      "packages": [
+        "com.androidemu.atari"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.atari",
+      "activity": "com.androidemu.atari/.EmulatorActivity"
+    },
+    {
+      "id": "gbcoid",
+      "name": "GBCoid",
+      "packages": [
+        "com.androidemu.gbc"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.gbc",
+      "activity": "com.androidemu.gbc/.EmulatorActivity"
+    },
+    {
+      "id": "gearoid",
+      "name": "Gearoid",
+      "packages": [
+        "com.androidemu.gg"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.gg",
+      "activity": "com.androidemu.gg/.EmulatorActivity"
+    },
+    {
+      "id": "gensoid",
+      "name": "Gensoid",
+      "packages": [
+        "com.androidemu.gens"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.gens",
+      "activity": "com.androidemu.gens/.EmulatorActivity"
+    },
+    {
+      "id": "m64plus-fz-pro",
+      "name": "M64Plus FZ Pro",
+      "packages": [
+        "org.mupen64plusae.v3.fzurita.pro"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
+      "activity": "org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity"
+    },
+    {
+      "id": "my-oldboy",
+      "name": "My OldBoy!",
+      "packages": [
+        "com.fastemulator.gbc"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gbc",
+      "activity": "com.fastemulator.gbc/.EmulatorActivity"
+    },
+    {
+      "id": "myboy-free",
+      "name": "My Boy! Free",
+      "packages": [
+        "com.fastemulator.gbafree"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gbafree",
+      "activity": "com.fastemulator.gbafree/com.fastemulator.gba.EmulatorActivity"
+    },
+    {
+      "id": "nesoid",
+      "name": "NESoid",
+      "packages": [
+        "com.androidemu.nes"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.nes",
+      "activity": "com.androidemu.nes/.EmulatorActivity"
+    },
+    {
+      "id": "superretro16-lite",
+      "name": "SuperRetro16 Lite",
+      "packages": [
+        "com.bubblezapgames.supergnes_lite"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.bubblezapgames.supergnes_lite",
+      "activity": "com.bubblezapgames.supergnes_lite/com.bubblezapgames.supergnes.IntentFilterActivity"
+    },
+    {
+      "id": "supergnes",
+      "name": "SuperRetro16",
+      "packages": [
+        "com.bubblezapgames.supergnes"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.bubblezapgames.supergnes",
+      "activity": "com.bubblezapgames.supergnes/.IntentFilterActivity"
+    },
+    {
+      "id": "colem-deluxe",
+      "name": "ColEm Deluxe",
+      "packages": [
+        "com.fms.colem.deluxe"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=com.fms.colem.deluxe",
+      "activity": "com.fms.colem.deluxe/com.fms.emulib.MainActivity"
+    },
+    {
+      "id": "dolphin-retroid",
+      "name": "Dolphin (Retroid fork)",
+      "packages": [
+        "org.dolphinemu.handheld"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.dolphinemu.handheld",
+      "activity": "org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity",
+      "launchArgs": "VIEW;e AutoStartFile \"{file.path}\""
+    },
+    {
+      "id": "yaba-sanshiro-2-pro",
+      "name": "Yaba Sanshiro 2 Pro",
+      "packages": [
+        "org.devmiyax.yabasanshioro2.pro"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.devmiyax.yabasanshioro2.pro",
+      "activity": "org.devmiyax.yabasanshioro2.pro/org.uoyabause.android.Yabause",
+      "launchArgs": "VIEW;e org.uoyabause.android.FileNameEx \"{file.path}\""
+    },
+    {
+      "id": "yaba-sanshiro-pro",
+      "name": "Yaba Sanshiro Pro",
+      "packages": [
+        "org.uoyabause.android.pro"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.uoyabause.android.pro",
+      "activity": "org.uoyabause.android.pro/org.uoyabause.android.Yabause",
+      "launchArgs": "VIEW;e org.uoyabause.android.FileNameEx \"{file.path}\""
+    },
+    {
+      "id": "yaba-sanshiro",
+      "name": "Yaba Sanshiro",
+      "packages": [
+        "org.uoyabause.android"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=org.uoyabause.android",
+      "activity": "org.uoyabause.android/.Yabause",
+      "launchArgs": "VIEW;e org.uoyabause.android.FileNameEx \"{file.path}\""
+    },
+    {
+      "id": "real3doplayer",
+      "name": "Real3DOPlayer",
+      "packages": [
+        "ru.vastness.altmer.real3doplayer"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ru.vastness.altmer.real3doplayer",
+      "activity": "ru.vastness.altmer.real3doplayer/.MainActivity",
+      "launchArgs": "VIEW;e cd \"{file.path}\""
+    },
+    {
+      "id": "iratajaguar",
+      "name": "IrataJaguar",
+      "packages": [
+        "ru.vastness.altmer.iratajaguar"
+      ],
+      "siteUrl": "https://play.google.com/store/apps/details?id=ru.vastness.altmer.iratajaguar",
+      "activity": "ru.vastness.altmer.iratajaguar/.MainActivity",
+      "launchArgs": "VIEW;e rom \"{file.path}\""
     }
   ],
   "systems": [
@@ -2582,6 +2778,10 @@
         {
           "emulator": "retroarch-32",
           "core": "4do_libretro"
+        },
+        {
+          "emulator": "real3doplayer",
+          "activity": "ru.vastness.altmer.real3doplayer/.MainActivity"
         }
       ]
     },
@@ -2595,7 +2795,8 @@
       "emulators": [
         {
           "emulator": "mame4droid",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.seleuco.mame4droid/.MAME4droid"
         },
         {
           "emulator": "mame4droid-current"
@@ -2707,6 +2908,102 @@
         {
           "emulator": "retroarch-32",
           "core": "fbalpha_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "hbmame_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "hbmame_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "hbmame_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2003_midway_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mame2003_midway_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mame2003_midway_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2009_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mame2009_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mame2009_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2015_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mame2015_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mame2015_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mame2016_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mame2016_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mame2016_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mamearcade_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mamearcade_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mamearcade_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mess2015_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mess2015_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mess2015_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "ume2015_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "ume2015_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "ume2015_libretro"
         }
       ]
     },
@@ -2784,6 +3081,46 @@
         {
           "emulator": "retroarch-32",
           "core": "mame_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha2012_cps1_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fbalpha2012_cps1_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fbalpha2012_cps1_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha2012_cps2_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fbalpha2012_cps2_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fbalpha2012_cps2_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha2012_cps3_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fbalpha2012_cps3_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fbalpha2012_cps3_libretro"
+        },
+        {
+          "emulator": "neo-emu",
+          "activity": "com.explusalpha.NeoEmu/com.imagine.BaseActivity"
         }
       ]
     },
@@ -2797,7 +3134,8 @@
       "emulators": [
         {
           "emulator": "a2600-emu",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.explusalpha.A2600Emu/com.imagine.BaseActivity"
         },
         {
           "emulator": "retroarch",
@@ -2822,6 +3160,10 @@
         {
           "emulator": "retroarch-32",
           "core": "stella2014_libretro"
+        },
+        {
+          "emulator": "ataroid",
+          "activity": "com.androidemu.atari/.EmulatorActivity"
         }
       ]
     },
@@ -2848,6 +3190,18 @@
         {
           "emulator": "retroarch-32",
           "core": "atari800_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "a5200_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "a5200_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "a5200_libretro"
         }
       ]
     },
@@ -2893,6 +3247,18 @@
         {
           "emulator": "retroarch-32",
           "core": "squirreljme_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "freej2me_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "freej2me_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "freej2me_libretro"
         }
       ]
     },
@@ -2984,6 +3350,10 @@
         {
           "emulator": "retroarch-32",
           "core": "cygne_libretro"
+        },
+        {
+          "emulator": "iratajaguar",
+          "activity": "ru.vastness.altmer.iratajaguar/.MainActivity"
         }
       ]
     },
@@ -3047,7 +3417,8 @@
           "emulator": "lemuroid"
         },
         {
-          "emulator": "c64-emu"
+          "emulator": "c64-emu",
+          "activity": "com.explusalpha.C64Emu/com.imagine.BaseActivity"
         },
         {
           "emulator": "c64-jahnke"
@@ -3078,6 +3449,42 @@
         {
           "emulator": "retroarch-32",
           "core": "vice_x64sc_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "frodo_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "frodo_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "frodo_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vice_xscpu64_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_xscpu64_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_xscpu64_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "x64sdl_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "x64sdl_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "x64sdl_libretro"
         }
       ]
     },
@@ -3134,6 +3541,18 @@
         {
           "emulator": "retroarch-32",
           "core": "uae4arm_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fsuae_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fsuae_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fsuae_libretro"
         }
       ]
     },
@@ -3278,6 +3697,42 @@
         {
           "emulator": "retroarch-32",
           "core": "dosbox_svn_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_core_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "dosbox_core_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "dosbox_core_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "dosbox_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "dosbox_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dosbox_svn_ce_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "dosbox_svn_ce_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "dosbox_svn_ce_libretro"
         }
       ]
     },
@@ -3294,7 +3749,8 @@
           "favourite": true
         },
         {
-          "emulator": "msx-emu"
+          "emulator": "msx-emu",
+          "activity": "com.explusalpha.MsxEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "openmsx"
@@ -3412,6 +3868,18 @@
         {
           "emulator": "retroarch-32",
           "core": "quasi88_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "nekop2_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "nekop2_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "nekop2_libretro"
         }
       ]
     },
@@ -3434,7 +3902,8 @@
           "emulator": "classicboy-lite"
         },
         {
-          "emulator": "pce-emu"
+          "emulator": "pce-emu",
+          "activity": "com.explusalpha.PceEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "retroarch",
@@ -3471,6 +3940,18 @@
         {
           "emulator": "retroarch-32",
           "core": "geargrafx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_supergrafx_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mednafen_supergrafx_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mednafen_supergrafx_libretro"
         }
       ]
     },
@@ -3670,7 +4151,8 @@
           "emulator": "mikage"
         },
         {
-          "emulator": "citra-nightly"
+          "emulator": "citra-nightly",
+          "activity": "org.citra.emu/.ui.main.MainActivity"
         },
         {
           "emulator": "citra-mmj"
@@ -3698,6 +4180,18 @@
         {
           "emulator": "retroarch-32",
           "core": "citra2018_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "citra_canary_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "citra_canary_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "citra_canary_libretro"
         }
       ]
     },
@@ -3714,7 +4208,8 @@
           "favourite": true
         },
         {
-          "emulator": "drastic"
+          "emulator": "drastic",
+          "activity": "com.dsemu.drastic/.DraSticActivity"
         },
         {
           "emulator": "lemuroid"
@@ -3776,7 +4271,8 @@
           "emulator": "classicboy-lite"
         },
         {
-          "emulator": "gbc-emu"
+          "emulator": "gbc-emu",
+          "activity": "com.explusalpha.GbcEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "nostalgia-gbc"
@@ -3873,6 +4369,38 @@
         {
           "emulator": "retroarch-32",
           "core": "vba_next_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "emux_gb_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "emux_gb_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "emux_gb_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fixgb_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fixgb_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fixgb_libretro"
+        },
+        {
+          "emulator": "gbcoid",
+          "activity": "com.androidemu.gbc/.EmulatorActivity"
+        },
+        {
+          "emulator": "my-oldboy",
+          "activity": "com.fastemulator.gbc/.EmulatorActivity"
         }
       ]
     },
@@ -4005,7 +4533,8 @@
       "emulators": [
         {
           "emulator": "my-boy",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.fastemulator.gba/.EmulatorActivity"
         },
         {
           "emulator": "pizzaboy"
@@ -4014,7 +4543,8 @@
           "emulator": "john-gba"
         },
         {
-          "emulator": "gba-emu"
+          "emulator": "gba-emu",
+          "activity": "com.explusalpha.GbaEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "lemuroid"
@@ -4108,6 +4638,46 @@
         {
           "emulator": "retroarch-32",
           "core": "gpsp_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "meteor_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "meteor_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "meteor_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "tempgba_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "tempgba_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "tempgba_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vbam_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vbam_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vbam_libretro"
+        },
+        {
+          "emulator": "myboy-free",
+          "activity": "com.fastemulator.gbafree/com.fastemulator.gba.EmulatorActivity"
         }
       ]
     },
@@ -4143,7 +4713,8 @@
       "emulators": [
         {
           "emulator": "nes-emu",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.explusalpha.NesEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "nostalgia-nes"
@@ -4228,6 +4799,46 @@
         {
           "emulator": "retroarch-32",
           "core": "fceux_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bnes_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bnes_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bnes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "emux_nes_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "emux_nes_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "emux_nes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "fixnes_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fixnes_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fixnes_libretro"
+        },
+        {
+          "emulator": "nesoid",
+          "activity": "com.androidemu.nes/.EmulatorActivity"
         }
       ]
     },
@@ -4241,7 +4852,8 @@
       "emulators": [
         {
           "emulator": "snes9x-ex",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.explusalpha.Snes9xPlus/com.imagine.BaseActivity"
         },
         {
           "emulator": "nostalgia-snes"
@@ -4377,6 +4989,146 @@
         {
           "emulator": "retroarch-32",
           "core": "bsnes_mercury_performance_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes2014_accuracy_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bsnes2014_accuracy_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bsnes2014_accuracy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes2014_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bsnes2014_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bsnes2014_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes2014_performance_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bsnes2014_performance_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bsnes2014_performance_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_cplusplus98_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bsnes_cplusplus98_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bsnes_cplusplus98_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "bsnes_hd_beta_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bsnes_hd_beta_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bsnes_hd_beta_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "higan_sfc_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "higan_sfc_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "higan_sfc_balanced_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "higan_sfc_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "higan_sfc_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "higan_sfc_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_snes_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mednafen_snes_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mednafen_snes_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_supafaust_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mednafen_supafaust_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mednafen_supafaust_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mesen-s_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mesen-s_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mesen-s_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "snes9x2005_plus_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "snes9x2005_plus_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "snes9x2005_plus_libretro"
+        },
+        {
+          "emulator": "superretro16-lite",
+          "activity": "com.bubblezapgames.supergnes_lite/com.bubblezapgames.supergnes.IntentFilterActivity"
+        },
+        {
+          "emulator": "supergnes",
+          "activity": "com.bubblezapgames.supergnes/.IntentFilterActivity"
         }
       ]
     },
@@ -4532,10 +5284,12 @@
       "emulators": [
         {
           "emulator": "mupen64plus-ae",
-          "favourite": true
+          "favourite": true,
+          "activity": "paulscode.android.mupen64plusae/.MainActivity"
         },
         {
-          "emulator": "m64plus-fz"
+          "emulator": "m64plus-fz",
+          "activity": "org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity"
         },
         {
           "emulator": "nood"
@@ -4578,6 +5332,58 @@
         {
           "emulator": "retroarch-32",
           "core": "parallel_n64_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mupen64plus_next_develop_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mupen64plus_next_develop_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mupen64plus_next_develop_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mupen64plus_next_gles2_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mupen64plus_next_gles2_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mupen64plus_next_gles2_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mupen64plus_next_gles3_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mupen64plus_next_gles3_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mupen64plus_next_gles3_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "parallel_n64_debug_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "parallel_n64_debug_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "parallel_n64_debug_libretro"
+        },
+        {
+          "emulator": "m64plus-fz-pro",
+          "activity": "org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity"
         }
       ]
     },
@@ -4591,7 +5397,8 @@
       "emulators": [
         {
           "emulator": "dolphin",
-          "favourite": true
+          "favourite": true,
+          "activity": "org.dolphinemu.dolphinemu/.ui.main.MainActivity"
         },
         {
           "emulator": "retroarch",
@@ -4604,6 +5411,34 @@
         {
           "emulator": "retroarch-32",
           "core": "dolphin_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "dolphin_launcher_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "dolphin_launcher_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "dolphin_launcher_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "ishiiruka_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "ishiiruka_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "ishiiruka_libretro"
+        },
+        {
+          "emulator": "dolphin-retroid",
+          "activity": "org.dolphinemu.handheld/org.dolphinemu.dolphinemu.ui.main.MainActivity"
         }
       ]
     },
@@ -4860,13 +5695,16 @@
       "emulators": [
         {
           "emulator": "flycast",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.flycast.emulator/com.reicast.emulator.MainActivity"
         },
         {
-          "emulator": "redream"
+          "emulator": "redream",
+          "activity": "io.recompiled.redream/.MainActivity"
         },
         {
-          "emulator": "reicast"
+          "emulator": "reicast",
+          "activity": "com.reicast.emulator/.MainActivity"
         },
         {
           "emulator": "retroarch",
@@ -4879,6 +5717,30 @@
         {
           "emulator": "retroarch-32",
           "core": "flycast_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "flycast_gles2_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "flycast_gles2_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "flycast_gles2_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "retrodream_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "retrodream_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "retrodream_libretro"
         }
       ]
     },
@@ -5046,6 +5908,22 @@
         {
           "emulator": "retroarch-32",
           "core": "picodrive_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "emux_sms_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "emux_sms_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "emux_sms_libretro"
+        },
+        {
+          "emulator": "gearoid",
+          "activity": "com.androidemu.gg/.EmulatorActivity"
         }
       ]
     },
@@ -5133,7 +6011,8 @@
       "emulators": [
         {
           "emulator": "md-emu",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.explusalpha.MdEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "lemuroid"
@@ -5188,6 +6067,22 @@
         {
           "emulator": "retroarch-32",
           "core": "clownmdemu_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "genesis_plus_gx_wide_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "genesis_plus_gx_wide_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "genesis_plus_gx_wide_libretro"
+        },
+        {
+          "emulator": "gensoid",
+          "activity": "com.androidemu.gens/.EmulatorActivity"
         }
       ]
     },
@@ -5232,6 +6127,42 @@
         {
           "emulator": "retroarch-32",
           "core": "yabasanshiro_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "kronos_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "kronos_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "kronos_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "yabause_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "yabause_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "yabause_libretro"
+        },
+        {
+          "emulator": "yaba-sanshiro-2-pro",
+          "activity": "org.devmiyax.yabasanshioro2.pro/org.uoyabause.android.Yabause"
+        },
+        {
+          "emulator": "yaba-sanshiro-pro",
+          "activity": "org.uoyabause.android.pro/org.uoyabause.android.Yabause"
+        },
+        {
+          "emulator": "yaba-sanshiro",
+          "activity": "org.uoyabause.android/.Yabause"
         }
       ]
     },
@@ -5267,7 +6198,8 @@
       "emulators": [
         {
           "emulator": "ngp-emu",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.explusalpha.NgpEmu/com.imagine.BaseActivity"
         },
         {
           "emulator": "lemuroid"
@@ -5301,6 +6233,18 @@
         {
           "emulator": "retroarch-32",
           "core": "handy_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "race_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "race_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "race_libretro"
         }
       ]
     },
@@ -5348,16 +6292,19 @@
       "emulators": [
         {
           "emulator": "duckstation",
-          "favourite": true
+          "favourite": true,
+          "activity": "com.github.stenzek.duckstation/.EmulationActivity"
         },
         {
-          "emulator": "epsxe"
+          "emulator": "epsxe",
+          "activity": "com.epsxe.ePSXe/.ePSXe"
         },
         {
           "emulator": "psx-emu"
         },
         {
-          "emulator": "fpse"
+          "emulator": "fpse",
+          "activity": "com.emulator.fpse/.Main"
         },
         {
           "emulator": "lemuroid"
@@ -5369,7 +6316,8 @@
           "emulator": "classicboy-lite"
         },
         {
-          "emulator": "fpse64"
+          "emulator": "fpse64",
+          "activity": "com.emulator.fpse64/.Main"
         },
         {
           "emulator": "silverarrow"
@@ -5409,6 +6357,78 @@
         {
           "emulator": "retroarch-32",
           "core": "mednafen_psx_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "duckstation_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "duckstation_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "duckstation_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "mednafen_psx_hw_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mednafen_psx_hw_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mednafen_psx_hw_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "pcsx1_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "pcsx1_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "pcsx1_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "pcsx_rearmed_interpreter_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "pcsx_rearmed_interpreter_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "pcsx_rearmed_interpreter_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "pcsx_rearmed_neon_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "pcsx_rearmed_neon_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "pcsx_rearmed_neon_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "rustation_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "rustation_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "rustation_libretro"
         }
       ]
     },
@@ -5422,7 +6442,8 @@
       "emulators": [
         {
           "emulator": "aethersx2",
-          "favourite": true
+          "favourite": true,
+          "activity": "xyz.aethersx2.android/.EmulationActivity"
         },
         {
           "emulator": "nethersx2"
@@ -5483,10 +6504,12 @@
       "emulators": [
         {
           "emulator": "ppsspp",
-          "favourite": true
+          "favourite": true,
+          "activity": "org.ppsspp.ppsspp/.PpssppActivity"
         },
         {
-          "emulator": "ppsspp-gold"
+          "emulator": "ppsspp-gold",
+          "activity": "org.ppsspp.ppssppgold/org.ppsspp.ppsspp.PpssppActivity"
         },
         {
           "emulator": "retroarch",
@@ -5522,7 +6545,20 @@
       "folder": "xbox",
       "hue": 312,
       "mame": false,
-      "emulators": []
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "directxbox_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "directxbox_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "directxbox_libretro"
+        }
+      ]
     },
     {
       "id": "xbox360",
@@ -5551,6 +6587,1416 @@
         {
           "emulator": "retroarch-32",
           "core": "same_cdi_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "cdi2015_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "cdi2015_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "cdi2015_libretro"
+        }
+      ]
+    },
+    {
+      "id": "zx81",
+      "name": "Sinclair - ZX 81",
+      "folder": "ZX81",
+      "romExtensions": [
+        "p",
+        "t81",
+        "tzx"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "81_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "81_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "81_libretro"
+        }
+      ]
+    },
+    {
+      "id": "arduboy",
+      "name": "Arduboy",
+      "folder": "Arduboy",
+      "romExtensions": [
+        "hex"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "arduous_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "arduous_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "arduous_libretro"
+        }
+      ]
+    },
+    {
+      "id": "bk",
+      "name": "Elektronika - BK-0010/BK-0011",
+      "folder": "BK-0010/BK-0011(M)",
+      "romExtensions": [
+        "bin"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "bk_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "bk_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "bk_libretro"
+        }
+      ]
+    },
+    {
+      "id": "doom3",
+      "name": "Doom 3",
+      "folder": "Doom 3 Game Engine",
+      "romExtensions": [
+        "pk4"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "boom3_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "boom3_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "boom3_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "boom3_xp_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "boom3_xp_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "boom3_xp_libretro"
+        }
+      ]
+    },
+    {
+      "id": "chailove",
+      "name": "ChaiLove",
+      "folder": "ChaiLove",
+      "romExtensions": [
+        "chai",
+        "chailove"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "chailove_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "chailove_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "chailove_libretro"
+        }
+      ]
+    },
+    {
+      "id": "cruzes",
+      "name": "Cruzes",
+      "folder": "Cruzes",
+      "romExtensions": [
+        "game"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "cruzes_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "cruzes_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "cruzes_libretro"
+        }
+      ]
+    },
+    {
+      "id": "daphne",
+      "name": "Arcade",
+      "folder": "Arcade (various)",
+      "romExtensions": [
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "daphne_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "daphne_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "daphne_libretro"
+        }
+      ]
+    },
+    {
+      "id": "dinothawr",
+      "name": "Dinothawr",
+      "folder": "Dinothawr Game Engine",
+      "romExtensions": [
+        "game"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "dinothawr_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "dinothawr_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "dinothawr_libretro"
+        }
+      ]
+    },
+    {
+      "id": "wolfenstein3d",
+      "name": "Wolfenstein 3D",
+      "folder": "Wolfenstein 3D Game Engine",
+      "romExtensions": [
+        "exe",
+        "n3d",
+        "pk3",
+        "sdm",
+        "sod",
+        "wl1",
+        "wl6"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "ecwolf_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "ecwolf_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "ecwolf_libretro"
+        }
+      ]
+    },
+    {
+      "id": "chip8",
+      "name": "CHIP-8",
+      "folder": "CHIP-8",
+      "romExtensions": [
+        "bin",
+        "ch8",
+        "rom"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "emux_chip8_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "emux_chip8_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "emux_chip8_libretro"
+        }
+      ]
+    },
+    {
+      "id": "neogeo",
+      "name": "Arcade",
+      "folder": "Neo Geo",
+      "romExtensions": [
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "fbalpha2012_neogeo_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "fbalpha2012_neogeo_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "fbalpha2012_neogeo_libretro"
+        }
+      ]
+    },
+    {
+      "id": "intellivision",
+      "name": "Mattel - Intellivision",
+      "folder": "Intellivision",
+      "romExtensions": [
+        "bin",
+        "int",
+        "rom"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "freeintv_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "freeintv_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "freeintv_libretro"
+        }
+      ]
+    },
+    {
+      "id": "colecovision",
+      "name": "Coleco - ColecoVision",
+      "folder": "ColecoVision",
+      "romExtensions": [
+        "bin",
+        "col",
+        "cv",
+        "rom"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "gearcoleco_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "gearcoleco_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "gearcoleco_libretro"
+        },
+        {
+          "emulator": "colem-deluxe",
+          "activity": "com.fms.colem.deluxe/com.fms.emulib.MainActivity"
+        }
+      ]
+    },
+    {
+      "id": "gme",
+      "name": "Game Music Emu",
+      "folder": "Music",
+      "romExtensions": [
+        "ay",
+        "gbs",
+        "gym",
+        "hes",
+        "kss",
+        "nsf",
+        "nsfe",
+        "sap",
+        "spc",
+        "vgm",
+        "vgz",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "gme_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "gme_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "gme_libretro"
+        }
+      ]
+    },
+    {
+      "id": "lowresnx",
+      "name": "LowRes NX",
+      "folder": "LowRes NX",
+      "romExtensions": [
+        "nx"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "lowresnx_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "lowresnx_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "lowresnx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "lutro",
+      "name": "Lua Engine",
+      "folder": "Lutro",
+      "romExtensions": [
+        "love",
+        "lua",
+        "lutro"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "lutro_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "lutro_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "lutro_libretro"
+        }
+      ]
+    },
+    {
+      "id": "movie",
+      "name": "MPV",
+      "folder": "MPV",
+      "romExtensions": [
+        "3g2",
+        "3gp",
+        "asf",
+        "avi",
+        "divx",
+        "f4f",
+        "f4v",
+        "flac",
+        "flv",
+        "m2p",
+        "m2ts",
+        "m4a",
+        "mkv",
+        "mov",
+        "mp3",
+        "mp4",
+        "mpeg",
+        "mpg",
+        "mxf",
+        "ogg",
+        "ogm",
+        "ps",
+        "ts",
+        "vob",
+        "wav",
+        "webm",
+        "wma",
+        "wmv"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mpv_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mpv_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mpv_libretro"
+        }
+      ]
+    },
+    {
+      "id": "bomberman",
+      "name": "Mr.Boom",
+      "folder": "Mr.Boom",
+      "romExtensions": [
+        "desktop"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mrboom_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mrboom_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mrboom_libretro"
+        }
+      ]
+    },
+    {
+      "id": "palm",
+      "name": "Palm OS",
+      "folder": "Palm OS",
+      "romExtensions": [
+        "img",
+        "pdb",
+        "pqa",
+        "prc"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "mu_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "mu_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "mu_libretro"
+        }
+      ]
+    },
+    {
+      "id": "nxengine",
+      "name": "Cave Story",
+      "folder": "Cave Story Game Engine",
+      "romExtensions": [
+        "exe"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "nxengine_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "nxengine_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "nxengine_libretro"
+        }
+      ]
+    },
+    {
+      "id": "odyssey2",
+      "name": "Magnavox - Odyssey2 / Phillips Videopac+",
+      "folder": "Magnavox Odyssey2 / Phillips Videopac+",
+      "romExtensions": [
+        "bin"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "o2em_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "o2em_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "o2em_libretro"
+        }
+      ]
+    },
+    {
+      "id": "oberon",
+      "name": "Oberon RISC Emulator",
+      "folder": "Oberon RISC machine",
+      "romExtensions": [
+        "dsk"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "oberon_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "oberon_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "oberon_libretro"
+        }
+      ]
+    },
+    {
+      "id": "openlara",
+      "name": "Tomb Raider",
+      "folder": "Classic Tomb Raider engine",
+      "romExtensions": [
+        "phd",
+        "psx",
+        "tr2"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "openlara_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "openlara_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "openlara_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pc",
+      "name": "PC",
+      "folder": "PC",
+      "romExtensions": [
+        "bat",
+        "com",
+        "conf",
+        "exe"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "pcem_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "pcem_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "pcem_libretro"
+        }
+      ]
+    },
+    {
+      "id": "music",
+      "name": "PocketCDG",
+      "folder": "Music",
+      "romExtensions": [
+        "cdg"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "pocketcdg_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "pocketcdg_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "pocketcdg_libretro"
+        }
+      ]
+    },
+    {
+      "id": "supervision",
+      "name": "Watara - Supervision",
+      "folder": "Supervision",
+      "romExtensions": [
+        "bin",
+        "sv"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "potator_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "potator_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "potator_libretro"
+        }
+      ]
+    },
+    {
+      "id": "x68000",
+      "name": "Sharp - X68000",
+      "folder": "Sharp X68000",
+      "romExtensions": [
+        "2hd",
+        "88d",
+        "cmd",
+        "d88",
+        "dim",
+        "dup",
+        "hdf",
+        "hdm",
+        "img",
+        "m3u",
+        "xdf",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "px68k_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "px68k_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "px68k_libretro"
+        }
+      ]
+    },
+    {
+      "id": "redbook",
+      "name": "Redbook Audio Player",
+      "folder": "Redbook",
+      "romExtensions": [
+        "bin",
+        "cue"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "redbook_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "redbook_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "redbook_libretro"
+        }
+      ]
+    },
+    {
+      "id": "flashback",
+      "name": "Flashback",
+      "folder": "Flashback Game Engine",
+      "romExtensions": [
+        "aba",
+        "lev",
+        "map",
+        "seq"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "reminiscence_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "reminiscence_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "reminiscence_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pico8",
+      "name": "PICO-8",
+      "folder": "PICO8",
+      "romExtensions": [
+        "p8",
+        "png"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "retro8_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "retro8_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "retro8_libretro"
+        }
+      ]
+    },
+    {
+      "id": "megaduck",
+      "name": "Mega Duck / Cougar Boy",
+      "folder": "Mega Duck",
+      "romExtensions": [
+        "bin"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "sameduck_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "sameduck_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "sameduck_libretro"
+        }
+      ]
+    },
+    {
+      "id": "samcoupe",
+      "name": "SAM Coupe",
+      "folder": "SAM coupe",
+      "romExtensions": [
+        "dsk",
+        "mgt",
+        "sad",
+        "sbt"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "simcp_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "simcp_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "simcp_libretro"
+        }
+      ]
+    },
+    {
+      "id": "tic80",
+      "name": "TIC-80",
+      "folder": "TIC-80",
+      "romExtensions": [
+        "tic"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "tic80_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "tic80_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "tic80_libretro"
+        }
+      ]
+    },
+    {
+      "id": "quake",
+      "name": "Quake",
+      "folder": "Quake Game Engine",
+      "romExtensions": [
+        "pak"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "tyrquake_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "tyrquake_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "tyrquake_libretro"
+        }
+      ]
+    },
+    {
+      "id": "uzebox",
+      "name": "Uzebox",
+      "folder": "Uzebox",
+      "romExtensions": [
+        "uze"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "uzem_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "uzem_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "uzem_libretro"
+        }
+      ]
+    },
+    {
+      "id": "vectrex",
+      "name": "GCE - Vectrex",
+      "folder": "Vectrex",
+      "romExtensions": [
+        "bin",
+        "vec"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vecx_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vecx_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vecx_libretro"
+        }
+      ]
+    },
+    {
+      "id": "vmuse",
+      "name": "VeMUlator",
+      "folder": "SEGA Visual Memory Unit",
+      "romExtensions": [
+        "bin",
+        "dci",
+        "vms"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vemulator_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vemulator_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vemulator_libretro"
+        }
+      ]
+    },
+    {
+      "id": "c128",
+      "name": "Commodore - C128",
+      "folder": "C128",
+      "romExtensions": [
+        "bin",
+        "cmd",
+        "crt",
+        "d2m",
+        "d4m",
+        "d64",
+        "d6z",
+        "d71",
+        "d7z",
+        "d80",
+        "d81",
+        "d82",
+        "d8z",
+        "g41",
+        "g4z",
+        "g64",
+        "g6z",
+        "gz",
+        "m3u",
+        "nbz",
+        "nib",
+        "p00",
+        "prg",
+        "t64",
+        "tap",
+        "vfl",
+        "vsf",
+        "x64",
+        "x6z",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vice_x128_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_x128_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_x128_libretro"
+        }
+      ]
+    },
+    {
+      "id": "cbm2",
+      "name": "Commodore - CBM-II 6x0/7x0",
+      "folder": "CBM-II",
+      "romExtensions": [
+        "bin",
+        "cmd",
+        "crt",
+        "d2m",
+        "d4m",
+        "d64",
+        "d6z",
+        "d71",
+        "d7z",
+        "d80",
+        "d81",
+        "d82",
+        "d8z",
+        "g41",
+        "g4z",
+        "g64",
+        "g6z",
+        "gz",
+        "m3u",
+        "nbz",
+        "nib",
+        "p00",
+        "prg",
+        "t64",
+        "tap",
+        "vfl",
+        "vsf",
+        "x64",
+        "x6z",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vice_xcbm2_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_xcbm2_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_xcbm2_libretro"
+        }
+      ]
+    },
+    {
+      "id": "cbm5x0",
+      "name": "Commodore - CBM-II 5x0",
+      "folder": "CBM-5x0",
+      "romExtensions": [
+        "bin",
+        "cmd",
+        "crt",
+        "d2m",
+        "d4m",
+        "d64",
+        "d6z",
+        "d71",
+        "d7z",
+        "d80",
+        "d81",
+        "d82",
+        "d8z",
+        "g41",
+        "g4z",
+        "g64",
+        "g6z",
+        "gz",
+        "m3u",
+        "nbz",
+        "nib",
+        "p00",
+        "prg",
+        "t64",
+        "tap",
+        "vfl",
+        "vsf",
+        "x64",
+        "x6z",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vice_xcbm5x0_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_xcbm5x0_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_xcbm5x0_libretro"
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "name": "Commodore - PET",
+      "folder": "PET",
+      "romExtensions": [
+        "bin",
+        "cmd",
+        "crt",
+        "d2m",
+        "d4m",
+        "d64",
+        "d6z",
+        "d71",
+        "d7z",
+        "d80",
+        "d81",
+        "d82",
+        "d8z",
+        "g41",
+        "g4z",
+        "g64",
+        "g6z",
+        "gz",
+        "m3u",
+        "nbz",
+        "nib",
+        "p00",
+        "prg",
+        "t64",
+        "tap",
+        "vfl",
+        "vsf",
+        "x64",
+        "x6z",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vice_xpet_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_xpet_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_xpet_libretro"
+        }
+      ]
+    },
+    {
+      "id": "plus4",
+      "name": "Commodore - PLUS/4",
+      "folder": "PLUS/4",
+      "romExtensions": [
+        "bin",
+        "cmd",
+        "crt",
+        "d2m",
+        "d4m",
+        "d64",
+        "d6z",
+        "d71",
+        "d7z",
+        "d80",
+        "d81",
+        "d82",
+        "d8z",
+        "g41",
+        "g4z",
+        "g64",
+        "g6z",
+        "gz",
+        "m3u",
+        "nbz",
+        "nib",
+        "p00",
+        "prg",
+        "t64",
+        "tap",
+        "vfl",
+        "vsf",
+        "x64",
+        "x6z",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vice_xplus4_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_xplus4_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_xplus4_libretro"
+        }
+      ]
+    },
+    {
+      "id": "vic20",
+      "name": "Commodore - VIC-20",
+      "folder": "VIC-20",
+      "romExtensions": [
+        "20",
+        "40",
+        "60",
+        "a0",
+        "b0",
+        "bin",
+        "cmd",
+        "crt",
+        "d2m",
+        "d4m",
+        "d64",
+        "d6z",
+        "d71",
+        "d7z",
+        "d80",
+        "d81",
+        "d82",
+        "d8z",
+        "g41",
+        "g4z",
+        "g64",
+        "g6z",
+        "gz",
+        "m3u",
+        "nbz",
+        "nib",
+        "p00",
+        "prg",
+        "rom",
+        "t64",
+        "tap",
+        "vfl",
+        "vsf",
+        "x64",
+        "x6z",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vice_xvic_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vice_xvic_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vice_xvic_libretro"
+        }
+      ]
+    },
+    {
+      "id": "quake2",
+      "name": "Quake II - Ground Zero",
+      "folder": "Quake II Game Engine",
+      "romExtensions": [
+        "pak"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vitaquake2-rogue_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vitaquake2-rogue_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vitaquake2-rogue_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vitaquake2-xatrix_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vitaquake2-xatrix_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vitaquake2-xatrix_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vitaquake2-zaero_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vitaquake2-zaero_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vitaquake2-zaero_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vitaquake2_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vitaquake2_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vitaquake2_libretro"
+        }
+      ]
+    },
+    {
+      "id": "quake3",
+      "name": "Quake III: Arena",
+      "folder": "Quake 3 Game Engine",
+      "romExtensions": [
+        "pk3"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "vitaquake3_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vitaquake3_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vitaquake3_libretro"
+        },
+        {
+          "emulator": "retroarch",
+          "core": "vitavoyager_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "vitavoyager_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "vitavoyager_libretro"
+        }
+      ]
+    },
+    {
+      "id": "wasm4",
+      "name": "WASM-4",
+      "folder": "WASM-4",
+      "romExtensions": [
+        "wasm"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "wasm4_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "wasm4_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "wasm4_libretro"
+        }
+      ]
+    },
+    {
+      "id": "sharpx1",
+      "name": "Sharp X1",
+      "folder": "Sharp X1",
+      "romExtensions": [
+        "2d",
+        "2hd",
+        "88d",
+        "cmd",
+        "d88",
+        "dup",
+        "dx1",
+        "hdm",
+        "tap",
+        "tfd",
+        "xdf",
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "x1_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "x1_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "x1_libretro"
+        }
+      ]
+    },
+    {
+      "id": "xrick",
+      "name": "Rick Dangerous",
+      "folder": "Rick Dangerous Game Engine",
+      "romExtensions": [
+        "zip"
+      ],
+      "emulators": [
+        {
+          "emulator": "retroarch",
+          "core": "xrick_libretro"
+        },
+        {
+          "emulator": "retroarch-plus",
+          "core": "xrick_libretro"
+        },
+        {
+          "emulator": "retroarch-32",
+          "core": "xrick_libretro"
         }
       ]
     }
