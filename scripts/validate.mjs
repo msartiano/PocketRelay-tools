@@ -157,6 +157,30 @@ check("config/repos/curated.json", (curated, rel) => {
   }
 });
 
+// ---- system-icons -----------------------------------------------------------
+
+{
+  const dir = join(root, "config", "system-icons");
+  if (!existsSync(dir)) {
+    problems.push("config/system-icons: missing directory");
+  } else {
+    const files = readdirSync(dir);
+    for (const f of files) {
+      if (f === "manifest.json") continue;
+      const m = /^([a-z0-9-]+)\.(svg|png)$/.exec(f);
+      if (!m) problems.push(`system-icons: bad file name "${f}" (want <safe>.svg|png)`);
+    }
+  }
+  const cfg = load("config/systems.json");
+  if (cfg) {
+    for (const sys of cfg.systems) {
+      if (sys.logoKey !== undefined && (typeof sys.logoKey !== "string" || !/^[a-z0-9-]+$/.test(sys.logoKey))) {
+        problems.push(`systems[] ${sys.id}: logoKey must be a safe [a-z0-9-]+ name, got ${JSON.stringify(sys.logoKey)}`);
+      }
+    }
+  }
+}
+
 // ---- report ------------------------------------------------------------------
 
 if (problems.length) {
