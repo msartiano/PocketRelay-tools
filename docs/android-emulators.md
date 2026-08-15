@@ -147,13 +147,13 @@ For the 64-bit build use `com.retroarch.aarch64` (and `com.retroarch.ra32` for 3
 ```
 am start \
   -n com.explusalpha.A2600Emu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
 ### AetherSX2
 
-- Package: `xyz.aethersx2.android`
+- Package: `xyz.aethersx2.android`, `xyz.aethersx2.custom`, `xyz.aethersx2.tturnip`, `xyz.aethersx2.cturnip`
 - Systems: ps2
 - Activity: `xyz.aethersx2.android.EmulationActivity`
 - Launch:
@@ -191,16 +191,30 @@ am start \
   -d {file.uri}
 ```
 
-### ARMSX3
+### APS3E
 
-- Package: `com.armsx3`
+- Package: `aenu.aps3e`
 - Systems: ps3
-
+- Activity: `aenu.aps3e.EmulatorActivity`
 - Launch:
 ```
 am start \
-  -p com.armsx3 \
-  -a android.intent.action.VIEW \
+  -n aenu.aps3e/aenu.aps3e.EmulatorActivity \
+  -a aenu.intent.action.APS3E \
+  -e iso_uri {file.uri} \
+  -d {file.uri}
+```
+
+### ARMSX3
+
+- Package: `com.armsx3`, `com.nanodata.armsx`, `come.nanodata.armsx2`, `come.nanodata.armsx2.debug`, `com.armsx2`
+- Systems: psx, ps2, ps3
+- Activity: `com.armsx2.Main`
+- Launch:
+```
+am start \
+  -n com.armsx3/com.armsx2.Main \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -213,20 +227,34 @@ am start \
 ```
 am start \
   -n com.androidemu.atari/com.androidemu.atari.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
+  -d {file.uri}
+```
+
+### AX360E
+
+- Package: `aenu.ax360e`, `aenu.ax360e.free`
+- Systems: xbox360
+- Activity: `aenu.ax360e.EmulatorActivity`
+- Launch:
+```
+am start \
+  -n aenu.ax360e/aenu.ax360e.EmulatorActivity \
+  -a aenu.intent.action.AX360E \
+  -e game_uri {file.uri} \
   -d {file.uri}
 ```
 
 ### Azahar
 
-- Package: `io.github.lime3ds.android`
+- Package: `io.github.lime3ds.android`, `org.azahar_emu.azahar`, `io.github.azaharplus.android`
 - Systems: n3ds
-
+- Activity: `org.citra.citra_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p io.github.lime3ds.android \
-  -a android.intent.action.VIEW \
+  -n io.github.lime3ds.android/org.citra.citra_emu.activities.EmulationActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -240,6 +268,19 @@ am start \
 am start \
   -p net.sourceforge.bochs \
   -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
+### Borked3DS
+
+- Package: `io.github.borked3ds.android`
+- Systems: n3ds
+- Activity: `io.github.borked3ds.android.activities.EmulationActivity`
+- Launch:
+```
+am start \
+  -n io.github.borked3ds.android/io.github.borked3ds.android.activities.EmulationActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -278,7 +319,20 @@ am start \
 ```
 am start \
   -n com.explusalpha.C64Emu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
+  -d {file.uri}
+```
+
+### CEMU
+
+- Package: `info.cemu.cemu`
+- Systems: wiiu
+- Activity: `info.cemu.cemu.emulation.EmulationActivity`
+- Launch:
+```
+am start \
+  -n info.cemu.cemu/info.cemu.cemu.emulation.EmulationActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -297,14 +351,14 @@ am start \
 
 ### Citra (MMJ)
 
-- Package: `org.citra.citra_emu`, `org.github.weihuoya.citra`
+- Package: `org.citra.citra_emu`, `org.github.weihuoya.citra`, `org.citra.citra_emu.canary`, `org.gamerytb.lemonade.canary`
 - Systems: n3ds
-
+- Activity: `org.citra.citra_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p org.citra.citra_emu \
-  -a android.intent.action.VIEW \
+  -n org.citra.citra_emu/org.citra.citra_emu.activities.EmulationActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -326,12 +380,12 @@ am start \
 
 - Package: `org.citron.citron_emu`
 - Systems: nsw
-
+- Activity: `org.citron.citron_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p org.citron.citron_emu \
-  -a android.intent.action.VIEW \
+  -n org.citron.citron_emu/org.citron.citron_emu.activities.EmulationActivity \
+  -a android.nfc.action.TECH_DISCOVERED \
   -d {file.uri}
 ```
 
@@ -402,7 +456,7 @@ am start \
 
 ### Dolphin
 
-- Package: `org.dolphinemu.dolphinemu`, `com.dolphin.emulator`, `org.dolphin.dolphinemu`
+- Package: `org.dolphinemu.dolphinemu`, `com.dolphin.emulator`, `org.dolphin.dolphinemu`, `org.mm.jr`, `org.mm.j`, `org.dolphinemu.mmjr`, `org.dolphinemu.mmjr3`, `org.dolphin.ishiirukadark`, `org.dolphinemu.primehack`, `org.shiiion.primehack`, `org.dolphinemu.dolphinemu.debug`, `com.joeyos.dolphinemu`
 - Systems: gcn, ngc, wii
 - Activity: `org.dolphinemu.dolphinemu.ui.main.MainActivity`
 - Launch:
@@ -450,7 +504,20 @@ am start \
 ```
 am start \
   -n com.dsemu.drastic/com.dsemu.drastic.DraSticActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### DroidArcadia
+
+- Package: `com.amigan.droidarcadia`
+- Systems: arcadia2001
+- Activity: `com.amigan.droidarcadia.MainActivity`
+- Launch:
+```
+am start \
+  -n com.amigan.droidarcadia/com.amigan.droidarcadia.MainActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -469,14 +536,14 @@ am start \
 
 ### Eden
 
-- Package: `dev.eden.eden_emulator`
+- Package: `dev.eden.eden_emulator`, `dev.legacy.eden_emulator`, `dev.eden.eden_nightly`, `dev.eden.eden_emulator.nightly`
 - Systems: nsw
-
+- Activity: `org.yuzu.yuzu_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p dev.eden.eden_emulator \
-  -a android.intent.action.VIEW \
+  -n dev.eden.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity \
+  -a android.nfc.action.TECH_DISCOVERED \
   -d {file.uri}
 ```
 
@@ -490,6 +557,34 @@ am start \
 am start \
   -p com.xiaoji.gamesirnsemulator.x.google \
   -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
+### EmuCore V
+
+- Package: `com.sbro.emucorev`
+- Systems: psvita
+- Activity: `com.sbro.emucorev.core.vita.Emulator`
+- Launch:
+```
+am start \
+  -n com.sbro.emucorev/com.sbro.emucorev.core.vita.Emulator \
+  -a com.sbro.emucorev.action.LAUNCH \
+  -e titleId {tags.vita_game_id} \
+  -d {file.uri}
+```
+
+### EmuCore X
+
+- Package: `com.sbro.emucorex`
+- Systems: ps2
+- Activity: `com.sbro.emucorex.MainActivity`
+- Launch:
+```
+am start \
+  -n com.sbro.emucorex/com.sbro.emucorex.MainActivity \
+  -a com.sbro.emucorex.action.LAUNCH_GAME \
+  -e com.sbro.emucorex.extra.GAME_PATH {file.uri} \
   -d {file.uri}
 ```
 
@@ -507,6 +602,32 @@ am start \
   -d {file.uri}
 ```
 
+### Flash Player
+
+- Package: `com.issess.flashplayer`
+- Systems: flash
+- Activity: `com.issess.flashplayer.player.FlashPlayerActivity`
+- Launch:
+```
+am start \
+  -n com.issess.flashplayer/com.issess.flashplayer.player.FlashPlayerActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### Flash Player Pro
+
+- Package: `com.issess.flashplayerpro`
+- Systems: flash
+- Activity: `com.issess.flashplayer.player.FlashPlayerActivity`
+- Launch:
+```
+am start \
+  -n com.issess.flashplayerpro/com.issess.flashplayer.player.FlashPlayerActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
 ### Flycast
 
 - Package: `com.flycast.emulator`
@@ -516,7 +637,7 @@ am start \
 ```
 am start \
   -n com.flycast.emulator/com.reicast.emulator.MainActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -542,7 +663,7 @@ am start \
 ```
 am start \
   -n com.emulator.fpse/com.emulator.fpse.Main \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -555,7 +676,7 @@ am start \
 ```
 am start \
   -n com.emulator.fpse64/com.emulator.fpse64.Main \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -594,7 +715,7 @@ am start \
 ```
 am start \
   -n com.explusalpha.GbaEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -607,7 +728,7 @@ am start \
 ```
 am start \
   -n com.explusalpha.GbcEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -646,7 +767,7 @@ am start \
 ```
 am start \
   -n com.androidemu.gg/com.androidemu.gg.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -672,7 +793,7 @@ am start \
 ```
 am start \
   -n com.androidemu.gens/com.androidemu.gens.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -702,6 +823,32 @@ am start \
   -d {file.uri}
 ```
 
+### Haku
+
+- Package: `com.rfandango.haku_x`
+- Systems: xbox
+- Activity: `com.rfandango.haku_x.LauncherActivity`
+- Launch:
+```
+am start \
+  -n com.rfandango.haku_x/com.rfandango.haku_x.LauncherActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### Infinity
+
+- Package: `me.dt2dev.infinity`
+- Systems: pico8
+- Activity: `me.dt2dev.infinity.SchemeActivity`
+- Launch:
+```
+am start \
+  -n me.dt2dev.infinity/me.dt2dev.infinity.SchemeActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
 ### IrataJaguar
 
 - Package: `ru.vastness.altmer.iratajaguar`
@@ -713,6 +860,32 @@ am start \
   -n ru.vastness.altmer.iratajaguar/ru.vastness.altmer.iratajaguar.MainActivity \
   -a android.intent.action.VIEW \
   -e rom {file.path} \
+  -d {file.uri}
+```
+
+### J2ME Loader
+
+- Package: `ru.playsoftware.j2meloader`
+- Systems: j2me
+- Activity: `ru.playsoftware.j2meloader.MainActivity`
+- Launch:
+```
+am start \
+  -n ru.playsoftware.j2meloader/ru.playsoftware.j2meloader.MainActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### J2ME Loader (woesss)
+
+- Package: `ru.woesss.j2meloader`
+- Systems: j2me
+- Activity: `ru.playsoftware.j2meloader.MainActivity`
+- Launch:
+```
+am start \
+  -n ru.woesss.j2meloader/ru.playsoftware.j2meloader.MainActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -794,6 +967,20 @@ am start \
   -d {file.uri}
 ```
 
+### Kenjinx
+
+- Package: `org.benjisc.android`, `org.kenjinx.android`
+- Systems: nsw
+- Activity: `org.kenjinx.android.MainActivity`
+- Launch:
+```
+am start \
+  -n org.benjisc.android/org.kenjinx.android.MainActivity \
+  -a org.kenjinx.android.LAUNCH_GAME \
+  -e bootPath {file.uri} \
+  -d {file.uri}
+```
+
 ### Lemuroid
 
 - Package: `com.swordfish.lemuroid`
@@ -807,16 +994,29 @@ am start \
   -d {file.uri}
 ```
 
+### LinkBoy
+
+- Package: `com.pixelrespawn.linkboy`
+- Systems: gb
+- Activity: `com.pixelrespawn.linkboy.EmulatorActivity`
+- Launch:
+```
+am start \
+  -n com.pixelrespawn.linkboy/com.pixelrespawn.linkboy.EmulatorActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
 ### Lynx.emu
 
 - Package: `com.explusalpha.LynxEmu`
 - Systems: lynx
-
+- Activity: `com.imagine.BaseActivity`
 - Launch:
 ```
 am start \
-  -p com.explusalpha.LynxEmu \
-  -a android.intent.action.VIEW \
+  -n com.explusalpha.LynxEmu/com.imagine.BaseActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -829,7 +1029,7 @@ am start \
 ```
 am start \
   -n org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -842,7 +1042,7 @@ am start \
 ```
 am start \
   -n org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -868,7 +1068,7 @@ am start \
 ```
 am start \
   -n com.seleuco.mame4droid/com.seleuco.mame4droid.MAME4droid \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -876,12 +1076,12 @@ am start \
 
 - Package: `com.seleuco.mame4d2024`
 - Systems: mame, fba
-
+- Activity: `com.seleuco.mame4droid.MAME4droid`
 - Launch:
 ```
 am start \
-  -p com.seleuco.mame4d2024 \
-  -a android.intent.action.VIEW \
+  -n com.seleuco.mame4d2024/com.seleuco.mame4droid.MAME4droid \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -898,6 +1098,19 @@ am start \
   -d {file.uri}
 ```
 
+### Mandarine
+
+- Package: `io.github.mandarine3ds.mandarine`
+- Systems: n3ds
+- Activity: `io.github.mandarine3ds.mandarine.activities.EmulationActivity`
+- Launch:
+```
+am start \
+  -n io.github.mandarine3ds.mandarine/io.github.mandarine3ds.mandarine.activities.EmulationActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
 ### MasterEmu
 
 - Package: `uk.co.philpotter.masteremu`
@@ -911,29 +1124,56 @@ am start \
   -d {file.uri}
 ```
 
+### MasterGear
+
+- Package: `com.fms.mg`
+- Systems: gg
+- Activity: `com.fms.emulib.MainActivity`
+- Launch:
+```
+am start \
+  -n com.fms.mg/com.fms.emulib.MainActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
 ### MD.emu
 
 - Package: `com.explusalpha.MdEmu`
-- Systems: gg, sms, genesis, megadrive
+- Systems: segacd, gg, sms, genesis, megadrive
 - Activity: `com.imagine.BaseActivity`
 - Launch:
 ```
 am start \
   -n com.explusalpha.MdEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
 ### melonDS
 
-- Package: `me.magnum.melonds`
+- Package: `me.magnum.melonds`, `me.magnum.melonds.nightly`, `me.magnum.melonds.dev`, `me.magnum.melondualds`
 - Systems: nds
-
+- Activity: `me.magnum.melonds.ui.emulator.EmulatorActivity`
 - Launch:
 ```
 am start \
-  -p me.magnum.melonds \
-  -a android.intent.action.VIEW \
+  -n me.magnum.melonds/me.magnum.melonds.ui.emulator.EmulatorActivity \
+  -a me.magnum.melonds.LAUNCH_ROM \
+  -e uri {file.uri} \
+  -d {file.uri}
+```
+
+### MiceWine
+
+- Package: `com.micewine.emu`
+- Systems: windows
+- Activity: `com.micewine.emu.activities.MainActivity`
+- Launch:
+```
+am start \
+  -n com.micewine.emu/com.micewine.emu.activities.MainActivity \
+  -a e exePath "{file.path}" \
   -d {file.uri}
 ```
 
@@ -959,20 +1199,20 @@ am start \
 ```
 am start \
   -n com.explusalpha.MsxEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
 ### Mupen64Plus AE
 
-- Package: `org.mupen64plusae`, `paulscode.android.mupen64plusae`
+- Package: `org.mupen64plusae`, `paulscode.android.mupen64plusae`, `org.mupen64plusae.v3.alpha`
 - Systems: n64
 - Activity: `paulscode.android.mupen64plusae.MainActivity`
 - Launch:
 ```
 am start \
   -n org.mupen64plusae/paulscode.android.mupen64plusae.MainActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -985,7 +1225,7 @@ am start \
 ```
 am start \
   -n com.fastemulator.gba/com.fastemulator.gba.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -998,20 +1238,20 @@ am start \
 ```
 am start \
   -n com.fastemulator.gbafree/com.fastemulator.gba.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
 ### My OldBoy!
 
-- Package: `com.fastemulator.gbc`
+- Package: `com.fastemulator.gbc`, `com.fastemulator.gbcfree`
 - Systems: gb, gbc
 - Activity: `com.fastemulator.gbc.EmulatorActivity`
 - Launch:
 ```
 am start \
   -n com.fastemulator.gbc/com.fastemulator.gbc.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -1043,14 +1283,14 @@ am start \
 
 ### NEO.emu
 
-- Package: `com.explusalpha.NeoEmu`
+- Package: `com.explusalpha.NeoEmu`, `com.explusalpha.neoemu`
 - Systems: mame, fba
 - Activity: `com.imagine.BaseActivity`
 - Launch:
 ```
 am start \
   -n com.explusalpha.NeoEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -1063,7 +1303,7 @@ am start \
 ```
 am start \
   -n com.explusalpha.NesEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1089,7 +1329,7 @@ am start \
 ```
 am start \
   -n com.androidemu.nes/com.androidemu.nes.EmulatorActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
@@ -1154,20 +1394,20 @@ am start \
 ```
 am start \
   -n com.explusalpha.NgpEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
 ### Nood (N64)
 
 - Package: `com.hydra.noods`
-- Systems: n64
-
+- Systems: nds, n64
+- Activity: `com.hydra.noods.FileBrowser`
 - Launch:
 ```
 am start \
-  -p com.hydra.noods \
-  -a android.intent.action.VIEW \
+  -n com.hydra.noods/com.hydra.noods.FileBrowser \
+  -a e LaunchPath "{file.path}" \
   -d {file.uri}
 ```
 
@@ -1329,27 +1569,53 @@ am start \
 
 ### PCE.emu
 
-- Package: `com.explusalpha.PceEmu`
-- Systems: pce, tg16
+- Package: `com.explusalpha.PceEmu`, `com.PceEmu`
+- Systems: pce, tg16, supergrafx
 - Activity: `com.imagine.BaseActivity`
 - Launch:
 ```
 am start \
   -n com.explusalpha.PceEmu/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### PICO-8 Launcher
+
+- Package: `io.wip.pico8`
+- Systems: pico8
+- Activity: `com.godot.game.GodotAppLauncher`
+- Launch:
+```
+am start \
+  -n io.wip.pico8/com.godot.game.GodotAppLauncher \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### PicPic
+
+- Package: `com.sa_moo_rai.picpic`
+- Systems: pico8
+- Activity: `com.sa_moo_rai.picpic.MainActivity`
+- Launch:
+```
+am start \
+  -n com.sa_moo_rai.picpic/com.sa_moo_rai.picpic.MainActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
 ### Pizza Boy
 
-- Package: `it.dbtecno.pizzaboy`
-- Systems: gba
-
+- Package: `it.dbtecno.pizzaboy`, `it.dbtecno.pizzaboygba`
+- Systems: gb, gba
+- Activity: `it.dbtecno.pizzaboy.MainActivity`
 - Launch:
 ```
 am start \
-  -p it.dbtecno.pizzaboy \
-  -a android.intent.action.VIEW \
+  -n it.dbtecno.pizzaboy/it.dbtecno.pizzaboy.MainActivity \
+  -a e rom_uri "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1368,27 +1634,27 @@ am start \
 
 ### Pizza Boy C Pro
 
-- Package: `it.dbtecno.pizzaboycpro`
-- Systems: gb, gbc
-
+- Package: `it.dbtecno.pizzaboycpro`, `it.dbtecno.pizzaboyscpro`
+- Systems: gb, gbc, gg
+- Activity: `it.dbtecno.pizzaboyscpro.MainActivity`
 - Launch:
 ```
 am start \
-  -p it.dbtecno.pizzaboycpro \
-  -a android.intent.action.VIEW \
+  -n it.dbtecno.pizzaboycpro/it.dbtecno.pizzaboyscpro.MainActivity \
+  -a e rom_uri "{file.uri}" \
   -d {file.uri}
 ```
 
 ### Pizza Boy Pro
 
-- Package: `it.dbtecno.pizzaboypro`
-- Systems: gba
-
+- Package: `it.dbtecno.pizzaboypro`, `it.dbtecno.pizzaboygbapro`
+- Systems: gb, gba
+- Activity: `it.dbtecno.pizzaboypro.MainActivity`
 - Launch:
 ```
 am start \
-  -p it.dbtecno.pizzaboypro \
-  -a android.intent.action.VIEW \
+  -n it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity \
+  -a e rom_uri "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1407,7 +1673,7 @@ am start \
 
 ### PPSSPP
 
-- Package: `org.ppsspp.ppsspp`
+- Package: `org.ppsspp.ppsspp`, `org.ppsspp.ppsspplegacy`
 - Systems: psp
 - Activity: `org.ppsspp.ppsspp.PpssppActivity`
 - Launch:
@@ -1461,20 +1727,20 @@ am start \
 ### Redream
 
 - Package: `io.recompiled.redream`
-- Systems: dreamcast
+- Systems: dreamcast, atomiswave
 - Activity: `io.recompiled.redream.MainActivity`
 - Launch:
 ```
 am start \
   -n io.recompiled.redream/io.recompiled.redream.MainActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
 ### Reicast
 
 - Package: `com.reicast.emulator`
-- Systems: dreamcast
+- Systems: dreamcast, atomiswave
 - Activity: `com.reicast.emulator.MainActivity`
 - Launch:
 ```
@@ -1497,30 +1763,43 @@ am start \
   -d {file.uri}
 ```
 
+### Ruffle
+
+- Package: `rs.ruffle`
+- Systems: flash
+- Activity: `rs.ruffle.PlayerActivity`
+- Launch:
+```
+am start \
+  -n rs.ruffle/rs.ruffle.PlayerActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
 ### Saturn.emu
 
 - Package: `com.explusalpha.SaturnEmu`
 - Systems: saturn
-
+- Activity: `com.imagine.BaseActivity`
 - Launch:
 ```
 am start \
-  -p com.explusalpha.SaturnEmu \
-  -a android.intent.action.VIEW \
+  -n com.explusalpha.SaturnEmu/com.imagine.BaseActivity \
+  -a d "{file.path}" \
   -d {file.uri}
 ```
 
 ### ScummVM
 
-- Package: `org.scummvm.scummvm`
+- Package: `org.scummvm.scummvm`, `org.scummvm.scummvm.debug`
 - Systems: scummvm
-
+- Activity: `org.scummvm.scummvm.SplashActivity`
 - Launch:
 ```
 am start \
-  -p org.scummvm.scummvm \
-  -a android.intent.action.VIEW \
-  -d {file.uri}
+  -n org.scummvm.scummvm/org.scummvm.scummvm.SplashActivity \
+  -a android.intent.action.MAIN \
+  -d {tags.scummvm_id}
 ```
 
 ### SilverArrow
@@ -1536,29 +1815,42 @@ am start \
   -d {file.uri}
 ```
 
-### Skyline
+### SkyEmu
 
-- Package: `emu.skyline`
-- Systems: nsw
-
+- Package: `com.sky.SkyEmu`
+- Systems: nds
+- Activity: `com.sky.SkyEmu.EnhancedNativeActivity`
 - Launch:
 ```
 am start \
-  -p emu.skyline \
-  -a android.intent.action.VIEW \
+  -n com.sky.SkyEmu/com.sky.SkyEmu.EnhancedNativeActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### Skyline
+
+- Package: `emu.skyline`, `skyline.emu`
+- Systems: nsw
+- Activity: `emu.skyline.EmulationActivity`
+- Launch:
+```
+am start \
+  -n emu.skyline/emu.skyline.EmulationActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
 ### Snes9x EX+
 
 - Package: `com.explusalpha.Snes9xPlus`
-- Systems: snes, sfc
+- Systems: snes, sfc, satellaview
 - Activity: `com.imagine.BaseActivity`
 - Launch:
 ```
 am start \
   -n com.explusalpha.Snes9xPlus/com.imagine.BaseActivity \
-  -a android.intent.action.VIEW \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1577,27 +1869,40 @@ am start \
 
 ### Strato
 
-- Package: `emu.strato`
+- Package: `emu.strato`, `org.stratoemu.strato`
 - Systems: nsw
-
+- Activity: `org.stratoemu.strato.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p emu.strato \
-  -a android.intent.action.VIEW \
+  -n emu.strato/org.stratoemu.strato.EmulationActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
 ### Sudachi
 
-- Package: `org.sudachi.sudachi_emu`
+- Package: `org.sudachi.sudachi_emu`, `org.sudachi.sudachi_emu.ea`
 - Systems: nsw
-
+- Activity: `org.sudachi.sudachi_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p org.sudachi.sudachi_emu \
-  -a android.intent.action.VIEW \
+  -n org.sudachi.sudachi_emu/org.sudachi.sudachi_emu.activities.EmulationActivity \
+  -a android.nfc.action.TECH_DISCOVERED \
+  -d {file.uri}
+```
+
+### Supermodel 3
+
+- Package: `com.izzy2lost.super3`
+- Systems: model3
+- Activity: `com.izzy2lost.super3.MainActivity`
+- Launch:
+```
+am start \
+  -n com.izzy2lost.super3/com.izzy2lost.super3.MainActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1650,6 +1955,45 @@ am start \
 am start \
   -p com.zsnes.superzsnes \
   -a android.intent.action.VIEW \
+  -d {file.uri}
+```
+
+### Suyu
+
+- Package: `dev.suyu.suyu_emu.relWithDebInfo`
+- Systems: nsw
+- Activity: `dev.suyu.suyu_emu.activities.EmulationActivity`
+- Launch:
+```
+am start \
+  -n dev.suyu.suyu_emu.relWithDebInfo/dev.suyu.suyu_emu.activities.EmulationActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### SwanEmu
+
+- Package: `com.explusalpha.SwanEmu`
+- Systems: wonderswan
+- Activity: `com.imagine.BaseActivity`
+- Launch:
+```
+am start \
+  -n com.explusalpha.SwanEmu/com.imagine.BaseActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### Swiff
+
+- Package: `io.navivani.swiff`
+- Systems: flash
+- Activity: `io.navivani.swiff.MainActivity`
+- Launch:
+```
+am start \
+  -n io.navivani.swiff/io.navivani.swiff.MainActivity \
+  -a d "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1744,16 +2088,94 @@ am start \
   -d {file.uri}
 ```
 
-### Vita3K
+### VirtualBoy Go
 
-- Package: `com.github.eka2l1`
-- Systems: psvita
-
+- Package: `com.simongellis.vvb`
+- Systems: virtualboy
+- Activity: `com.simongellis.vvb.MainActivity`
 - Launch:
 ```
 am start \
-  -p com.github.eka2l1 \
-  -a android.intent.action.VIEW \
+  -n com.simongellis.vvb/com.simongellis.vvb.MainActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### Vita3K
+
+- Package: `org.vita3k.emulator`, `org.vita3k.emulator.ikhoeyZX`
+- Systems: psvita
+- Activity: `org.vita3k.emulator.Emulator`
+- Launch:
+```
+am start \
+  -n org.vita3k.emulator/org.vita3k.emulator.Emulator \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### Winlator
+
+- Package: `com.winlator`
+- Systems: windows
+- Activity: `com.winlator.XServerDisplayActivity`
+- Launch:
+```
+am start \
+  -n com.winlator/com.winlator.XServerDisplayActivity \
+  -a e shortcut_path "{file.path}" \
+  -d {file.uri}
+```
+
+### Winlator (CMod)
+
+- Package: `com.cmodded.winlator`, `com.winlator.cmod`
+- Systems: windows
+- Activity: `com.winlator.cmod.XServerDisplayActivity`
+- Launch:
+```
+am start \
+  -n com.cmodded.winlator/com.winlator.cmod.XServerDisplayActivity \
+  -a e shortcut_path "{file.path}" \
+  -d {file.uri}
+```
+
+### X1BOX
+
+- Package: `com.izzy2lost.x1box`
+- Systems: xbox
+- Activity: `com.izzy2lost.x1box.LauncherActivity`
+- Launch:
+```
+am start \
+  -n com.izzy2lost.x1box/com.izzy2lost.x1box.LauncherActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### X360 Mobile
+
+- Package: `emu.x360.mobile`
+- Systems: xbox360
+- Activity: `emu.x360.mobile.X360MobileGameLaunchActivity`
+- Launch:
+```
+am start \
+  -n emu.x360.mobile/emu.x360.mobile.X360MobileGameLaunchActivity \
+  -a d "{file.uri}" \
+  -d {file.uri}
+```
+
+### XenDroid
+
+- Package: `xendroid.compose`
+- Systems: xbox360
+- Activity: `xendroid.compose.EmulatorHostActivity`
+- Launch:
+```
+am start \
+  -n xendroid.compose/xendroid.compose.EmulatorHostActivity \
+  -a e game_uri "{file.uri}" \
   -d {file.uri}
 ```
 
@@ -1775,12 +2197,12 @@ am start \
 
 - Package: `org.devmiyax.yabasanshioro2`
 - Systems: saturn
-
+- Activity: `org.uoyabause.android.Yabause`
 - Launch:
 ```
 am start \
-  -p org.devmiyax.yabasanshioro2 \
-  -a android.intent.action.VIEW \
+  -n org.devmiyax.yabasanshioro2/org.uoyabause.android.Yabause \
+  -a e org.uoyabause.android.FileNameUri "{file.path}" \
   -d {file.uri}
 ```
 
@@ -1829,12 +2251,12 @@ am start \
 
 - Package: `org.yuzu.yuzu_emu`, `org.yuzu.android`
 - Systems: nsw
-
+- Activity: `org.yuzu.yuzu_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p org.yuzu.yuzu_emu \
-  -a android.intent.action.VIEW \
+  -n org.yuzu.yuzu_emu/org.yuzu.yuzu_emu.activities.EmulationActivity \
+  -a android.nfc.action.TECH_DISCOVERED \
   -d {file.uri}
 ```
 
@@ -1855,12 +2277,12 @@ am start \
 
 - Package: `org.yuzu.yuzu_emu.ea`
 - Systems: nsw
-
+- Activity: `org.yuzu.yuzu_emu.activities.EmulationActivity`
 - Launch:
 ```
 am start \
-  -p org.yuzu.yuzu_emu.ea \
-  -a android.intent.action.VIEW \
+  -n org.yuzu.yuzu_emu.ea/org.yuzu.yuzu_emu.activities.EmulationActivity \
+  -a android.nfc.action.TECH_DISCOVERED \
   -d {file.uri}
 ```
 
