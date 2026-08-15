@@ -6,7 +6,8 @@ is **data/content QA only** — real websites, downloadable apps, icons, launch 
 config completeness. Reference sources: `repo.md`.
 
 **How to use:** tick `[x]` as a check lands. Numbers from the last audit (2026-08-15):
-135 emulator ids, 119 systems, 143 catalog packages, 132 icon files.
+135 emulator ids, 119 systems, 143 catalog packages, 132 icon files, **25 emulators
+without a real icon** (§4A).
 
 ## 0. Coverage gap — emulators not yet in the config
 
@@ -268,13 +269,6 @@ or a `siteUrl` that actually offers a download:
 
 - [ ] **`vita3k` wrong package**: config uses `com.github.eka2l1`; real Vita3K Android
       package is `org.vita3k.emulator`.
-- [ ] **3 ids with NO icon file**: `vecdroid`, `colem`, `jzintv`.
-- [ ] **22 ids with only a `missing---<id>.png` placeholder** (need real art):
-      `ataroid`, `citra`, `delta-touch`, `delta-touch-full`, `dolphin-retroid`,
-      `mikage`, `n64-emu`, `n64oid`, `nethersx2`, `nostalgia-gba-pro`,
-      `nostalgia-gbc-pro`, `nostalgia-nes-pro`, `nostalgia-snes`, `nostalgia-snes-pro`,
-      `panda3ds`, `pizzaboy-c`, `pizzaboy-cpro`, `psx-emu`, `strato`,
-      `unityboyadvance`, `yaba-sanshiro-pro`, `yuzu-retroshark`.
 - [ ] **Package casing to verify on Play Store**: Neo.emu (`com.explusalpha.NeoEmu` vs
       `com.explusalpha.neoemu`), PCE.emu (`com.explusalpha.PceEmu` vs `com.PceEmu`),
       Skyline (`emu.skyline` vs `skyline.emu`), Strato (`emu.strato` vs
@@ -283,6 +277,46 @@ or a `siteUrl` that actually offers a download:
       (should match the master `.MainActivity` content-URI recipe).
 - [ ] **Link hygiene**: some `siteUrl` values are store URLs used as sites (halsafar /
       Network / MAME4droid entries) — replace with a real site where one exists.
+
+### 4A. Icon coverage — every emulator needs a real icon (target 100%)
+
+25 emulators currently have NO real icon (3 have no file at all, 22 have only a
+`missing---<id>.png` placeholder). Add real art (`config/emulator-icons/<id>.png` via
+`node scripts/fetch-emulator-icons.mjs` or manual) and tick the row. Regenerate the icon
+manifest after each batch. `missing---<id>.png` = NOT done.
+
+**No icon file at all (3):**
+- [ ] `colem` — com.fms.colem
+- [ ] `jzintv` — org.libsdl.jzintv4droid2
+- [ ] `vecdroid` — com.willna.vecdroid
+
+**Placeholder only (22):**
+- [ ] `ataroid` — com.androidemu.atari
+- [ ] `citra` — org.citra.citra
+- [ ] `delta-touch` — com.opentouchgaming.gzdoomfree
+- [ ] `delta-touch-full` — com.opentouchgaming.gzdoom
+- [ ] `dolphin-retroid` — org.dolphinemu.handheld
+- [ ] `mikage` — com.mikageinc.mikage
+- [ ] `n64-emu` — com.explusalpha.N64Plus
+- [ ] `n64oid` — com.mop.ide.n64oid
+- [ ] `nethersx2` — xyz.aether.sx2
+- [ ] `nostalgia-gba-pro` — com.nostalgiaemulators.gbapro
+- [ ] `nostalgia-gbc-pro` — com.nostalgiaemulators.gbcpro
+- [ ] `nostalgia-nes-pro` — com.nostalgiaemulators.nespro
+- [ ] `nostalgia-snes` — com.nostalgiaemulators.sneslite
+- [ ] `nostalgia-snes-pro` — com.nostalgiaemulators.snespro
+- [ ] `panda3ds` — com.alber.panda3ds
+- [ ] `pizzaboy-c` — it.dbtecno.pizzaboyc
+- [ ] `pizzaboy-cpro` — it.dbtecno.pizzaboycpro
+- [ ] `psx-emu` — com.explusalpha.PsxEmu
+- [ ] `strato` — emu.strato
+- [ ] `unityboyadvance` — com.Rekkuzan.UnityBoyAdvance
+- [ ] `yaba-sanshiro-pro` — org.uoyabause.android.pro
+- [ ] `yuzu-retroshark` — io.retroshark.yuzu
+
+**Icon coverage counter:** `[ ]/25` done. Also: every NEW emulator imported from the
+Daijishō ingest (§0) must land with a real icon (or placeholder flagged here) — the icon
+manifest check in `validate.mjs` keeps the list honest.
 
 ## 5. Systems QA
 
