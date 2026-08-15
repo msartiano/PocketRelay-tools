@@ -20,13 +20,17 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.A2600Emu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.A2600Emu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "aethersx2",
       "name": "AetherSX2",
       "packages": [
-        "xyz.aethersx2.android"
+        "xyz.aethersx2.android",
+        "xyz.aethersx2.custom",
+        "xyz.aethersx2.tturnip",
+        "xyz.aethersx2.cturnip"
       ],
       "siteUrl": "https://www.aethersx2.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=xyz.aethersx2.android",
@@ -81,7 +85,11 @@
       "id": "armsx3",
       "name": "ARMSX3",
       "packages": [
-        "com.armsx3"
+        "com.armsx3",
+        "com.nanodata.armsx",
+        "come.nanodata.armsx2",
+        "come.nanodata.armsx2.debug",
+        "com.armsx2"
       ],
       "siteUrl": "https://github.com/ARMSX2/ARMSX3",
       "apkUrl": "https://github.com/ARMSX2/ARMSX3/releases/download/0.7.2/ARMSX3-0.7.2.apk",
@@ -96,13 +104,17 @@
           "label": "GitHub",
           "url": "https://github.com/ARMSX2/ARMSX3"
         }
-      ]
+      ],
+      "activity": "com.nanodata.armsx/com.armsx2.Main",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "azahar",
       "name": "Azahar",
       "packages": [
-        "io.github.lime3ds.android"
+        "io.github.lime3ds.android",
+        "org.azahar_emu.azahar",
+        "io.github.azaharplus.android"
       ],
       "siteUrl": "https://azahar-emu.org/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=io.github.lime3ds.android",
@@ -117,7 +129,9 @@
           "label": "Official site",
           "url": "https://azahar-emu.org/"
         }
-      ]
+      ],
+      "activity": "io.github.lime3ds.android/org.citra.citra_emu.activities.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "bochs",
@@ -176,7 +190,8 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.C64Emu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.C64Emu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "c64-jahnke",
@@ -225,7 +240,9 @@
       "name": "Citra (MMJ)",
       "packages": [
         "org.citra.citra_emu",
-        "org.github.weihuoya.citra"
+        "org.github.weihuoya.citra",
+        "org.citra.citra_emu.canary",
+        "org.gamerytb.lemonade.canary"
       ],
       "siteUrl": "https://github.com/weihuoya/citra",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.citra.citra_emu",
@@ -240,7 +257,9 @@
           "label": "GitHub",
           "url": "https://github.com/weihuoya/citra"
         }
-      ]
+      ],
+      "activity": "org.citra.citra_emu/org.citra.citra_emu.activities.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "citra-nightly",
@@ -289,7 +308,9 @@
           "label": "GitHub",
           "url": "https://github.com/citron-emu/citron"
         }
-      ]
+      ],
+      "activity": "org.citron.citron_emu/org.citron.citron_emu.activities.EmulationActivity",
+      "launchArgs": "android.nfc.action.TECH_DISCOVERED;d \"{file.uri}\""
     },
     {
       "id": "classicboy",
@@ -402,7 +423,16 @@
       "packages": [
         "org.dolphinemu.dolphinemu",
         "com.dolphin.emulator",
-        "org.dolphin.dolphinemu"
+        "org.dolphin.dolphinemu",
+        "org.mm.jr",
+        "org.mm.j",
+        "org.dolphinemu.mmjr",
+        "org.dolphinemu.mmjr3",
+        "org.dolphin.ishiirukadark",
+        "org.dolphinemu.primehack",
+        "org.shiiion.primehack",
+        "org.dolphinemu.dolphinemu.debug",
+        "com.joeyos.dolphinemu"
       ],
       "siteUrl": "https://dolphin-emu.org/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.dolphinemu.dolphinemu",
@@ -467,7 +497,8 @@
           "url": "https://www.drastic-ds.com/"
         }
       ],
-      "activity": "com.dsemu.drastic/.DraSticActivity"
+      "activity": "com.dsemu.drastic/.DraSticActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "duckstation",
@@ -501,7 +532,10 @@
       "id": "eden",
       "name": "Eden",
       "packages": [
-        "dev.eden.eden_emulator"
+        "dev.eden.eden_emulator",
+        "dev.legacy.eden_emulator",
+        "dev.eden.eden_nightly",
+        "dev.eden.eden_emulator.nightly"
       ],
       "siteUrl": "https://github.com/StratoEmu/Eden",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=dev.eden.eden_emulator",
@@ -516,7 +550,9 @@
           "label": "GitHub",
           "url": "https://github.com/StratoEmu/Eden"
         }
-      ]
+      ],
+      "activity": "dev.eden.eden_emulator/org.yuzu.yuzu_emu.activities.EmulationActivity",
+      "launchArgs": "android.nfc.action.TECH_DISCOVERED;d \"{file.uri}\""
     },
     {
       "id": "egg-ns",
@@ -582,7 +618,8 @@
           "url": "https://github.com/flyinghead/flycast"
         }
       ],
-      "activity": "com.flycast.emulator/com.reicast.emulator.MainActivity"
+      "activity": "com.flycast.emulator/com.reicast.emulator.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "fmsx",
@@ -625,7 +662,8 @@
           "url": "https://www.fpsece.net/"
         }
       ],
-      "activity": "com.emulator.fpse/.Main"
+      "activity": "com.emulator.fpse/.Main",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "fpse64",
@@ -647,7 +685,8 @@
           "url": "https://www.fpsece.net/"
         }
       ],
-      "activity": "com.emulator.fpse64/.Main"
+      "activity": "com.emulator.fpse64/.Main",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "gb-droid",
@@ -701,7 +740,8 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.GbaEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.GbaEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "gbc-emu",
@@ -723,7 +763,8 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.GbcEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.GbcEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "gbcc",
@@ -912,7 +953,9 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.LynxEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "m64plus-fz",
@@ -934,7 +977,8 @@
           "url": "https://github.com/fzurita/m64plus_fz"
         }
       ],
-      "activity": "org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity"
+      "activity": "org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "magic-dosbox",
@@ -982,7 +1026,8 @@
           "url": "https://seleuco.com/mame4droid.html"
         }
       ],
-      "activity": "com.seleuco.mame4droid/.MAME4droid"
+      "activity": "com.seleuco.mame4droid/.MAME4droid",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "mame4droid-current",
@@ -1008,7 +1053,9 @@
           "label": "Official site",
           "url": "https://seleuco.com/mame4droid.html"
         }
-      ]
+      ],
+      "activity": "com.seleuco.mame4d2024/com.seleuco.mame4droid.MAME4droid",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "mame4droid-m4a",
@@ -1072,13 +1119,17 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.MdEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.MdEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "melonds",
       "name": "melonDS",
       "packages": [
-        "me.magnum.melonds"
+        "me.magnum.melonds",
+        "me.magnum.melonds.nightly",
+        "me.magnum.melonds.dev",
+        "me.magnum.melondualds"
       ],
       "siteUrl": "https://github.com/rafaelvcaetano/melonDS-Android",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=me.magnum.melonds",
@@ -1093,7 +1144,9 @@
           "label": "GitHub",
           "url": "https://github.com/rafaelvcaetano/melonDS-Android"
         }
-      ]
+      ],
+      "activity": "me.magnum.melonds/.ui.emulator.EmulatorActivity",
+      "launchArgs": "me.magnum.melonds.LAUNCH_ROM;e uri \"{file.uri}\""
     },
     {
       "id": "mikage",
@@ -1136,14 +1189,16 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.MsxEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.MsxEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "mupen64plus-ae",
       "name": "Mupen64Plus AE",
       "packages": [
         "org.mupen64plusae",
-        "paulscode.android.mupen64plusae"
+        "paulscode.android.mupen64plusae",
+        "org.mupen64plusae.v3.alpha"
       ],
       "siteUrl": "https://github.com/mupen64plus-ae/mupen64plus-ae",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae",
@@ -1159,7 +1214,8 @@
           "url": "https://github.com/mupen64plus-ae/mupen64plus-ae"
         }
       ],
-      "activity": "paulscode.android.mupen64plusae/.MainActivity"
+      "activity": "paulscode.android.mupen64plusae/.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "my-boy",
@@ -1181,7 +1237,8 @@
           "url": "https://fastemulator.blogspot.com/"
         }
       ],
-      "activity": "com.fastemulator.gba/.EmulatorActivity"
+      "activity": "com.fastemulator.gba/.EmulatorActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "n64-emu",
@@ -1224,7 +1281,8 @@
       "id": "neo-emu",
       "name": "NEO.emu",
       "packages": [
-        "com.explusalpha.NeoEmu"
+        "com.explusalpha.NeoEmu",
+        "com.explusalpha.neoemu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.NeoEmu",
@@ -1240,7 +1298,8 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.NeoEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.NeoEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "nes-droid",
@@ -1278,7 +1337,8 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.NesEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.NesEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "nethersx2",
@@ -1369,7 +1429,8 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.NgpEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.NgpEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "nood",
@@ -1390,7 +1451,9 @@
           "label": "GitHub",
           "url": "https://github.com/operatingsystems/nood"
         }
-      ]
+      ],
+      "activity": "com.hydra.noods/.FileBrowser",
+      "launchArgs": "e LaunchPath \"{file.path}\""
     },
     {
       "id": "nostalgia-gba",
@@ -1647,7 +1710,8 @@
       "id": "pce-emu",
       "name": "PCE.emu",
       "packages": [
-        "com.explusalpha.PceEmu"
+        "com.explusalpha.PceEmu",
+        "com.PceEmu"
       ],
       "siteUrl": "https://www.explusalpha.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.PceEmu",
@@ -1663,13 +1727,15 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.PceEmu/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.PceEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "pizzaboy",
       "name": "Pizza Boy",
       "packages": [
-        "it.dbtecno.pizzaboy"
+        "it.dbtecno.pizzaboy",
+        "it.dbtecno.pizzaboygba"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboy",
@@ -1684,7 +1750,9 @@
           "label": "Official site",
           "url": "https://www.pizzaboyemulator.com/"
         }
-      ]
+      ],
+      "activity": "it.dbtecno.pizzaboy/it.dbtecno.pizzaboy.MainActivity",
+      "launchArgs": "e rom_uri \"{file.uri}\""
     },
     {
       "id": "pizzaboy-c",
@@ -1711,7 +1779,8 @@
       "id": "pizzaboy-cpro",
       "name": "Pizza Boy C Pro",
       "packages": [
-        "it.dbtecno.pizzaboycpro"
+        "it.dbtecno.pizzaboycpro",
+        "it.dbtecno.pizzaboyscpro"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboycpro",
@@ -1726,13 +1795,16 @@
           "label": "Official site",
           "url": "https://www.pizzaboyemulator.com/"
         }
-      ]
+      ],
+      "activity": "it.dbtecno.pizzaboyscpro/.MainActivity",
+      "launchArgs": "e rom_uri \"{file.uri}\""
     },
     {
       "id": "pizzaboy-pro",
       "name": "Pizza Boy Pro",
       "packages": [
-        "it.dbtecno.pizzaboypro"
+        "it.dbtecno.pizzaboypro",
+        "it.dbtecno.pizzaboygbapro"
       ],
       "siteUrl": "https://www.pizzaboyemulator.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=it.dbtecno.pizzaboypro",
@@ -1747,7 +1819,9 @@
           "label": "Official site",
           "url": "https://www.pizzaboyemulator.com/"
         }
-      ]
+      ],
+      "activity": "it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity",
+      "launchArgs": "e rom_uri \"{file.uri}\""
     },
     {
       "id": "play",
@@ -1774,7 +1848,8 @@
       "id": "ppsspp",
       "name": "PPSSPP",
       "packages": [
-        "org.ppsspp.ppsspp"
+        "org.ppsspp.ppsspp",
+        "org.ppsspp.ppsspplegacy"
       ],
       "siteUrl": "https://www.ppsspp.org/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.ppsspp.ppsspp",
@@ -1872,7 +1947,8 @@
           "url": "https://redream.io/"
         }
       ],
-      "activity": "io.recompiled.redream/.MainActivity"
+      "activity": "io.recompiled.redream/.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "reicast",
@@ -2037,13 +2113,16 @@
           "label": "Official site",
           "url": "https://www.explusalpha.com/"
         }
-      ]
+      ],
+      "activity": "com.explusalpha.SaturnEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "scummvm",
       "name": "ScummVM",
       "packages": [
-        "org.scummvm.scummvm"
+        "org.scummvm.scummvm",
+        "org.scummvm.scummvm.debug"
       ],
       "siteUrl": "https://www.scummvm.org/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.scummvm.scummvm",
@@ -2063,7 +2142,9 @@
           "label": "Official site",
           "url": "https://www.scummvm.org/"
         }
-      ]
+      ],
+      "activity": "org.scummvm.scummvm/org.scummvm.scummvm.SplashActivity",
+      "launchArgs": "MAIN;d \"{tags.scummvm_id}\""
     },
     {
       "id": "silverarrow",
@@ -2085,7 +2166,8 @@
       "id": "skyline",
       "name": "Skyline",
       "packages": [
-        "emu.skyline"
+        "emu.skyline",
+        "skyline.emu"
       ],
       "siteUrl": "https://github.com/skyline-emu/skyline",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.skyline",
@@ -2100,7 +2182,9 @@
           "label": "GitHub",
           "url": "https://github.com/skyline-emu/skyline"
         }
-      ]
+      ],
+      "activity": "skyline.emu/emu.skyline.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "snes-droid",
@@ -2138,13 +2222,15 @@
           "url": "https://www.explusalpha.com/"
         }
       ],
-      "activity": "com.explusalpha.Snes9xPlus/com.imagine.BaseActivity"
+      "activity": "com.explusalpha.Snes9xPlus/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "strato",
       "name": "Strato",
       "packages": [
-        "emu.strato"
+        "emu.strato",
+        "org.stratoemu.strato"
       ],
       "siteUrl": "https://github.com/StratoEmu/Strato",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=emu.strato",
@@ -2159,13 +2245,16 @@
           "label": "GitHub",
           "url": "https://github.com/StratoEmu/Strato"
         }
-      ]
+      ],
+      "activity": "org.stratoemu.strato/org.stratoemu.strato.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "sudachi",
       "name": "Sudachi",
       "packages": [
-        "org.sudachi.sudachi_emu"
+        "org.sudachi.sudachi_emu",
+        "org.sudachi.sudachi_emu.ea"
       ],
       "siteUrl": "https://github.com/emu-dev/Sudachi",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=org.sudachi.sudachi_emu",
@@ -2180,7 +2269,9 @@
           "label": "GitHub",
           "url": "https://github.com/emu-dev/Sudachi"
         }
-      ]
+      ],
+      "activity": "org.sudachi.sudachi_emu/org.sudachi.sudachi_emu.activities.EmulationActivity",
+      "launchArgs": "android.nfc.action.TECH_DISCOVERED;d \"{file.uri}\""
     },
     {
       "id": "superretro16",
@@ -2329,7 +2420,9 @@
       "id": "vita3k",
       "name": "Vita3K",
       "packages": [
-        "com.github.eka2l1"
+        "com.github.eka2l1",
+        "org.vita3k.emulator",
+        "org.vita3k.emulator.ikhoeyZX"
       ],
       "siteUrl": "https://vita3k.org/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.github.eka2l1",
@@ -2349,7 +2442,9 @@
           "label": "Official site",
           "url": "https://vita3k.org/"
         }
-      ]
+      ],
+      "activity": "com.github.eka2l1/.emu.EmulatorActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "yabasanshiro2",
@@ -2370,7 +2465,9 @@
           "label": "GitHub",
           "url": "https://github.com/devmiyax/yabause"
         }
-      ]
+      ],
+      "activity": "org.devmiyax.yabasanshioro2/org.uoyabause.android.Yabause",
+      "launchArgs": "e org.uoyabause.android.FileNameUri \"{file.path}\""
     },
     {
       "id": "yabause",
@@ -2413,7 +2510,9 @@
           "label": "GitHub",
           "url": "https://github.com/yuzu-emu/yuzu-android"
         }
-      ]
+      ],
+      "activity": "org.yuzu.yuzu_emu/org.yuzu.yuzu_emu.activities.EmulationActivity",
+      "launchArgs": "android.nfc.action.TECH_DISCOVERED;d \"{file.uri}\""
     },
     {
       "id": "yuzu-ea",
@@ -2434,7 +2533,9 @@
           "label": "GitHub",
           "url": "https://github.com/yuzu-emu/yuzu-android"
         }
-      ]
+      ],
+      "activity": "org.yuzu.yuzu_emu.ea/org.yuzu.yuzu_emu.activities.EmulationActivity",
+      "launchArgs": "android.nfc.action.TECH_DISCOVERED;d \"{file.uri}\""
     },
     {
       "id": "yuzu-retroshark",
@@ -2464,7 +2565,8 @@
         "com.androidemu.atari"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.atari",
-      "activity": "com.androidemu.atari/.EmulatorActivity"
+      "activity": "com.androidemu.atari/.EmulatorActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "gbcoid",
@@ -2482,7 +2584,8 @@
         "com.androidemu.gg"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.gg",
-      "activity": "com.androidemu.gg/.EmulatorActivity"
+      "activity": "com.androidemu.gg/.EmulatorActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "gensoid",
@@ -2491,7 +2594,8 @@
         "com.androidemu.gens"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.gens",
-      "activity": "com.androidemu.gens/.EmulatorActivity"
+      "activity": "com.androidemu.gens/.EmulatorActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "m64plus-fz-pro",
@@ -2500,16 +2604,19 @@
         "org.mupen64plusae.v3.fzurita.pro"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=org.mupen64plusae.v3.fzurita.pro",
-      "activity": "org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity"
+      "activity": "org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity",
+      "launchArgs": "d \"{file.uri}\""
     },
     {
       "id": "my-oldboy",
       "name": "My OldBoy!",
       "packages": [
-        "com.fastemulator.gbc"
+        "com.fastemulator.gbc",
+        "com.fastemulator.gbcfree"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gbc",
-      "activity": "com.fastemulator.gbc/.EmulatorActivity"
+      "activity": "com.fastemulator.gbc/.EmulatorActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "myboy-free",
@@ -2518,7 +2625,8 @@
         "com.fastemulator.gbafree"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.fastemulator.gbafree",
-      "activity": "com.fastemulator.gbafree/com.fastemulator.gba.EmulatorActivity"
+      "activity": "com.fastemulator.gbafree/com.fastemulator.gba.EmulatorActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "nesoid",
@@ -2527,7 +2635,8 @@
         "com.androidemu.nes"
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=com.androidemu.nes",
-      "activity": "com.androidemu.nes/.EmulatorActivity"
+      "activity": "com.androidemu.nes/.EmulatorActivity",
+      "launchArgs": "d \"{file.path}\""
     },
     {
       "id": "superretro16-lite",
@@ -2642,6 +2751,335 @@
       ],
       "siteUrl": "https://play.google.com/store/apps/details?id=org.libsdl.jzintv4droid2",
       "activity": "org.libsdl.jzintv4droid2/.jzIntv4Droid"
+    },
+    {
+      "id": "droidarcadia",
+      "name": "DroidArcadia",
+      "packages": [
+        "com.amigan.droidarcadia"
+      ],
+      "siteUrl": "https://github.com/amigan/DroidArcadia",
+      "activity": "com.amigan.droidarcadia/.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "swiff",
+      "name": "Swiff",
+      "packages": [
+        "io.navivani.swiff"
+      ],
+      "siteUrl": "https://github.com/vytskaaltman/Swiff",
+      "activity": "io.navivani.swiff/.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "ruffle",
+      "name": "Ruffle",
+      "packages": [
+        "rs.ruffle"
+      ],
+      "siteUrl": "https://ruffle.rs/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=rs.ruffle",
+      "activity": "rs.ruffle/.PlayerActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "flash-player",
+      "name": "Flash Player",
+      "packages": [
+        "com.issess.flashplayer"
+      ],
+      "siteUrl": "https://github.com/issess/FlashPlayer",
+      "activity": "com.issess.flashplayer/.player.FlashPlayerActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "flash-player-pro",
+      "name": "Flash Player Pro",
+      "packages": [
+        "com.issess.flashplayerpro"
+      ],
+      "siteUrl": "https://github.com/issess/FlashPlayer",
+      "activity": "com.issess.flashplayerpro/com.issess.flashplayer.player.FlashPlayerActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "j2meloader",
+      "name": "J2ME Loader",
+      "packages": [
+        "ru.playsoftware.j2meloader"
+      ],
+      "siteUrl": "https://j2meloader.tech/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloader",
+      "activity": "ru.playsoftware.j2meloader/ru.playsoftware.j2meloader.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "j2meloader-woesss",
+      "name": "J2ME Loader (woesss)",
+      "packages": [
+        "ru.woesss.j2meloader"
+      ],
+      "siteUrl": "https://github.com/woesss/J2ME-Loader",
+      "activity": "ru.woesss.j2meloader/ru.playsoftware.j2meloader.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "x1box",
+      "name": "X1BOX",
+      "packages": [
+        "com.izzy2lost.x1box"
+      ],
+      "siteUrl": "https://github.com/izzy2lost/X1BOX",
+      "activity": "com.izzy2lost.x1box/.LauncherActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "haku",
+      "name": "Haku",
+      "packages": [
+        "com.rfandango.haku_x"
+      ],
+      "siteUrl": "https://github.com/Rfandango/Haku",
+      "activity": "com.rfandango.haku_x/.LauncherActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "ax360e",
+      "name": "AX360E",
+      "packages": [
+        "aenu.ax360e",
+        "aenu.ax360e.free"
+      ],
+      "siteUrl": "https://github.com/aenu/X360",
+      "activity": "aenu.ax360e/aenu.ax360e.EmulatorActivity",
+      "launchArgs": "aenu.intent.action.AX360E;e game_uri \"{file.uri}\""
+    },
+    {
+      "id": "x360-mobile",
+      "name": "X360 Mobile",
+      "packages": [
+        "emu.x360.mobile"
+      ],
+      "siteUrl": "https://github.com/x360emu/x360",
+      "activity": "emu.x360.mobile/.X360MobileGameLaunchActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "xendroid",
+      "name": "XenDroid",
+      "packages": [
+        "xendroid.compose"
+      ],
+      "siteUrl": "https://github.com/Xenos2X/xendroid",
+      "activity": "xendroid.compose/.EmulatorHostActivity",
+      "launchArgs": "e game_uri \"{file.uri}\""
+    },
+    {
+      "id": "borked3ds",
+      "name": "Borked3DS",
+      "packages": [
+        "io.github.borked3ds.android"
+      ],
+      "siteUrl": "https://github.com/valentinvanelslande/Borked3DS",
+      "activity": "io.github.borked3ds.android/.activities.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "mandarine",
+      "name": "Mandarine",
+      "packages": [
+        "io.github.mandarine3ds.mandarine"
+      ],
+      "siteUrl": "https://github.com/wheremyfoodat/Mandarine",
+      "activity": "io.github.mandarine3ds.mandarine/.activities.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "skyemu",
+      "name": "SkyEmu",
+      "packages": [
+        "com.sky.SkyEmu"
+      ],
+      "siteUrl": "https://github.com/skylersaleh/SkyEmu",
+      "activity": "com.sky.SkyEmu/.EnhancedNativeActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "linkboy",
+      "name": "LinkBoy",
+      "packages": [
+        "com.pixelrespawn.linkboy"
+      ],
+      "siteUrl": "https://github.com/linkboy-emu/linkboy",
+      "activity": "com.pixelrespawn.linkboy/.EmulatorActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "suyu",
+      "name": "Suyu",
+      "packages": [
+        "dev.suyu.suyu_emu.relWithDebInfo"
+      ],
+      "siteUrl": "https://suyu.dev/",
+      "activity": "dev.suyu.suyu_emu.relWithDebInfo/dev.suyu.suyu_emu.activities.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "kenjinx",
+      "name": "Kenjinx",
+      "packages": [
+        "org.benjisc.android",
+        "org.kenjinx.android"
+      ],
+      "siteUrl": "https://github.com/kenjinx/Kenjinx",
+      "activity": "org.kenjinx.android/.MainActivity",
+      "launchArgs": "org.kenjinx.android.LAUNCH_GAME;e bootPath \"{file.uri}\""
+    },
+    {
+      "id": "cemu",
+      "name": "CEMU",
+      "packages": [
+        "info.cemu.cemu"
+      ],
+      "siteUrl": "https://cemu.info/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=info.cemu.cemu",
+      "activity": "info.cemu.cemu/.emulation.EmulationActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "pico8-launcher",
+      "name": "PICO-8 Launcher",
+      "packages": [
+        "io.wip.pico8"
+      ],
+      "siteUrl": "https://github.com/lyricly/pico8-android",
+      "activity": "io.wip.pico8/com.godot.game.GodotAppLauncher",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "picpic",
+      "name": "PicPic",
+      "packages": [
+        "com.sa_moo_rai.picpic"
+      ],
+      "siteUrl": "https://github.com/sa-moo-rai/PicPic",
+      "activity": "com.sa_moo_rai.picpic/.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "infinity",
+      "name": "Infinity",
+      "packages": [
+        "me.dt2dev.infinity"
+      ],
+      "siteUrl": "https://github.com/dt2dev/Infinity",
+      "activity": "me.dt2dev.infinity/me.dt2dev.infinity.SchemeActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "mastergear",
+      "name": "MasterGear",
+      "packages": [
+        "com.fms.mg"
+      ],
+      "siteUrl": "https://fms.komkon.org/MG/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.fms.mg",
+      "activity": "com.fms.mg/com.fms.emulib.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "super3",
+      "name": "Supermodel 3",
+      "packages": [
+        "com.izzy2lost.super3"
+      ],
+      "siteUrl": "https://github.com/izzy2lost/Supermodel3",
+      "activity": "com.izzy2lost.super3/.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "emucorev",
+      "name": "EmuCore V",
+      "packages": [
+        "com.sbro.emucorev"
+      ],
+      "siteUrl": "https://github.com/sbro-moe/EmuCore",
+      "activity": "com.sbro.emucorev/.core.vita.Emulator",
+      "launchArgs": "com.sbro.emucorev.action.LAUNCH;e titleId \"{tags.vita_game_id}\""
+    },
+    {
+      "id": "emucorex",
+      "name": "EmuCore X",
+      "packages": [
+        "com.sbro.emucorex"
+      ],
+      "siteUrl": "https://github.com/sbro-moe/EmuCore",
+      "activity": "com.sbro.emucorex/.MainActivity",
+      "launchArgs": "com.sbro.emucorex.action.LAUNCH_GAME;e com.sbro.emucorex.extra.GAME_PATH \"{file.uri}\""
+    },
+    {
+      "id": "aps3e",
+      "name": "APS3E",
+      "packages": [
+        "aenu.aps3e"
+      ],
+      "siteUrl": "https://github.com/aenu/APS3",
+      "activity": "aenu.aps3e/aenu.aps3e.EmulatorActivity",
+      "launchArgs": "aenu.intent.action.APS3E;e iso_uri \"{file.uri}\""
+    },
+    {
+      "id": "vvb",
+      "name": "VirtualBoy Go",
+      "packages": [
+        "com.simongellis.vvb"
+      ],
+      "siteUrl": "https://github.com/simongellis/VirtualBoyGo",
+      "activity": "com.simongellis.vvb/com.simongellis.vvb.MainActivity",
+      "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "winlator-cmod",
+      "name": "Winlator (CMod)",
+      "packages": [
+        "com.cmodded.winlator",
+        "com.winlator.cmod"
+      ],
+      "siteUrl": "https://github.com/cmodmirror/winlator-cmod",
+      "activity": "com.winlator.cmod/.XServerDisplayActivity",
+      "launchArgs": "e shortcut_path \"{file.path}\""
+    },
+    {
+      "id": "winlator",
+      "name": "Winlator",
+      "packages": [
+        "com.winlator"
+      ],
+      "siteUrl": "https://winlator.org/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.winlator",
+      "activity": "com.winlator/.XServerDisplayActivity",
+      "launchArgs": "e shortcut_path \"{file.path}\""
+    },
+    {
+      "id": "micewine",
+      "name": "MiceWine",
+      "packages": [
+        "com.micewine.emu"
+      ],
+      "siteUrl": "https://github.com/MiceWine/micewine",
+      "activity": "com.micewine.emu/com.micewine.emu.activities.MainActivity",
+      "launchArgs": "e exePath \"{file.path}\""
+    },
+    {
+      "id": "swan-emu",
+      "name": "SwanEmu",
+      "packages": [
+        "com.explusalpha.SwanEmu"
+      ],
+      "siteUrl": "https://www.explusalpha.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.SwanEmu",
+      "activity": "com.explusalpha.SwanEmu/com.imagine.BaseActivity",
+      "launchArgs": "d \"{file.uri}\""
     }
   ],
   "systems": [
@@ -3303,6 +3741,14 @@
         {
           "emulator": "retroarch-32",
           "core": "freej2me_libretro"
+        },
+        {
+          "emulator": "j2meloader",
+          "activity": "ru.playsoftware.j2meloader/ru.playsoftware.j2meloader.MainActivity"
+        },
+        {
+          "emulator": "j2meloader-woesss",
+          "activity": "ru.woesss.j2meloader/ru.playsoftware.j2meloader.MainActivity"
         }
       ]
     },
@@ -3420,6 +3866,10 @@
         {
           "emulator": "retroarch-32",
           "core": "mednafen_wswan_libretro"
+        },
+        {
+          "emulator": "swan-emu",
+          "activity": "com.explusalpha.SwanEmu/com.imagine.BaseActivity"
         }
       ]
     },
@@ -4170,6 +4620,10 @@
         {
           "emulator": "retroarch-32",
           "core": "geargrafx_libretro"
+        },
+        {
+          "emulator": "pce-emu",
+          "activity": "com.PceEmu/com.imagine.BaseActivity"
         }
       ]
     },
@@ -4236,6 +4690,14 @@
         {
           "emulator": "retroarch-32",
           "core": "citra_canary_libretro"
+        },
+        {
+          "emulator": "borked3ds",
+          "activity": "io.github.borked3ds.android/.activities.EmulationActivity"
+        },
+        {
+          "emulator": "mandarine",
+          "activity": "io.github.mandarine3ds.mandarine/.activities.EmulationActivity"
         }
       ]
     },
@@ -4293,6 +4755,14 @@
         {
           "emulator": "retroarch-32",
           "core": "desmume2015_libretro"
+        },
+        {
+          "emulator": "nood",
+          "activity": "com.hydra.noods/.FileBrowser"
+        },
+        {
+          "emulator": "skyemu",
+          "activity": "com.sky.SkyEmu/.EnhancedNativeActivity"
         }
       ]
     },
@@ -4445,6 +4915,18 @@
         {
           "emulator": "my-oldboy",
           "activity": "com.fastemulator.gbc/.EmulatorActivity"
+        },
+        {
+          "emulator": "pizzaboy",
+          "activity": "it.dbtecno.pizzaboy/it.dbtecno.pizzaboy.MainActivity"
+        },
+        {
+          "emulator": "pizzaboy-pro",
+          "activity": "it.dbtecno.pizzaboypro/it.dbtecno.pizzaboypro.MainActivity"
+        },
+        {
+          "emulator": "linkboy",
+          "activity": "com.pixelrespawn.linkboy/.EmulatorActivity"
         }
       ]
     },
@@ -5275,6 +5757,10 @@
         {
           "emulator": "retroarch-32",
           "core": "bsnes_hd_libretro"
+        },
+        {
+          "emulator": "snes9x-ex",
+          "activity": "com.explusalpha.Snes9xPlus/com.imagine.BaseActivity"
         }
       ]
     },
@@ -5321,6 +5807,10 @@
         {
           "emulator": "retroarch-32",
           "core": "gambatte_libretro"
+        },
+        {
+          "emulator": "vvb",
+          "activity": "com.simongellis.vvb/com.simongellis.vvb.MainActivity"
         }
       ]
     },
@@ -5554,7 +6044,12 @@
       "logoKey": "wiiu",
       "hue": 355,
       "mame": false,
-      "emulators": []
+      "emulators": [
+        {
+          "emulator": "cemu",
+          "activity": "info.cemu.cemu/.emulation.EmulationActivity"
+        }
+      ]
     },
     {
       "id": "nsw",
@@ -5594,6 +6089,14 @@
         },
         {
           "emulator": "nyushu"
+        },
+        {
+          "emulator": "suyu",
+          "activity": "dev.suyu.suyu_emu.relWithDebInfo/dev.suyu.suyu_emu.activities.EmulationActivity"
+        },
+        {
+          "emulator": "kenjinx",
+          "activity": "org.kenjinx.android/.MainActivity"
         }
       ]
     },
@@ -5659,6 +6162,18 @@
         {
           "emulator": "bochs",
           "favourite": true
+        },
+        {
+          "emulator": "winlator-cmod",
+          "activity": "com.winlator.cmod/.XServerDisplayActivity"
+        },
+        {
+          "emulator": "winlator",
+          "activity": "com.winlator/.XServerDisplayActivity"
+        },
+        {
+          "emulator": "micewine",
+          "activity": "com.micewine.emu/com.micewine.emu.activities.MainActivity"
         }
       ]
     },
@@ -5738,6 +6253,10 @@
         {
           "emulator": "retroarch-32",
           "core": "picodrive_libretro"
+        },
+        {
+          "emulator": "md-emu",
+          "activity": "com.explusalpha.MdEmu/com.imagine.BaseActivity"
         }
       ]
     },
@@ -5822,6 +6341,14 @@
         {
           "emulator": "retroarch-32",
           "core": "flycast_libretro"
+        },
+        {
+          "emulator": "redream",
+          "activity": "io.recompiled.redream/.MainActivity"
+        },
+        {
+          "emulator": "reicast",
+          "activity": "com.reicast.emulator/.MainActivity"
         }
       ]
     },
@@ -5890,6 +6417,14 @@
         },
         {
           "emulator": "gearoid"
+        },
+        {
+          "emulator": "pizzaboy-cpro",
+          "activity": "it.dbtecno.pizzaboyscpro/.MainActivity"
+        },
+        {
+          "emulator": "mastergear",
+          "activity": "com.fms.mg/com.fms.emulib.MainActivity"
         }
       ]
     },
@@ -6491,6 +7026,10 @@
         {
           "emulator": "retroarch-32",
           "core": "rustation_libretro"
+        },
+        {
+          "emulator": "armsx3",
+          "activity": "com.nanodata.armsx/com.armsx2.Main"
         }
       ]
     },
@@ -6539,6 +7078,14 @@
         {
           "emulator": "retroarch-32",
           "core": "play_libretro"
+        },
+        {
+          "emulator": "armsx3",
+          "activity": "come.nanodata.armsx2/com.armsx2.Main"
+        },
+        {
+          "emulator": "emucorex",
+          "activity": "com.sbro.emucorex/.MainActivity"
         }
       ]
     },
@@ -6553,6 +7100,10 @@
         {
           "emulator": "armsx3",
           "favourite": true
+        },
+        {
+          "emulator": "aps3e",
+          "activity": "aenu.aps3e/aenu.aps3e.EmulatorActivity"
         }
       ]
     },
@@ -6598,6 +7149,10 @@
         {
           "emulator": "vita3k",
           "favourite": true
+        },
+        {
+          "emulator": "emucorev",
+          "activity": "com.sbro.emucorev/.core.vita.Emulator"
         }
       ]
     },
@@ -6619,6 +7174,14 @@
         {
           "emulator": "retroarch-32",
           "core": "directxbox_libretro"
+        },
+        {
+          "emulator": "x1box",
+          "activity": "com.izzy2lost.x1box/.LauncherActivity"
+        },
+        {
+          "emulator": "haku",
+          "activity": "com.rfandango.haku_x/.LauncherActivity"
         }
       ]
     },
@@ -6628,7 +7191,20 @@
       "folder": "xbox360",
       "hue": 271,
       "mame": false,
-      "emulators": []
+      "emulators": [
+        {
+          "emulator": "ax360e",
+          "activity": "aenu.ax360e/aenu.ax360e.EmulatorActivity"
+        },
+        {
+          "emulator": "x360-mobile",
+          "activity": "emu.x360.mobile/.X360MobileGameLaunchActivity"
+        },
+        {
+          "emulator": "xendroid",
+          "activity": "xendroid.compose/.EmulatorHostActivity"
+        }
+      ]
     },
     {
       "id": "cdimono1",
@@ -7424,6 +8000,18 @@
         {
           "emulator": "retroarch-32",
           "core": "retro8_libretro"
+        },
+        {
+          "emulator": "pico8-launcher",
+          "activity": "io.wip.pico8/com.godot.game.GodotAppLauncher"
+        },
+        {
+          "emulator": "picpic",
+          "activity": "com.sa_moo_rai.picpic/.MainActivity"
+        },
+        {
+          "emulator": "infinity",
+          "activity": "me.dt2dev.infinity/me.dt2dev.infinity.SchemeActivity"
         }
       ]
     },
@@ -8068,6 +8656,51 @@
         {
           "emulator": "retroarch-32",
           "core": "xrick_libretro"
+        }
+      ]
+    },
+    {
+      "id": "arcadia2001",
+      "name": "Emerson - Arcadia 2001",
+      "folder": "Arcadia 2001",
+      "emulators": [
+        {
+          "emulator": "droidarcadia",
+          "activity": "com.amigan.droidarcadia/.MainActivity"
+        }
+      ]
+    },
+    {
+      "id": "flash",
+      "name": "Adobe - Flash",
+      "folder": "Flash",
+      "emulators": [
+        {
+          "emulator": "swiff",
+          "activity": "io.navivani.swiff/.MainActivity"
+        },
+        {
+          "emulator": "ruffle",
+          "activity": "rs.ruffle/.PlayerActivity"
+        },
+        {
+          "emulator": "flash-player",
+          "activity": "com.issess.flashplayer/.player.FlashPlayerActivity"
+        },
+        {
+          "emulator": "flash-player-pro",
+          "activity": "com.issess.flashplayerpro/com.issess.flashplayer.player.FlashPlayerActivity"
+        }
+      ]
+    },
+    {
+      "id": "model3",
+      "name": "Sega - Model 3",
+      "folder": "Model 3",
+      "emulators": [
+        {
+          "emulator": "super3",
+          "activity": "com.izzy2lost.super3/.MainActivity"
         }
       ]
     }
