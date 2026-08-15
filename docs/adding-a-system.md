@@ -59,12 +59,20 @@ Append one entry to `systems[]`:
   "folder": "Playstation Vita 2",    // the roms/<folder> name
   "aliases": ["psv2", "ps-vita-2"],  // folder/display names that map here
   "romExtensions": ["iso", "vpk"],   // files the scanner treats as ROMs
-  "logoKey": "psv2",                 // optional
+  "logoKey": "psv2",                 // system-icon key: config/system-icons/<logoKey>.svg
   "hue": 210,                        // fallback tile color
   "mame": false,
   "emulators": [ /* see below */ ]
 }
 ```
+
+A new platform should ship with a **system icon**: add `logoKey` when the
+ES-DE logo file name differs from the system id, then drop
+`config/system-icons/<logoKey || id>.svg` (an SVG from the desktop repo's
+`platform-logos/` set) — or regenerate the whole set with
+`node scripts/fetch-platform-icons.mjs` (copies from `../nodeland/dist/platform-logos`,
+writes the `manifest.json` the app diffs against for Settings → Update).
+Systems with no icon simply letter-tile in-app.
 
 ## New emulator / variant for an existing system
 
@@ -98,5 +106,7 @@ Rules:
    (updates the README emulator table + `docs/android-emulators.md`). Any
    change to an emulator's config/definition — or a fix to a broken launch —
    MUST include this step in the same commit.
-5. Commit + PR. CI re-validates.
-6. Merge → the app's Settings → Update shows the change with a friendly diff.
+5. For a new platform: add `logoKey` (when the logo file name differs) and
+   `config/system-icons/<logoKey || id>.svg` (via `fetch-platform-icons.mjs`).
+6. Commit + PR. CI re-validates.
+7. Merge → the app's Settings → Update shows the change with a friendly diff.

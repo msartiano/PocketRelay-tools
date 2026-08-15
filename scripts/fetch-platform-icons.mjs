@@ -11,7 +11,7 @@
  * Systems with no matching logo simply get no file — the app letter-tiles
  * them. Idempotent: existing files are overwritten (the set is regenerable).
  */
-import { readdirSync, copyFileSync, mkdirSync, existsSync, readFileSync } from "node:fs";
+import { readdirSync, copyFileSync, mkdirSync, existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -52,4 +52,13 @@ for (const sys of cfg.systems) {
   }
 }
 
-console.log(`system-icons: ${copied} copied (${cfg.systems.length - missing} missing -> letter-tile fallback)`);
+// Committed manifest (name -> byte size) so the app's Settings → Update can
+// diff the remote set against what's on the device from a raw GitHub URL.
+const manifestFiles = {};
+for (const f of readdirSync(outDir)) {
+  if (f === "manifest.json") continue;
+  manifestFiles[f] = statSync(join(outDir, f)).size;
+}
+writeFileSync(join(outDir, "manifest.json"), JSON.stringify({ version: 1, files: manifestFiles }, null, 2) + "\n", "utf8");
+
+console.log(`system-icons: ${copied} copied (${cfg.systems.length - missing} missing -> letter-tile fallback), manifest written`);
