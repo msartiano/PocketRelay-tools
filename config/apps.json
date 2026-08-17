@@ -6,31 +6,6 @@
       "systems": "any"
     },
     {
-      "package": "banner.hub",
-      "name": "Banner Hub",
-      "systems": "any"
-    },
-    {
-      "package": "banner.hub.lite",
-      "name": "Banner Hub Lite",
-      "systems": "any"
-    },
-    {
-      "package": "com.foobnix.pdf.reader",
-      "name": "Librera PDF",
-      "systems": "any"
-    },
-    {
-      "package": "com.foobnix.pro.pdf.reader",
-      "name": "Librera PDF Pro",
-      "systems": "any"
-    },
-    {
-      "package": "com.github.axet.bookreader",
-      "name": "Android Book Reader",
-      "systems": "any"
-    },
-    {
       "package": "com.limelight",
       "name": "Moonlight",
       "systems": "any"
@@ -38,21 +13,6 @@
     {
       "package": "com.limelight.noir",
       "name": "Moonlight Noir",
-      "systems": "any"
-    },
-    {
-      "package": "com.ludashi.aibench",
-      "name": "AI Bench",
-      "systems": "any"
-    },
-    {
-      "package": "com.mxtech.videoplayer.ad",
-      "name": "MX Player",
-      "systems": "any"
-    },
-    {
-      "package": "com.mxtech.videoplayer.pro",
-      "name": "MX Player Pro",
       "systems": "any"
     },
     {
@@ -71,53 +31,13 @@
       "systems": "any"
     },
     {
-      "package": "com.studio08.xbgamestream",
-      "name": "xbGameStream",
-      "systems": "any"
-    },
-    {
       "package": "com.tencent.ig",
       "name": "GameHub Lite",
       "systems": "any"
     },
     {
-      "package": "dev.anilbeesetti.nextplayer",
-      "name": "NextPlayer",
-      "systems": "any"
-    },
-    {
       "package": "gamehub.lite",
       "name": "GameHub",
-      "systems": "any"
-    },
-    {
-      "package": "is.xyz.mpv",
-      "name": "MPV",
-      "systems": "any"
-    },
-    {
-      "package": "org.courville.nova",
-      "name": "Nova Video Player",
-      "systems": "any"
-    },
-    {
-      "package": "org.koreader.launcher",
-      "name": "KOReader",
-      "systems": "any"
-    },
-    {
-      "package": "org.readera",
-      "name": "Readera",
-      "systems": "any"
-    },
-    {
-      "package": "org.videolan.vlc",
-      "name": "VLC",
-      "systems": "any"
-    },
-    {
-      "package": "org.xbmc.kodi",
-      "name": "Kodi",
       "systems": "any"
     }
   ]
