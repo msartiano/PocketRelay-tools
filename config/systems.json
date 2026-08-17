@@ -3077,6 +3077,38 @@
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.explusalpha.SwanEmu",
       "activity": "com.explusalpha.SwanEmu/com.imagine.BaseActivity",
       "launchArgs": "d \"{file.uri}\""
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight",
+      "packages": [
+        "com.limelight"
+      ],
+      "siteUrl": "https://github.com/moonlight-stream/moonlight-android"
+    },
+    {
+      "id": "moonlight-noir",
+      "name": "Moonlight Noir",
+      "packages": [
+        "com.limelight.noir"
+      ],
+      "siteUrl": "https://github.com/moonlight-stream/moonlight-android"
+    },
+    {
+      "id": "gamehub",
+      "name": "GameHub",
+      "packages": [
+        "gamehub.lite"
+      ],
+      "siteUrl": "https://www.gamehub.qq.com/"
+    },
+    {
+      "id": "gamehub-lite",
+      "name": "GameHub Lite",
+      "packages": [
+        "com.tencent.ig"
+      ],
+      "siteUrl": "https://www.gamehub.qq.com/"
     }
   ],
   "systems": [
@@ -3223,6 +3255,12 @@
         {
           "emulator": "retroarch-32",
           "core": "dosbox_svn_libretro"
+        },
+        {
+          "emulator": "gamehub"
+        },
+        {
+          "emulator": "gamehub-lite"
         }
       ]
     },
@@ -4164,6 +4202,12 @@
         },
         {
           "emulator": "bochs"
+        },
+        {
+          "emulator": "gamehub"
+        },
+        {
+          "emulator": "gamehub-lite"
         },
         {
           "emulator": "retroarch",
@@ -6171,6 +6215,18 @@
         {
           "emulator": "micewine",
           "activity": "com.micewine.emu/com.micewine.emu.activities.MainActivity"
+        },
+        {
+          "emulator": "moonlight"
+        },
+        {
+          "emulator": "moonlight-noir"
+        },
+        {
+          "emulator": "gamehub"
+        },
+        {
+          "emulator": "gamehub-lite"
         }
       ]
     },
