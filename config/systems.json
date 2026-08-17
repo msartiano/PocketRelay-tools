@@ -7178,15 +7178,18 @@
         },
         {
           "emulator": "retroarch",
-          "core": "ppsspp_libretro"
+          "core": "ppsspp_libretro",
+          "chdSupported": false
         },
         {
           "emulator": "retroarch-plus",
-          "core": "ppsspp_libretro"
+          "core": "ppsspp_libretro",
+          "chdSupported": false
         },
         {
           "emulator": "retroarch-32",
-          "core": "ppsspp_libretro"
+          "core": "ppsspp_libretro",
+          "chdSupported": false
         }
       ]
     },

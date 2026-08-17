@@ -18,6 +18,7 @@
           "siteUrl": { "type": "string", "pattern": "^https?://" },
           "playStoreUrl": { "type": "string", "pattern": "^https?://" },
           "apkUrl": { "type": "string", "pattern": "^https?://" },
+          "chdSupported": { "type": "boolean" },
           "links": {
             "type": "array",
             "items": {
@@ -61,7 +62,8 @@
                 "extras": { "type": "object" },
                 "mimeType": { "type": "string" },
                 "activity": { "type": "string" },
-                "favourite": { "type": "boolean" }
+                "favourite": { "type": "boolean" },
+                "chdSupported": { "type": "boolean" }
               },
               "additionalProperties": false
             }
