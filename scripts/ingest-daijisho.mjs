@@ -114,8 +114,8 @@ const FOLD = {
 // ---- curated master data for NEW standalone ids (id -> {name, site, play?, apk?}) ----
 const PKG_META = {
   "com.winlator": { id: "winlator", name: "Winlator", site: "https://winlator.org/", play: "com.winlator" },
-  "com.winlator.cmod": { id: "winlator-cmod", name: "Winlator (CMod)", site: "https://github.com/cmodmirror/winlator-cmod" },
-  "com.cmodded.winlator": { id: "winlator-cmod", name: "Winlator (CMod)", site: "https://github.com/cmodmirror/winlator-cmod" },
+  "com.winlator.cmod": { id: "winlator-cmod", name: "Winlator (CMod)", site: "https://github.com/Stredohori/Winlator-CMOD" },
+  "com.cmodded.winlator": { id: "winlator-cmod", name: "Winlator (CMod)", site: "https://github.com/Stredohori/Winlator-CMOD" },
   "com.micewine.emu": { id: "micewine", name: "MiceWine", site: "https://github.com/MiceWine/micewine" },
   "info.cemu.cemu": { id: "cemu", name: "CEMU", site: "https://cemu.info/", play: "info.cemu.cemu" },
   "aenu.ax360e": { id: "ax360e", name: "AX360E", site: "https://github.com/aenu/X360" },

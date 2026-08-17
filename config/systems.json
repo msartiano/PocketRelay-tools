@@ -3043,7 +3043,7 @@
         "com.cmodded.winlator",
         "com.winlator.cmod"
       ],
-      "siteUrl": "https://github.com/cmodmirror/winlator-cmod",
+      "siteUrl": "https://github.com/Stredohori/Winlator-CMOD",
       "activity": "com.winlator.cmod/.XServerDisplayActivity",
       "launchArgs": "e shortcut_path \"{file.path}\""
     },
@@ -3100,7 +3100,7 @@
       "packages": [
         "gamehub.lite"
       ],
-      "siteUrl": "https://www.gamehub.qq.com/"
+      "siteUrl": "https://gamehub.xiaoji.com/en/"
     },
     {
       "id": "gamehub-lite",
@@ -3108,7 +3108,7 @@
       "packages": [
         "com.tencent.ig"
       ],
-      "siteUrl": "https://www.gamehub.qq.com/"
+      "siteUrl": "https://github.com/Producdevity/gamehub-lite/releases"
     }
   ],
   "systems": [
