@@ -6649,6 +6649,12 @@
         {
           "emulator": "gensoid"
         }
+      ],
+      "aliases": [
+        "mega drive",
+        "mega-drive",
+        "mega drive - genesis",
+        "mega drive / genesis"
       ]
     },
     {
@@ -6734,6 +6740,9 @@
           "emulator": "gensoid",
           "activity": "com.androidemu.gens/.EmulatorActivity"
         }
+      ],
+      "aliases": [
+        "genesis / mega drive"
       ]
     },
     {
